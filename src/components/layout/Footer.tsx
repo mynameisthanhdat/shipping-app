@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FOOTER_SERVICES, FOOTER_SOLUTIONS, NavItem, PATHS } from '../../routes/paths';
+import { FOOTER_SERVICES, FOOTER_SOLUTIONS, NavItem } from '../../routes/paths';
+import Logo from './Logo';
 
 const FooterColumn: React.FC<{ title: string; items: NavItem[] }> = ({ title, items }) => (
   <div>
@@ -23,9 +24,7 @@ const Footer: React.FC = () => {
       <div className="mx-auto max-w-container px-6 py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Link to={PATHS.home} className="text-2xl font-bold text-white">
-              Parcelio
-            </Link>
+            <Logo className="text-2xl text-white" imageClassName="h-11 w-11" />
             <p className="mt-6 text-sm text-white/70">Affordable shipping for everyone.</p>
           </div>
 

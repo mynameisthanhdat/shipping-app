@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
+import Logo from './Logo';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `text-sm transition-colors hover:text-brand ${isActive ? 'text-brand' : 'text-navy'}`;
@@ -83,9 +84,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white">
       <div className="mx-auto flex h-[84px] max-w-container items-center gap-8 px-6">
-        <Link to={PATHS.home} className="text-xl font-bold text-navy">
-          Parcelio
-        </Link>
+        <Logo className="text-xl text-navy" />
 
         <nav className="hidden flex-1 items-center gap-8 lg:flex">
           {MAIN_NAV.map((item) =>
