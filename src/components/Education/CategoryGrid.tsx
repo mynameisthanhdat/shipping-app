@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { EDUCATION_CATEGORIES, NavItem } from '../../routes/paths';
+import { MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
 
 const categoryLinkClass = ({ isActive }: { isActive: boolean }) =>
   `flex min-h-24 items-center justify-center bg-muted-surface px-4 text-center text-base font-bold transition-colors md:text-lg ${
@@ -12,7 +12,7 @@ type CategoryGridProps = {
 };
 
 const CategoryGrid: React.FC<CategoryGridProps> = ({
-  categories = EDUCATION_CATEGORIES,
+  categories = MAIN_NAV.find((item) => item.to === PATHS.education)?.children ?? [],
 }) => {
   const topCategories = categories.slice(0, 4);
   const bottomCategories = categories.slice(4);

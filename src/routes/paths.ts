@@ -60,12 +60,13 @@ export const MAIN_NAV: NavItem[] = [
     label: 'Education',
     to: PATHS.education,
     children: [
-      { label: 'Education Centre', to: `${PATHS.education}/education-centre` },
+      { label: "FAQ's", to: PATHS.educationFaqs },
       { label: 'Testimonials', to: PATHS.educationTestimonials },
-      { label: 'Guides & Ebooks', to: `${PATHS.education}/guides-and-ebooks` },
-      { label: 'Shipping Glossary', to: `${PATHS.education}/shipping-glossary` },
+      { label: 'Transit Warranty Options', to: PATHS.educationTransitWarranty },
+      { label: 'Packaging Requirements', to: PATHS.educationPackaging },
+      { label: 'Account Enquiries', to: PATHS.educationAccountEnquiries },
+      { label: 'Tracking', to: PATHS.educationTracking },
       { label: 'Blog', to: PATHS.educationBlog },
-      { label: 'FAQs', to: PATHS.educationFaqs },
     ],
   },
   {
@@ -95,17 +96,6 @@ export const FOOTER_SOLUTIONS: NavItem[] = [
   { label: 'Individuals & Families', to: PATHS.individuals },
   { label: 'Ecommerce', to: PATHS.ecommerce },
   { label: 'API for Developers', to: PATHS.api },
-];
-
-/** Education Centre category tiles — extra items are not in the header dropdown. */
-export const EDUCATION_CATEGORIES: NavItem[] = [
-  { label: "FAQ's", to: PATHS.educationFaqs },
-  { label: 'Testimonials', to: PATHS.educationTestimonials },
-  { label: 'Transit Warranty Options', to: PATHS.educationTransitWarranty },
-  { label: 'Packaging Requirements', to: PATHS.educationPackaging },
-  { label: 'Account Enquiries', to: PATHS.educationAccountEnquiries },
-  { label: 'Tracking', to: PATHS.educationTracking },
-  { label: 'Blog', to: PATHS.educationBlog },
 ];
 
 /** Flattens a nav tree into a single list of items, parents included. */

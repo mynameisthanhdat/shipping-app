@@ -9,7 +9,6 @@ import Testimonials from '../pages/Education/Testimonials';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import {
-  EDUCATION_CATEGORIES,
   FOOTER_SERVICES,
   FOOTER_SOLUTIONS,
   MAIN_NAV,
@@ -34,7 +33,6 @@ const MOCK_PAGES = flattenNav([
   ...MAIN_NAV,
   ...FOOTER_SERVICES,
   ...FOOTER_SOLUTIONS,
-  ...EDUCATION_CATEGORIES,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
 ]).filter(
