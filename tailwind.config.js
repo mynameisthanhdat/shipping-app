@@ -14,6 +14,10 @@ module.exports = {
           DEFAULT: '#e2683c',
           hover: '#cf5a30',
         },
+        muted: {
+          DEFAULT: '#666666',
+          surface: '#d9d9d9',
+        },
       },
       maxWidth: {
         container: '1140px',

@@ -21,7 +21,15 @@ export const PATHS = {
 
   // Submenu paths that have a real page behind them.
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,
+
+  //Education submenu paths
   educationTestimonials: `${EDUCATION}/testimonials`,
+  educationFaqs: `${EDUCATION}/faqs`,
+  educationBlog: `${EDUCATION}/blog`,
+  educationTransitWarranty: `${EDUCATION}/transit-warranty-options`,
+  educationPackaging: `${EDUCATION}/packaging-requirements`,
+  educationAccountEnquiries: `${EDUCATION}/account-enquiries`,
+  educationTracking: `${EDUCATION}/tracking`,
 } as const;
 
 export type NavItem = {
@@ -56,8 +64,8 @@ export const MAIN_NAV: NavItem[] = [
       { label: 'Testimonials', to: PATHS.educationTestimonials },
       { label: 'Guides & Ebooks', to: `${PATHS.education}/guides-and-ebooks` },
       { label: 'Shipping Glossary', to: `${PATHS.education}/shipping-glossary` },
-      { label: 'Blog', to: `${PATHS.education}/blog` },
-      { label: 'FAQs', to: `${PATHS.education}/faqs` },
+      { label: 'Blog', to: PATHS.educationBlog },
+      { label: 'FAQs', to: PATHS.educationFaqs },
     ],
   },
   {
@@ -87,6 +95,17 @@ export const FOOTER_SOLUTIONS: NavItem[] = [
   { label: 'Individuals & Families', to: PATHS.individuals },
   { label: 'Ecommerce', to: PATHS.ecommerce },
   { label: 'API for Developers', to: PATHS.api },
+];
+
+/** Education Centre category tiles — extra items are not in the header dropdown. */
+export const EDUCATION_CATEGORIES: NavItem[] = [
+  { label: "FAQ's", to: PATHS.educationFaqs },
+  { label: 'Testimonials', to: PATHS.educationTestimonials },
+  { label: 'Transit Warranty Options', to: PATHS.educationTransitWarranty },
+  { label: 'Packaging Requirements', to: PATHS.educationPackaging },
+  { label: 'Account Enquiries', to: PATHS.educationAccountEnquiries },
+  { label: 'Tracking', to: PATHS.educationTracking },
+  { label: 'Blog', to: PATHS.educationBlog },
 ];
 
 /** Flattens a nav tree into a single list of items, parents included. */
