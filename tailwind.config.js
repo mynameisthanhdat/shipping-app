@@ -22,6 +22,9 @@ module.exports = {
       maxWidth: {
         container: '1140px',
       },
+      boxShadow: {
+        card: '0 4px 16px rgba(21, 42, 71, 0.08)',
+      },
     },
   },
   plugins: [],
