@@ -1,5 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import CompareInstantRates from '../components/Home/CompareInstantRates';
+import CourierNetwork from '../components/Home/CourierNetwork';
+import Hero from '../components/Home/Hero';
+import HomeTestimonialGrid from '../components/Home/HomeTestimonialGrid';
+import IntegrationGrid from '../components/Home/IntegrationGrid';
+import RateExampleGrid from '../components/Home/RateExampleGrid';
+import ReferralBanner from '../components/Home/ReferralBanner';
+import SolutionCards from '../components/Home/SolutionCards';
+import WhyChoose from '../components/Home/WhyChoose';
 import PackageDetailsForm from '../components/Quote/PackageDetailsForm';
 import { PATHS } from '../routes/paths';
 import { PackageDetails } from '../types/quote';
@@ -7,24 +16,58 @@ import { PackageDetails } from '../types/quote';
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
-  // Hands the filled-in form to the wizard, which seeds its draft from this state.
   const handleSubmit = (packageDetails: PackageDetails) =>
     navigate(PATHS.quote, { state: { packageDetails } });
 
   return (
-    <div className="mx-auto w-full max-w-container px-6 py-16">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold text-navy">
-          Compare couriers and book your delivery
-        </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-muted">
-          Tell us what you are sending and where it is going. We will line up the courier
-          options side by side so you can pick on price and timing.
-        </p>
+    <div className="flex min-h-full flex-1 flex-col">
+      <Hero />
+
+      <div className="mx-auto w-full max-w-container px-6">
+        <div className="relative z-10 -mt-12 md:-mt-16">
+          <section className="rounded-xl border border-black/10 bg-white px-6 py-7 shadow-card md:px-8">
+            <h2 className="text-lg font-bold text-navy">
+              Instant quote. Book now and Save!
+            </h2>
+            <div className="mt-6">
+              <PackageDetailsForm onSubmit={handleSubmit} />
+            </div>
+          </section>
+        </div>
+
+        <div className="mt-16">
+          <CompareInstantRates />
+        </div>
+
+        <div className="mt-16">
+          <RateExampleGrid />
+        </div>
+
+        <div className="mt-16">
+          <HomeTestimonialGrid />
+        </div>
+
+        <div className="mt-16">
+          <IntegrationGrid />
+        </div>
+
+        <div className="mt-16">
+          <SolutionCards />
+        </div>
+
+        <div className="mt-16">
+          <CourierNetwork />
+        </div>
       </div>
 
-      <div className="mt-10 rounded-xl border border-black/10 bg-white px-7 py-7 shadow-card">
-        <PackageDetailsForm onSubmit={handleSubmit} />
+      <div className="mt-16">
+        <WhyChoose />
+      </div>
+
+      <div className="mx-auto w-full max-w-container px-6">
+        <div className="mt-16 pb-16">
+          <ReferralBanner />
+        </div>
       </div>
     </div>
   );
