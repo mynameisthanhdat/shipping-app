@@ -28,7 +28,7 @@ const QuoteStepper: React.FC<QuoteStepperProps> = ({ currentIndex, completedCoun
 
         const label = (
           <span
-            className={`mt-2.5 block text-center text-[11px] leading-tight ${
+            className={`mt-2.5 block text-center text-xs leading-tight ${
               isCurrent ? 'font-bold text-navy' : 'text-muted'
             }`}
           >

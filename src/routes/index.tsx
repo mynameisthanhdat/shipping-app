@@ -9,6 +9,7 @@ import Testimonials from '../pages/Education/Testimonials';
 import CompareRates from '../pages/CompareRates';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
+import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
 import UpcomingStep from '../pages/GetAQuote/UpcomingStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
@@ -41,7 +42,8 @@ const quoteRoute: RouteObject = {
   element: <GetAQuote />,
   children: [
     { index: true, element: <PackageDetailsStep /> },
-    ...QUOTE_STEPS.slice(1).map<RouteObject>((step) => ({
+    { path: 'select-quote', element: <SelectQuoteStep /> },
+    ...QUOTE_STEPS.slice(2).map<RouteObject>((step) => ({
       path: step.segment,
       element: <UpcomingStep step={step} />,
     })),

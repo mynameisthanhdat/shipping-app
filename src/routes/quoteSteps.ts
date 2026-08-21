@@ -47,6 +47,7 @@ export const getQuoteStepIndex = (pathname: string): number => {
  */
 export const getCompletedStepCount = (draft: QuoteDraft): number => {
   if (!isPackageDetailsComplete(draft.packageDetails)) return 0;
+  if (!draft.selectedQuoteId) return 1;
 
-  return 1;
+  return 2;
 };
