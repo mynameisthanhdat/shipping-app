@@ -38,6 +38,23 @@ export type PackageDetails = {
   items: QuoteItem[];
 };
 
+/** Step 2 — one courier option returned for the shipment. */
+export type CarrierQuote = {
+  id: string;
+  carrier: string;
+  /** Business days in transit. */
+  transitDays: number;
+  /** Days from today the courier can collect: 0 = today, 1 = tomorrow. */
+  collectionDayOffset: number;
+  /** Collection window as 24h hours, e.g. [9, 16] renders as "9am-4pm". */
+  collectionWindow: [number, number];
+  /** Included transit warranty, in dollars. */
+  warrantyValue: number;
+  price: number;
+};
+
+export type QuoteSortId = 'lowest-price' | 'fastest-delivery' | 'earliest-collection';
+
 /**
  * The whole wizard state. Add `collectionDetails`, `additionalInformation` and
  * `payment` slices here as steps 3–5 are built, then widen
