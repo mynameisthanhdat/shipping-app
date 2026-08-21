@@ -1,17 +1,18 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import CompareInstantRates from '../components/Home/CompareInstantRates';
-import CourierNetwork from '../components/Home/CourierNetwork';
-import Hero from '../components/Home/Hero';
-import HomeTestimonialGrid from '../components/Home/HomeTestimonialGrid';
-import IntegrationGrid from '../components/Home/IntegrationGrid';
-import RateExampleGrid from '../components/Home/RateExampleGrid';
-import ReferralBanner from '../components/Home/ReferralBanner';
-import SolutionCards from '../components/Home/SolutionCards';
-import WhyChoose from '../components/Home/WhyChoose';
-import PackageDetailsForm from '../components/Quote/PackageDetailsForm';
-import { PATHS } from '../routes/paths';
-import { PackageDetails } from '../types/quote';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import AustraliaWideFreight from "../components/Home/AustraliaWideFreight";
+import CompareInstantRates from "../components/Home/CompareInstantRates";
+import CourierNetwork from "../components/Home/CourierNetwork";
+import Hero from "../components/Home/Hero";
+import HomeTestimonialGrid from "../components/Home/HomeTestimonialGrid";
+import IntegrationGrid from "../components/Home/IntegrationGrid";
+import RateExampleGrid from "../components/Home/RateExampleGrid";
+import ScrollToTop from "../components/Home/ScrollToTop";
+import SolutionCards from "../components/Home/SolutionCards";
+import WhyChoose from "../components/Home/WhyChoose";
+import PackageDetailsForm from "../components/Quote/PackageDetailsForm";
+import { PATHS } from "../routes/paths";
+import { PackageDetails } from "../types/quote";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex min-h-full flex-1 flex-col">
+      <ScrollToTop />
       <Hero />
 
       <div className="mx-auto w-full max-w-container px-6">
@@ -58,15 +60,13 @@ const Home: React.FC = () => {
         <div className="mt-16">
           <CourierNetwork />
         </div>
-      </div>
+      
+        <div className="mt-16">
+          <WhyChoose />
+        </div>
 
-      <div className="mt-16">
-        <WhyChoose />
-      </div>
-
-      <div className="mx-auto w-full max-w-container px-6">
-        <div className="mt-16 pb-16">
-          <ReferralBanner />
+        <div className="my-16">
+          <AustraliaWideFreight />
         </div>
       </div>
     </div>

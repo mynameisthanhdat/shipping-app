@@ -170,3 +170,26 @@ export const WHY_CHOOSE_FEATURES: string[] = [
   'Automatic customs documentation',
   'Flexible pickup scheduling',
 ];
+
+/** Services offered — temporary mock until freight-content API exists. */
+export const FREIGHT_SERVICES: string[] = [
+  'Air freight within Australia',
+  'Shipping within Australia',
+  'Large and small packages',
+  'Residential and commercial addresses',
+  'Door to door service',
+  'Local and interstate services',
+  'Direct and indirect delivery',
+  'Same and next day delivery',
+  'Give you real time tracking information',
+];
+
+/** Audience segments — temporary mock until freight-content API exists. */
+export const FREIGHT_AUDIENCES: string[] = [
+  'Businesses that require our cheap couriers on a regular basis',
+  'Businesses that have single, occasional and/or sporadic needs',
+  'Individuals and families who are sending small items',
+  'Individuals and families sending large packages',
+  'Any person or business on a budget',
+  'Anyone who wants the best value for money',
+];

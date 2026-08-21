@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { RATE_EXAMPLES } from '../../mocks/home';
+import { PATHS } from '../../routes/paths';
 
 const RateExampleGrid: React.FC = () => (
   <section>
@@ -18,6 +20,15 @@ const RateExampleGrid: React.FC = () => (
           <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
         </article>
       ))}
+    </div>
+
+    <div className="mt-8 flex justify-center">
+      <Link
+        to={PATHS.compareRates}
+        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+      >
+        See more
+      </Link>
     </div>
   </section>
 );

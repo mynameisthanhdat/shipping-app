@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { COURIER_PARTNERS } from '../../mocks/home';
+import { PATHS } from '../../routes/paths';
 
 const CourierNetwork: React.FC = () => (
   <section>
@@ -21,6 +23,15 @@ const CourierNetwork: React.FC = () => (
         </li>
       ))}
     </ul>
+
+    <div className="mt-8 flex justify-center">
+      <Link
+        to={PATHS.couriers}
+        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+      >
+        Show more
+      </Link>
+    </div>
   </section>
 );
 

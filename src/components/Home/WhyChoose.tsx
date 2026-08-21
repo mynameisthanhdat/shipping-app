@@ -7,12 +7,10 @@ const WhyChoose: React.FC = () => {
   const rightColumn = WHY_CHOOSE_FEATURES.slice(midpoint);
 
   return (
-    <section className="bg-navy">
-      <div className="mx-auto w-full max-w-container px-6 py-20 md:py-24">
+    <section className="rounded-xl bg-navy px-6 pt-7 pb-12 text-center">
         <h2 className="text-2xl font-bold text-white">
           Why Businesses Choose Parcelio
         </h2>
-
         <div className="mt-10 grid gap-x-12 gap-y-4 sm:grid-cols-2">
           {[leftColumn, rightColumn].map((column, columnIndex) => (
             <ul key={columnIndex} className="space-y-4">
@@ -28,7 +26,6 @@ const WhyChoose: React.FC = () => {
             </ul>
           ))}
         </div>
-      </div>
     </section>
   );
 };
