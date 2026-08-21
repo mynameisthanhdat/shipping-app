@@ -17,12 +17,47 @@ export type OurServicesHubContent = {
   closingText: string;
 };
 
+export type ContentSection = {
+  heading: string;
+  paragraphs: string[];
+};
+
+export type NextDayDeliveryContent = {
+  breadcrumb: string;
+  title: string;
+  introduction: {
+    question: string;
+    prefix: string;
+    courierNetworkLabel: string;
+    suffix: string;
+  };
+  trustedDelivery: ContentSection;
+  savings: {
+    heading: string;
+    parcelPost: {
+      prefix: string;
+      highlightedText: string;
+      suffix: string;
+    };
+    memberDiscount: {
+      prefix: string;
+      linkLabel: string;
+      suffix: string;
+    };
+    finalParagraph: string;
+  };
+  quotes: ContentSection;
+};
+
 /**
  * Static content for every page in the Our Services group.
  * Add future sub-pages as sibling modules, for example `interstate`,
  * `sameDay`, or `nextDay`, instead of declaring mock copy in page files.
  */
-export const OUR_SERVICES_CONTENT: { hub: OurServicesHubContent } = {
+export const OUR_SERVICES_CONTENT: {
+  hub: OurServicesHubContent;
+  nextDay: NextDayDeliveryContent;
+} = {
   hub: {
     breadcrumb: 'Our services',
     title: 'Courier, Freight & Shipping Services',
@@ -83,5 +118,45 @@ export const OUR_SERVICES_CONTENT: { hub: OurServicesHubContent } = {
     ],
     closingText:
       'Contact Transdirect today to learn more about our services and how we are able to assist you.',
+  },
+  nextDay: {
+    breadcrumb: 'Next Day/ Overnight Delivery',
+    title: 'Next Day & Overnight Delivery Australia',
+    introduction: {
+      question: 'Searching for the best next day delivery couriers, at the absolute lowest rates?',
+      prefix: 'Welcome to Transdirect. Let our',
+      courierNetworkLabel: 'Courier Network',
+      suffix:
+        'handle your express and overnight deliveries safely, on-time and with full end-to-end tracking. All of our courier services are also Certified 100% Carbon Neutral.',
+    },
+    trustedDelivery: {
+      heading: 'Trusted Overnight Delivery to Sydney, Melbourne & More',
+      paragraphs: [
+        'We’ve been an industry leader in priority and overnight delivery services for more than a decade, working with Australia’s best courier and freight companies, whilst helping our 100,000+ small business clients save money and grow their companies.',
+        'Our insurance and warranty options, and free email and SMS parcel tracking updates, will provide further peace of mind for your overnight, priority delivery needs.',
+      ],
+    },
+    savings: {
+      heading: 'Next Day Delivery 30% Cheaper than Parcel Post',
+      parcelPost: {
+        prefix:
+          'With Transdirect, you’ll enjoy rates 10% below standard overnight delivery costs for',
+        highlightedText: 'parcel post',
+        suffix: 'and other providers.',
+      },
+      memberDiscount: {
+        prefix: 'Better yet, the more you ship with us, the lower your rates: Thanks to',
+        linkLabel: 'our exclusive Transdirect Member discounts',
+        suffix: 'you’ll easily save 30% on next-day courier costs!',
+      },
+      finalParagraph:
+        'Even without a free Transdirect Member account, you can get a free instant quote, book the best next-day delivery courier for your needs, and track your package from pickup to drop-off, across Australia.',
+    },
+    quotes: {
+      heading: 'Get the Best Courier Quotes, Book & Save Today',
+      paragraphs: [
+        'We’re proud to serve more than 100,000 Australian small business clients, and provide the cheapest courier rates across a variety of needs, from same-day shipping to international freight services. We’ve earned some of the highest ratings in our industry, so let us put our courier expertise to work for you!',
+      ],
+    },
   },
 };
