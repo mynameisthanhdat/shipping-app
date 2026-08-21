@@ -34,8 +34,8 @@ const HighlightedText: React.FC<{ text: string; highlightedText?: string }> = ({
 
 const OurServices: React.FC = () => {
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-3 text-navy sm:pt-5">
-      <nav aria-label="Breadcrumb" className="text-xs text-slate-500">
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
+      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
         <Link to={PATHS.home} className="transition-colors hover:text-brand">
           Home
         </Link>{' '}
