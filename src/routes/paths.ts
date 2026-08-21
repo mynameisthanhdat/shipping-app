@@ -23,6 +23,7 @@ export const PATHS = {
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,
   servicesSameDayCourier: `${SERVICES}/same-day-courier`,
   servicesNextDayDelivery: `${SERVICES}/next-day-delivery`,
+  servicesParcelDelivery: `${SERVICES}/parcel-delivery`,
 
   //Education submenu paths
   educationTestimonials: `${EDUCATION}/testimonials`,
@@ -55,6 +56,7 @@ export const MAIN_NAV: NavItem[] = [
       { label: 'International Shipping', to: `${PATHS.services}/international-shipping` },
       { label: 'Same-Day Courier', to: PATHS.servicesSameDayCourier },
       { label: 'Returns Management', to: `${PATHS.services}/returns-management` },
+      { label: 'Parcel Delivery', to: PATHS.servicesParcelDelivery },
     ],
   },
   { label: 'Couriers', to: PATHS.couriers },
