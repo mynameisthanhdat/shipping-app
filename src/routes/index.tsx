@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Education from '../pages/Education';
 import OurServices from '../pages/OurServices';
 import ExpertInterStateCouriersInAus from '../pages/OurServices/ExpertInterStateCouriersInAus';
+import ParcelDelivery from '../pages/OurServices/ParcelDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import CompareRates from '../pages/CompareRates';
 import GetAQuote from '../pages/GetAQuote';
@@ -26,6 +27,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.home]: <Home />,
   [PATHS.services]: <OurServices />,
   [PATHS.servicesExpertInterstateCouriers]: <ExpertInterStateCouriersInAus />,
+  [PATHS.servicesParcelDelivery]: <ParcelDelivery />,
   [PATHS.education]: <Education />,
   [PATHS.educationTestimonials]: <Testimonials />,
   [PATHS.compareRates]: <CompareRates />,
