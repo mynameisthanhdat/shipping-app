@@ -21,6 +21,7 @@ export const PATHS = {
 
   // Submenu paths that have a real page behind them.
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,
+  servicesSameDayCourier: `${SERVICES}/same-day-courier`,
 
   //Education submenu paths
   educationTestimonials: `${EDUCATION}/testimonials`,
@@ -51,7 +52,7 @@ export const MAIN_NAV: NavItem[] = [
       { label: 'Standard Shipping', to: `${PATHS.services}/standard-shipping` },
       { label: 'Freight & Pallet', to: `${PATHS.services}/freight-and-pallet` },
       { label: 'International Shipping', to: `${PATHS.services}/international-shipping` },
-      { label: 'Same-Day Courier', to: `${PATHS.services}/same-day-courier` },
+      { label: 'Same-Day Courier', to: PATHS.servicesSameDayCourier },
       { label: 'Returns Management', to: `${PATHS.services}/returns-management` },
     ],
   },
