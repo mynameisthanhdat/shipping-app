@@ -17,6 +17,52 @@ export type OurServicesHubContent = {
   closingText: string;
 };
 
+export type LinkItem = {
+  label: string;
+  to: string;
+};
+
+export type SameDayDeliveryContent = {
+  breadcrumb: string;
+  title: string;
+  introduction: string[];
+  callToAction: {
+    quoteLabel: string;
+    bookingLabel: string;
+    suffix: string;
+  };
+  termsText: string;
+  whyChooseHeading: string;
+  compareCouriers: ContentSection;
+  australiaWide: ContentSection & {
+    locationsHeading: string;
+    locations: LinkItem[];
+    moreLocationsLabel: string;
+  };
+  tracking: ContentSection & {
+    linkLabel: string;
+  };
+  competitiveRates: ContentSection;
+  bookingProcess: ContentSection;
+  howItWorks: {
+    heading: string;
+    steps: Array<{ label: string; title: string; description: string }>;
+  };
+  items: {
+    heading: string;
+    introduction: string;
+    values: string[];
+    requirements: string;
+    requirementsLinkLabel: string;
+    requirementsSuffix: string;
+  };
+  testimonials: {
+    heading: string;
+    values: string[];
+    linkLabel: string;
+  };
+};
+
 export type ContentSection = {
   heading: string;
   paragraphs: string[];
@@ -43,6 +89,7 @@ export type InterstateCouriersContent = {
 export const OUR_SERVICES_CONTENT: {
   hub: OurServicesHubContent;
   interstate: InterstateCouriersContent;
+  sameDay: SameDayDeliveryContent;
 } = {
   hub: {
     breadcrumb: 'Our services',
@@ -150,6 +197,109 @@ export const OUR_SERVICES_CONTENT: {
         'We operate in all of Australia’s capital cities and are definitely the leaders in interstate freight. We traverse this large nation, taking great care to deliver the goods you require securely and efficiently.',
         'Trandirect is the company that Australia trusts and uses for reliable, secure and timely deliveries wherever you trade or live.',
       ],
+    },
+  },
+  sameDay: {
+    breadcrumb: 'Same Day Courier Services',
+    title: 'Same Day Courier Services',
+    introduction: [
+      'Need something delivered urgently? Transdirect’s same-day courier service helps both individuals and businesses send parcels fast, with delivery arranged the same day the booking is made*. It doesn’t matter if you’re a busy ecommerce seller, a small business juggling fast-moving stock or simply need a personal package sent straight away, we’ve got you covered.',
+      'Partnering with some of Australia’s leading courier companies means we can offer competitive pricing and a simple online booking process. Sending a parcel has never been easier.',
+    ],
+    callToAction: {
+      quoteLabel: 'Get a quote now',
+      bookingLabel: 'book same-day delivery',
+      suffix: 'in just a few clicks.',
+    },
+    termsText: '*T&Cs apply.',
+    whyChooseHeading: 'Why Choose Transdirect for Same-Day Delivery?',
+    compareCouriers: {
+      heading: 'Compare Top Couriers Instantly',
+      paragraphs: [
+        'We work with Australia’s most trusted courier companies, including CouriersPlease, Allied Express, TNT, Direct Couriers and more, so you can compare services side-by-side and choose what suits your timeline and budget.',
+      ],
+    },
+    australiaWide: {
+      heading: 'Australia-wide Services',
+      paragraphs: [
+        'Our same-day courier services operate across major metropolitan areas right around the country. Whether you’re located in a CBD or surrounding suburbs, Transdirect connects you to fast, local couriers.',
+      ],
+      locationsHeading: 'Available locations include:',
+      locations: [
+        { label: 'Sydney', to: `${PATHS.locations}/sydney` },
+        { label: 'Melbourne', to: `${PATHS.locations}/melbourne` },
+        { label: 'Brisbane', to: `${PATHS.locations}/brisbane` },
+        { label: 'Perth', to: `${PATHS.locations}/perth` },
+        { label: 'Adelaide', to: `${PATHS.locations}/adelaide` },
+        { label: 'Canberra', to: `${PATHS.locations}/canberra` },
+      ],
+      moreLocationsLabel: 'more',
+    },
+    tracking: {
+      heading: 'Available Tracking for Deliveries',
+      paragraphs: [
+        'Once your item is on its way, you can track its movements in real-time. We give you a unique tracking number and provide live updates so you can keep an eye on your delivery from start to finish.',
+      ],
+      linkLabel: 'Track your item here',
+    },
+    competitiveRates: {
+      heading: 'Competitive Courier Rates',
+      paragraphs: [
+        'Transdirect helps you compare and save by showing discounted rates across multiple courier partners. There’s no need to contact couriers individually – our instant quotes do the heavy lifting for you.',
+      ],
+    },
+    bookingProcess: {
+      heading: 'Simple Online Booking Process',
+      paragraphs: [
+        'Get an instant quote, choose your preferred courier, print your consignment note, and you’re ready to go. No phone calls or paperwork necessary.',
+      ],
+    },
+    howItWorks: {
+      heading: 'How Our Same-Day Delivery Service Works',
+      steps: [
+        {
+          label: 'Step 1:',
+          title: 'Get an instant quote:',
+          description:
+            'Use our online freight calculator to input your parcel details and get a price immediately.',
+        },
+        {
+          label: 'Step 2:',
+          title: 'Book your delivery:',
+          description:
+            'Pick your courier, add optional insurance and finalise your booking. You’ll receive a confirmation email with a consignment label – print it and attach it securely to your parcel.',
+        },
+        {
+          label: 'Step 3:',
+          title: 'Track your package:',
+          description: 'Once collected, you can follow the parcel’s journey using our tracking tool.',
+        },
+      ],
+    },
+    items: {
+      heading: 'What Items Can You Send with a Same Day Courier?',
+      introduction: 'Same-day couriers can transport a wide range of items, such as:',
+      values: [
+        'Documents and contracts',
+        'Office supplies',
+        'Product samples',
+        'Consumer goods',
+        'Retail orders',
+        'Spare parts (new and packaged only)',
+      ],
+      requirements:
+        'Items must meet packaging and weight guidelines. Packages over 25kg must be split into two cartons or packed on a pallet or crate so they can be moved via forklift. For safety reasons, hazardous materials, perishable goods and oversized freight may not be accepted. Read our',
+      requirementsLinkLabel: 'packaging requirements',
+      requirementsSuffix: 'for full details.',
+    },
+    testimonials: {
+      heading: 'What Our Clients Say',
+      values: [
+        'I just wanted to let you know the service I have received from your company over the past month has been fantastic. I am a very happy customer and would recommend your company to anyone.',
+        'I have done two orders with your company and both times I have been extremely impressed by how quickly and efficiently the process was in getting the stock to my customers in NSW.',
+        'Just a quick note to say your web page is very easy to use. So far, it has been an easy and fast transaction, which is what we need in business.',
+      ],
+      linkLabel: 'Read more customer reviews',
     },
   },
 };
