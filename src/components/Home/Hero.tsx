@@ -27,7 +27,7 @@ const Hero: React.FC = () => (
           Get Instant Quote
         </Link>
         <Link
-          to={PATHS.trackShipment}
+          to={PATHS.educationTracking}
           className="inline-flex items-center justify-center rounded-md border border-white px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-white/10"
         >
           Track a Shipment
