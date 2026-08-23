@@ -102,10 +102,10 @@ const AccountSignupForm: React.FC<AccountSignupFormProps> = ({
 
   return (
     <form
-      id="account-signup"
+    
       onSubmit={handleSubmit}
       noValidate
-      className={className}
+      className={`scroll-mt-10 ${className}`}
     >
       <div className="grid gap-5 md:grid-cols-2">
         <TextField

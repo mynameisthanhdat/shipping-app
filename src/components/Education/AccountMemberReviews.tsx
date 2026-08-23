@@ -15,7 +15,7 @@ const AccountMemberReviews: React.FC = () => (
         </blockquote>
       ))}
     </div>
-    <p className="mt-6">
+    <p className="mt-4">
       <Link
         to={PATHS.educationTestimonials}
         className="text-sm font-bold text-brand transition-colors hover:text-brand-hover"

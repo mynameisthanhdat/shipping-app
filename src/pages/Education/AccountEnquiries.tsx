@@ -1,20 +1,21 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import CtaBanner from '../../components/CtaBanner';
-import AccountBenefits from '../../components/Education/AccountBenefits';
-import AccountFaqList from '../../components/Education/AccountFaqList';
-import AccountHowToSteps from '../../components/Education/AccountHowToSteps';
-import AccountMemberReviews from '../../components/Education/AccountMemberReviews';
-import AccountSignupForm from '../../components/Education/AccountSignupForm';
-import CategoryGrid from '../../components/Education/CategoryGrid';
-import { PATHS } from '../../routes/paths';
-import { AccountSignupDetails } from '../../types/account';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import CtaBanner from "../../components/CtaBanner";
+import AccountBenefits from "../../components/Education/AccountBenefits";
+import AccountFaqList from "../../components/Education/AccountFaqList";
+import AccountHowToSteps from "../../components/Education/AccountHowToSteps";
+import AccountMemberReviews from "../../components/Education/AccountMemberReviews";
+import AccountSignupForm from "../../components/Education/AccountSignupForm";
+import CategoryGrid from "../../components/Education/CategoryGrid";
+import { PATHS } from "../../routes/paths";
+import { AccountSignupDetails } from "../../types/account";
 
 const AccountEnquiries: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (accountSignup: AccountSignupDetails) =>
     navigate(PATHS.openAccount, { state: { accountSignup } });
+
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
@@ -23,7 +24,10 @@ const AccountEnquiries: React.FC = () => {
             Home
           </Link>
           <span> / </span>
-          <Link to={PATHS.education} className="transition-colors hover:text-navy">
+          <Link
+            to={PATHS.education}
+            className="transition-colors hover:text-navy"
+          >
             Education Centre
           </Link>
           <span> / Account Enquiries</span>
@@ -43,13 +47,14 @@ const AccountEnquiries: React.FC = () => {
         </div>
 
         <section className="mt-12">
-          <p className="text-center text-sm leading-relaxed text-muted">
-            Want to save on every delivery you book? Open a free Transdirect shipping
-            account to enjoy member-only discounts, faster bookings and real-time parcel
-            tracking – all from one simple-to-use dashboard. No matter what your shipping
-            needs are, our courier account puts you in complete control.
+          <p className="text-start text-sm leading-relaxed text-muted">
+            Want to save on every delivery you book? Open a free Transdirect
+            shipping account to enjoy member-only discounts, faster bookings and
+            real-time parcel tracking – all from one simple-to-use dashboard. No
+            matter what your shipping needs are, our courier account puts you in
+            complete control.
           </p>
-          <p className="mt-4 text-center">
+          <p className="mt-4 text-start">
             <a
               href="#account-signup"
               className="text-sm font-bold text-brand transition-colors hover:text-brand-hover"
@@ -91,32 +96,27 @@ const AccountEnquiries: React.FC = () => {
             Shipping Guidelines and Restrictions
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-muted">
-            Transdirect accepts most items for transport, from small parcels to larger
-            freight deliveries. The maximum length we can carry is 5 metres (500cm).
+            Transdirect accepts most items for transport, from small parcels to
+            larger freight deliveries. The maximum length we can carry is 5
+            metres (500cm).
           </p>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            Important: We are unable to transport hazardous materials, perishable goods
-            or any items classified as dangerous or restricted.
+            Important: We are unable to transport hazardous materials,
+            perishable goods or any items classified as dangerous or restricted.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-muted">
-            Please refer to our{' '}
-            <Link
-              to={PATHS.educationPackaging}
-              className="font-semibold text-brand transition-colors hover:text-brand-hover"
-            >
-              packaging requirements
-            </Link>{' '}
-            for details on preparing your parcel.
+            Please refer to our packaging requirements for details on preparing
+            your parcel.
           </p>
         </section>
 
-        <section className="mt-12">
+        <section className="mt-12" id="account-signup">
           <h2 className="text-center text-2xl font-bold text-navy">
             Open Your Transdirect Shipping Account Today
           </h2>
           <p className="mt-3 text-center text-sm leading-relaxed text-muted">
-            Ready to start saving? Take advantage of membership discounts by opening your
-            free courier account today.
+            Ready to start saving? Take advantage of membership discounts by
+            opening your free courier account today.
           </p>
           <div className="mt-8">
             <AccountSignupForm onSubmit={handleSubmit} />
