@@ -108,12 +108,47 @@ export type NextDayDeliveryContent = {
   quotes: ContentSection;
 };
 
+export type ParcelDeliveryContent = {
+  breadcrumb: string;
+  title: string;
+  lead: string;
+  courierNetwork: {
+    prefix: string;
+    linkLabel: string;
+    suffix: string;
+  };
+  savings: {
+    heading: string;
+    average: {
+      prefix: string;
+      highlightedText: string;
+      suffix: string;
+    };
+    membership: {
+      prefix: string;
+      linkLabel: string;
+      suffix: string;
+    };
+  };
+  quote: {
+    heading: string;
+    prefix: string;
+    linkLabel: string;
+    suffix: string;
+  };
+};
 
+/**
+ * Static content for every page in the Our Services group.
+ * Add future sub-pages as sibling modules, for example `interstate`,
+ * `sameDay`, or `nextDay`, instead of declaring mock copy in page files.
+ */
 export const OUR_SERVICES_CONTENT: {
   hub: OurServicesHubContent;
   interstate: InterstateCouriersContent;
   sameDay: SameDayDeliveryContent;
   nextDay: NextDayDeliveryContent;
+  parcelDelivery: ParcelDeliveryContent;
 } = {
   hub: {
     breadcrumb: 'Our services',
@@ -163,6 +198,7 @@ export const OUR_SERVICES_CONTENT: {
       },
       {
         title: 'Package Delivery',
+        to: PATHS.servicesParcelDelivery,
         description:
           'Our standard package deliveries have all the same features of our express deliveries, and are ideal for people without a pressing time limit!',
       },
@@ -364,6 +400,40 @@ export const OUR_SERVICES_CONTENT: {
       paragraphs: [
         'We’re proud to serve more than 100,000 Australian small business clients, and provide the cheapest courier rates across a variety of needs, from same-day shipping to international freight services. We’ve earned some of the highest ratings in our industry, so let us put our courier expertise to work for you!',
       ],
+    },
+  },
+  parcelDelivery: {
+    breadcrumb: 'Next Day/ Parcel Delivery',
+    title: 'Parcel Delivery Australia',
+    lead:
+      'When you need a parcel delivered within Australia, trust Transdirect for the cheapest, fastest couriers available.',
+    courierNetwork: {
+      prefix: 'By partnering with Australia’s leading',
+      linkLabel: 'courier network',
+      suffix:
+        'our Transdirect members enjoy the biggest savings compared to standard parcel post delivery rates.',
+    },
+    savings: {
+      heading: 'Ready to save 30% on parcel delivery?',
+      average: {
+        prefix: 'On average, you’ll find savings of',
+        highlightedText: '10% or more',
+        suffix: 'compared to typical parcel delivery rates. But that’s only the beginning.',
+      },
+      membership: {
+        prefix:
+          'The more you send, the more you save, so if you ship a high volume of parcels with us as a Transdirect member, you’ll easily see savings of 30%.',
+        linkLabel: 'Becoming a Transdirect member is free',
+        suffix:
+          'with immediate approval, so you can start saving on parcel delivery services right away, with your first delivery.',
+      },
+    },
+    quote: {
+      heading: 'Just want a free parcel delivery cost quote first?',
+      prefix: 'No worries. Use our',
+      linkLabel: 'Transdirect Quote tool',
+      suffix:
+        'for the cheapest parcel delivery costs. Simply enter a few parcel details below and you’ll get instant real-time price quotes, so you can book with our best-in-class couriers.',
     },
   },
 };
