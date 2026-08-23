@@ -24,6 +24,7 @@ export const PATHS = {
   servicesSameDayCourier: `${SERVICES}/same-day-courier`,
   servicesNextDayDelivery: `${SERVICES}/next-day-delivery`,
   servicesParcelDelivery: `${SERVICES}/parcel-delivery`,
+  servicesPalletTransport: `${SERVICES}/pallet-transport-services`,
 
   //Education submenu paths
   educationTestimonials: `${EDUCATION}/testimonials`,
@@ -52,7 +53,7 @@ export const MAIN_NAV: NavItem[] = [
       },
       { label: 'Express Delivery', to: `${PATHS.services}/express-delivery` },
       { label: 'Next Day & Overnight Delivery', to: PATHS.servicesNextDayDelivery },
-      { label: 'Freight & Pallet', to: `${PATHS.services}/freight-and-pallet` },
+      { label: 'Freight & Pallet', to: PATHS.servicesPalletTransport },
       { label: 'International Shipping', to: `${PATHS.services}/international-shipping` },
       { label: 'Same-Day Courier', to: PATHS.servicesSameDayCourier },
       { label: 'Returns Management', to: `${PATHS.services}/returns-management` },

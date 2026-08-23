@@ -8,6 +8,7 @@ import ExpertInterStateCouriersInAus from '../pages/OurServices/ExpertInterState
 import SameDayCourierServices from '../pages/OurServices/SameDayCourierServices';
 import NextDayOvernightDelivery from '../pages/OurServices/NextDayOvernightDelivery';
 import ParcelDelivery from '../pages/OurServices/ParcelDelivery';
+import PalletTransportServices from '../pages/OurServices/PalletTransportServices';
 import Testimonials from '../pages/Education/Testimonials';
 import CompareRates from '../pages/CompareRates';
 import GetAQuote from '../pages/GetAQuote';
@@ -33,6 +34,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.servicesSameDayCourier]: <SameDayCourierServices />,
   [PATHS.servicesNextDayDelivery]: <NextDayOvernightDelivery />,
   [PATHS.servicesParcelDelivery]: <ParcelDelivery />,
+  [PATHS.servicesPalletTransport]: <PalletTransportServices />,
   [PATHS.education]: <Education />,
   [PATHS.educationTestimonials]: <Testimonials />,
   [PATHS.compareRates]: <CompareRates />,
