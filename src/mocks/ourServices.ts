@@ -138,6 +138,15 @@ export type ParcelDeliveryContent = {
   };
 };
 
+export type PalletTransportContent = {
+  breadcrumb: string;
+  title: string;
+  paragraphs: Array<{
+    text: string;
+    highlightedText?: string;
+  }>;
+};
+
 /**
  * Static content for every page in the Our Services group.
  * Add future sub-pages as sibling modules, for example `interstate`,
@@ -149,6 +158,7 @@ export const OUR_SERVICES_CONTENT: {
   sameDay: SameDayDeliveryContent;
   nextDay: NextDayDeliveryContent;
   parcelDelivery: ParcelDeliveryContent;
+  palletTransport: PalletTransportContent;
 } = {
   hub: {
     breadcrumb: 'Our services',
@@ -435,5 +445,43 @@ export const OUR_SERVICES_CONTENT: {
       suffix:
         'for the cheapest parcel delivery costs. Simply enter a few parcel details below and you’ll get instant real-time price quotes, so you can book with our best-in-class couriers.',
     },
+  },
+  palletTransport: {
+    breadcrumb: 'Next Day/ Pallet Shipping',
+    title: 'Pallet Shipping Australia',
+    paragraphs: [
+      {
+        text: 'Transdirect offers the state of the art pallet delivery service Australians need when pallet transport is required for freight. Shipping pallets provide safety for larger loads, adding strength and stability when you’re shipping freight.',
+      },
+      {
+        text: 'Transdirect specialises in pallet shipping. We are the experts in palletised road transport from regional areas and across all of our capital cities. Our experienced team of professionals and our excellent freight booking system ensures when our customers need a pallet courier that we are the best.',
+        highlightedText: 'Transdirect',
+      },
+      {
+        text: 'You may require one pallet or many to suit your transport requirements. Larger freight needs to be placed on pallets for protection of your precious cargo. This also makes handling much easier when loading and off-loading your goods.',
+      },
+      {
+        text: 'Pallets can also reduce the costs of manual handling, making pallet transport an efficient and safe option for shipping freight interstate. We work with Australia’s best, most efficient and affordable freight couriers to reduce your overheads and freight costs with pallet delivery service options.',
+      },
+      {
+        text: 'Note that you’ll need to pack your goods correctly before pallet delivery, to avoid extra costs or fees for incorrect weights and dimensions. From your pallet delivery quote Transdirect guarantees a smooth and easy process from the beginning to the very end. Transdirect ensures your goods are delivered safely, securely and on time. Using our pallet freight services gives you peace of mind when larger freight is required to be shipped interstate and to all corners of Australia.',
+        highlightedText: 'freight services',
+      },
+      {
+        text: 'Pallet freight makes sure your load is firmly secured, giving far more strength and stability. Courier transport vehicles are packed with maximum usage of space with the pallet packing system. Customers are charged by calculating weight and volume. The freight pallet system makes stacking very efficient, thus avoiding extra costs and surcharges incurred with random, non-stackable sized loads that don’t use shipping pallets.',
+      },
+      {
+        text: 'Palletised freight allows couriers to stack goods in rigid columns, increasing stability and strength. Pallets are packed fitting goods squarely to avoid overhang and shipment damage. This means shipping pallets also enable the stacking of freight as economically as possible. When loading a pallet, keep the shipment square with the top of the shipment flat for obvious space saving reasons.',
+      },
+      {
+        text: 'Pallet shipping uses strapping and stretch wrapping to protect your freight. Note that all shipping pallets should be entirely wrapped up to secure the load and protect items from the elements.',
+      },
+      {
+        text: 'At Transdirect, we continually invest in transport options, delivery services and shipping technology to provide the most affordable courier services for our valued customers.',
+      },
+      {
+        text: 'Transdirect’s years of transport excellence ensure you get the best pallet and freight delivery services in Australia and beyond. When shipping your precious cargo, interstate or to all corners of our great nation, trust Transdirect couriers for the highest level of service at the lowest rates.',
+      },
+    ],
   },
 };
