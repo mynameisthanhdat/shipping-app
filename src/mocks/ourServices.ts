@@ -147,6 +147,18 @@ export type PalletTransportContent = {
   }>;
 };
 
+export type CarbonNeutralDeliveryContent = {
+  breadcrumb: string;
+  title: string;
+  sections: Array<{
+    heading: string;
+    paragraphs: Array<{
+      text: string;
+      highlightedText?: string;
+    }>;
+  }>;
+};
+
 /**
  * Static content for every page in the Our Services group.
  * Add future sub-pages as sibling modules, for example `interstate`,
@@ -159,6 +171,7 @@ export const OUR_SERVICES_CONTENT: {
   nextDay: NextDayDeliveryContent;
   parcelDelivery: ParcelDeliveryContent;
   palletTransport: PalletTransportContent;
+  carbonNeutral: CarbonNeutralDeliveryContent;
 } = {
   hub: {
     breadcrumb: 'Our services',
@@ -196,13 +209,13 @@ export const OUR_SERVICES_CONTENT: {
       },
       {
         title: 'Same Day Delivery',
-        to: `${PATHS.services}/same-day-courier`,
+        to: PATHS.servicesSameDayCourier,
         description:
           'In a hurry? Our same day delivery services are available to major destinations Australia wide.',
       },
       {
         title: 'Next Day/Overnight Delivery',
-        to: `${PATHS.services}/standard-shipping`,
+        to: PATHS.servicesNextDayDelivery,
         description:
           'Our reliable courier services will ensure your package is safely delivered to its intended recipient overnight by the next day.',
       },
@@ -481,6 +494,74 @@ export const OUR_SERVICES_CONTENT: {
       },
       {
         text: 'Transdirect’s years of transport excellence ensure you get the best pallet and freight delivery services in Australia and beyond. When shipping your precious cargo, interstate or to all corners of our great nation, trust Transdirect couriers for the highest level of service at the lowest rates.',
+      },
+    ],
+  },
+  carbonNeutral: {
+    breadcrumb: 'Next Day/ Carbon Neutral Delivery Australia',
+    title: 'Carbon Neutral Shipping & Delivery Australia',
+    sections: [
+      {
+        heading: 'Certified Carbon Neutral Courier Services',
+        paragraphs: [
+          {
+            text: 'In 2019, Transdirect became one of Australia’s first certified carbon neutral delivery couriers. Even five years later, we’re among the few carbon neutral shipping services to offer customers this benefit.',
+            highlightedText: 'carbon neutral shipping services',
+          },
+          {
+            text: 'We teamed up with the Carbon Reduction Institute to offset all carbon emissions from our parcel courier and freight service partners. What that means is, any delivery service you book with us will help to reduce the carbon footprint impacting our environment. It doesn’t matter if it’s our local couriers, interstate parcel deliveries or international freight.',
+            highlightedText: 'Carbon Reduction Institute',
+          },
+          {
+            text: 'From small parcels to large pallets, whichever Transdirect carbon neutral delivery partners you ship with, you’ll automatically be doing your part to help offset carbon emissions.',
+            highlightedText: 'Transdirect carbon neutral delivery partners',
+          },
+        ],
+      },
+      {
+        heading: 'How Does Carbon Neutral Delivery Work?',
+        paragraphs: [
+          {
+            text: 'To become carbon neutral, Transdirect partnered with the Carbon Reduction Institute. Our target was and is to offset 100% of the emissions of our freight services.',
+            highlightedText: 'Carbon Reduction Institute',
+          },
+          {
+            text: 'First, we were audited to identify the amount of carbon created. Through the Carbon Reduction Institute’s certified program, we were able to offset our emissions and neutralise our footprint.',
+          },
+          {
+            text: 'Regular audits ensure the number of offsets is matched to the number of carbon emissions created by our freight and delivery services. We launched this initiative in September 2019, becoming one of only two Australian shipping providers at the time to offer carbon-offset parcel services to all of our clients. Learn more about carbon offsets and the NoCO2 certification.',
+            highlightedText: 'Learn more about carbon offsets and the NoCO2 certification.',
+          },
+        ],
+      },
+      {
+        heading: 'Saving Our Environment, Together',
+        paragraphs: [
+          {
+            text: 'We’ve been in the transportation and logistics industry for many years, and we realise the impact our parcel delivery services have on the environment. Of course, people and businesses still need delivery and courier services, for countless reasons.',
+          },
+          {
+            text: 'That’s why we’re always searching for new and better ways to provide the optimal services our 100,000+ customers have relied upon for years. That includes using more environmentally friendly and sustainable methods of transport.',
+          },
+          {
+            text: 'One major step has been implementing carbon offsets and achieving our carbon-neutral certification.',
+          },
+        ],
+      },
+      {
+        heading: 'Let’s Spread The Word',
+        paragraphs: [
+          {
+            text: 'If you’re using our courier services with your business, why not let your customers know that you’ve chosen a 100% carbon-neutral shipping company?',
+          },
+          {
+            text: 'The more we can spread the word, the more carbon-offset parcel delivery can grow to become the standard, and the healthier our environment will be as a result.',
+          },
+          {
+            text: 'Please feel free to use our 100% Carbon Neutral Delivery badges below on your website or social channels. Let your customers know you’re committed to the cause. Simply click to download and save, and repost wherever appropriate. (And let us know, so we can say thank you!)',
+            highlightedText: 'download and save',
+          },
+        ],
       },
     ],
   },
