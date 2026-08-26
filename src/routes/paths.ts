@@ -21,6 +21,11 @@ export const PATHS = {
 
   // Submenu paths that have a real page behind them.
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,
+  servicesSameDayCourier: `${SERVICES}/same-day-courier`,
+  servicesNextDayDelivery: `${SERVICES}/next-day-delivery`,
+  servicesParcelDelivery: `${SERVICES}/parcel-delivery`,
+  servicesPalletTransport: `${SERVICES}/pallet-transport-services`,
+  servicesCarbonNeutral: `${SERVICES}/carbon-neutral-delivery`,
 
   //Education submenu paths
   educationTestimonials: `${EDUCATION}/testimonials`,
@@ -47,12 +52,11 @@ export const MAIN_NAV: NavItem[] = [
         label: 'Expert Inter State Couriers in Aus',
         to: PATHS.servicesExpertInterstateCouriers,
       },
-      { label: 'Express Delivery', to: `${PATHS.services}/express-delivery` },
-      { label: 'Standard Shipping', to: `${PATHS.services}/standard-shipping` },
-      { label: 'Freight & Pallet', to: `${PATHS.services}/freight-and-pallet` },
-      { label: 'International Shipping', to: `${PATHS.services}/international-shipping` },
-      { label: 'Same-Day Courier', to: `${PATHS.services}/same-day-courier` },
-      { label: 'Returns Management', to: `${PATHS.services}/returns-management` },
+      { label: 'Next Day & Overnight Delivery', to: PATHS.servicesNextDayDelivery },
+      { label: 'Freight & Pallet', to: PATHS.servicesPalletTransport },
+      { label: 'Same-Day Courier', to: PATHS.servicesSameDayCourier },
+      { label: 'Parcel Delivery', to: PATHS.servicesParcelDelivery },
+      { label: 'Carbon Neutral Delivery', to: PATHS.servicesCarbonNeutral },
     ],
   },
   { label: 'Couriers', to: PATHS.couriers },

@@ -5,9 +5,19 @@ import Home from '../pages/Home';
 import Education from '../pages/Education';
 import OurServices from '../pages/OurServices';
 import ExpertInterStateCouriersInAus from '../pages/OurServices/ExpertInterStateCouriersInAus';
+import SameDayCourierServices from '../pages/OurServices/SameDayCourierServices';
+import NextDayOvernightDelivery from '../pages/OurServices/NextDayOvernightDelivery';
+import ParcelDelivery from '../pages/OurServices/ParcelDelivery';
+import PalletTransportServices from '../pages/OurServices/PalletTransportServices';
+import CarbonNeutralDelivery from '../pages/OurServices/CarbonNeutralDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import TransitWarranty from '../pages/Education/TransitWarranty';
+import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
+import GetAQuote from '../pages/GetAQuote';
+import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
+import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
+import UpcomingStep from '../pages/GetAQuote/UpcomingStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import {
@@ -17,17 +27,45 @@ import {
   PATHS,
   flattenNav,
 } from './paths';
+import { QUOTE_STEPS } from './quoteSteps';
 
 /** Pages that are fully built. Add an entry here when a new page lands. */
 const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.home]: <Home />,
   [PATHS.services]: <OurServices />,
   [PATHS.servicesExpertInterstateCouriers]: <ExpertInterStateCouriersInAus />,
+  [PATHS.servicesSameDayCourier]: <SameDayCourierServices />,
+  [PATHS.servicesNextDayDelivery]: <NextDayOvernightDelivery />,
+  [PATHS.servicesParcelDelivery]: <ParcelDelivery />,
+  [PATHS.servicesPalletTransport]: <PalletTransportServices />,
+  [PATHS.servicesCarbonNeutral]: <CarbonNeutralDelivery />,
   [PATHS.education]: <Education />,
   [PATHS.educationTestimonials]: <Testimonials />,
   [PATHS.educationTransitWarranty]: <TransitWarranty />,
+  [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.compareRates]: <CompareRates />,
 };
+
+/**
+ * The quote wizard: one nested route per step, all sharing the stepper and draft
+ * state held by the GetAQuote layout. Replace an `UpcomingStep` with the real
+ * screen as each step is designed.
+ */
+const quoteRoute: RouteObject = {
+  path: PATHS.quote.replace(/^\//, ''),
+  element: <GetAQuote />,
+  children: [
+    { index: true, element: <PackageDetailsStep /> },
+    { path: 'select-quote', element: <SelectQuoteStep /> },
+    ...QUOTE_STEPS.slice(2).map<RouteObject>((step) => ({
+      path: step.segment,
+      element: <UpcomingStep step={step} />,
+    })),
+  ],
+};
+
+/** Paths owned by a real page or route, so they never fall through to a mock. */
+const EXPLICIT_PATHS = new Set<string>([...Object.keys(REAL_PAGES), PATHS.quote]);
 
 /**
  * Remaining routes: reuse the nav lists so each page just renders its own
@@ -41,7 +79,7 @@ const MOCK_PAGES = flattenNav([
   { label: 'Sign in', to: PATHS.signIn },
 ]).filter(
   (page, index, all) =>
-    !REAL_PAGES[page.to] &&
+    !EXPLICIT_PATHS.has(page.to) &&
     all.findIndex((other) => other.to === page.to) === index
 );
 
@@ -57,6 +95,7 @@ export const routes: RouteObject[] = [
           path: path.replace(/^\//, ''),
           element,
         })),
+      quoteRoute,
       ...MOCK_PAGES.map<RouteObject>((page) => ({
         path: page.to.replace(/^\//, ''),
         element: <PlaceholderPage title={page.label} />,
