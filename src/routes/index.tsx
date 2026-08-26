@@ -12,6 +12,7 @@ import PalletTransportServices from '../pages/OurServices/PalletTransportService
 import CarbonNeutralDelivery from '../pages/OurServices/CarbonNeutralDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import TransitWarranty from '../pages/Education/TransitWarranty';
+import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
 import GetAQuote from '../pages/GetAQuote';
@@ -42,6 +43,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.education]: <Education />,
   [PATHS.educationTestimonials]: <Testimonials />,
   [PATHS.educationTransitWarranty]: <TransitWarranty />,
+  [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.compareRates]: <CompareRates />,
 };
