@@ -17,7 +17,14 @@ module.exports = {
         muted: {
           DEFAULT: '#666666',
           surface: '#d9d9d9',
+          /** Placeholder / empty-state text — deliberately lighter than body copy
+           *  so an unfilled field never reads as filled in. */
+          placeholder: '#a8adb8',
         },
+        /** Completed / active wizard step. */
+        success: '#3fb984',
+        /** Upcoming wizard step. */
+        step: '#5f6b7a',
       },
       maxWidth: {
         container: '1140px',
