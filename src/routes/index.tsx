@@ -9,8 +9,10 @@ import SameDayCourierServices from '../pages/OurServices/SameDayCourierServices'
 import NextDayOvernightDelivery from '../pages/OurServices/NextDayOvernightDelivery';
 import ParcelDelivery from '../pages/OurServices/ParcelDelivery';
 import PalletTransportServices from '../pages/OurServices/PalletTransportServices';
+import CarbonNeutralDelivery from '../pages/OurServices/CarbonNeutralDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import PackagingRequirements from '../pages/Education/PackagingRequirements';
+import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
@@ -36,9 +38,11 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.servicesNextDayDelivery]: <NextDayOvernightDelivery />,
   [PATHS.servicesParcelDelivery]: <ParcelDelivery />,
   [PATHS.servicesPalletTransport]: <PalletTransportServices />,
+  [PATHS.servicesCarbonNeutral]: <CarbonNeutralDelivery />,
   [PATHS.education]: <Education />,
   [PATHS.educationTestimonials]: <Testimonials />,
   [PATHS.educationPackaging]: <PackagingRequirements />,
+  [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.compareRates]: <CompareRates />,
 };
 
