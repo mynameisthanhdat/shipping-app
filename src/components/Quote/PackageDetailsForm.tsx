@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ITEM_TYPES, POSTCODES } from '../../mocks/quoteOptions';
-import { FIELD_CLASS, FieldError, LABEL_CLASS, Select } from './fields';
+import { FIELD_CLASS, FieldError, LABEL_CLASS, Radio, Select } from './fields';
 import {
   AddressType,
   ItemTypeId,
@@ -12,6 +12,11 @@ import {
 
 /** Error keys are field paths, e.g. `originPostcode` or `items.item-1.weight`. */
 type FormErrors = Record<string, string>;
+
+const ADDRESS_TYPES: Array<{ id: AddressType; label: string }> = [
+  { id: 'commercial', label: 'Commercial' },
+  { id: 'residential', label: 'Residential' },
+];
 
 const MEASUREMENTS: Array<{ key: keyof QuoteItem; label: string; placeholder: string }> = [
   { key: 'weight', label: 'Weight', placeholder: '5 kg' },
@@ -83,18 +88,15 @@ const PostcodeField: React.FC<PostcodeFieldProps> = ({
     <FieldError message={error} />
 
     <div className="mt-2 flex items-center gap-5">
-      {(['commercial', 'residential'] as AddressType[]).map((type) => (
-        <label key={type} className="flex items-center gap-1.5 text-sm text-navy">
-          <input
-            type="radio"
-            name={`${id}-address-type`}
-            value={type}
-            checked={addressType === type}
-            onChange={() => onAddressTypeChange(type)}
-            className="h-3 w-3 accent-brand"
-          />
-          <span className="capitalize">{type}</span>
-        </label>
+      {ADDRESS_TYPES.map((type) => (
+        <Radio
+          key={type.id}
+          label={type.label}
+          name={`${id}-address-type`}
+          value={type.id}
+          checked={addressType === type.id}
+          onChange={() => onAddressTypeChange(type.id)}
+        />
       ))}
     </div>
   </div>
@@ -244,7 +246,7 @@ const PackageDetailsForm: React.FC<PackageDetailsFormProps> = ({
                 <button
                   type="button"
                   onClick={() => removeItem(item.id)}
-                  className="justify-self-start text-xs text-muted underline transition-colors hover:text-navy sm:col-span-2 md:col-span-6"
+                  className="justify-self-start text-sm text-muted underline transition-colors hover:text-navy sm:col-span-2 md:col-span-6"
                 >
                   Remove item {index + 1}
                 </button>

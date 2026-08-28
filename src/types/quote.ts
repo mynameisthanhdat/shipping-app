@@ -38,6 +38,59 @@ export type PackageDetails = {
   items: QuoteItem[];
 };
 
+/** Who is filling in step 3 — drives which field set each side shows. */
+export type PartyRole = 'sender' | 'receiver' | 'third-party';
+
+export type PartySide = 'collectFrom' | 'deliveryTo';
+
+export type PartyFieldName =
+  | 'thirdPartyName'
+  | 'thirdPartyPhone'
+  | 'thirdPartyCompany'
+  | 'thirdPartyEmail'
+  | 'contactName'
+  | 'contactPhone'
+  | 'contactEmail'
+  | 'deliveryOption'
+  | 'addressSearch'
+  | 'company'
+  | 'unitStreetNumber'
+  | 'streetName'
+  | 'streetType';
+
+/** Partial because the field set differs per role; see collectionFields.ts. */
+export type PartyDetails = Partial<Record<PartyFieldName, string>>;
+
+/** Step 3 — collection details, addresses and handling instructions. */
+export type CollectionDetails = {
+  /** The declaration itself — the shipment carries none of the listed goods. */
+  dangerousGoodsAccepted: boolean;
+  productDescription: string;
+  role: PartyRole;
+  collectFrom: PartyDetails;
+  deliveryTo: PartyDetails;
+  collectionDate: string;
+  pickupFrontDoorIfUnattended: boolean;
+  pickupInstructions: string;
+  authorityToLeave: boolean;
+  authorityToLeaveLocation: string;
+  deliveryInstructions: string;
+};
+
+export const createCollectionDetails = (): CollectionDetails => ({
+  dangerousGoodsAccepted: false,
+  productDescription: '',
+  role: 'sender',
+  collectFrom: {},
+  deliveryTo: {},
+  collectionDate: '',
+  pickupFrontDoorIfUnattended: true,
+  pickupInstructions: '',
+  authorityToLeave: true,
+  authorityToLeaveLocation: '',
+  deliveryInstructions: '',
+});
+
 /** Step 2 — one courier option returned for the shipment. */
 export type CarrierQuote = {
   id: string;
@@ -64,6 +117,7 @@ export type QuoteDraft = {
   packageDetails: PackageDetails;
   /** Set by step 2 once the courier options screen exists. */
   selectedQuoteId: string | null;
+  collectionDetails: CollectionDetails;
 };
 
 let itemSequence = 0;
@@ -94,6 +148,7 @@ export const createEmptyPackageDetails = (): PackageDetails => ({
 export const createQuoteDraft = (packageDetails?: PackageDetails): QuoteDraft => ({
   packageDetails: packageDetails ?? createEmptyPackageDetails(),
   selectedQuoteId: null,
+  collectionDetails: createCollectionDetails(),
 });
 
 /** True once step 1 holds enough to price a shipment. */
