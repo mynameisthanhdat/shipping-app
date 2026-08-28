@@ -14,6 +14,7 @@ import CompareRates from '../pages/CompareRates';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
+import CollectionDetailsStep from '../pages/GetAQuote/CollectionDetailsStep';
 import UpcomingStep from '../pages/GetAQuote/UpcomingStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
@@ -51,7 +52,8 @@ const quoteRoute: RouteObject = {
   children: [
     { index: true, element: <PackageDetailsStep /> },
     { path: 'select-quote', element: <SelectQuoteStep /> },
-    ...QUOTE_STEPS.slice(2).map<RouteObject>((step) => ({
+    { path: 'collection-details', element: <CollectionDetailsStep /> },
+    ...QUOTE_STEPS.slice(3).map<RouteObject>((step) => ({
       path: step.segment,
       element: <UpcomingStep step={step} />,
     })),
