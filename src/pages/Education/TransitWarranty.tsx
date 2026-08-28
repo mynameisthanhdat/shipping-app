@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CtaBanner from '../../components/CtaBanner';
 import CategoryGrid from '../../components/Education/CategoryGrid';
-import TestimonialGrid from '../../components/Education/TestimonialGrid';
-import { TESTIMONIALS } from '../../mocks/education/testimonials';
+import WarrantySection from '../../components/Education/WarrantySection';
+import { TRANSIT_WARRANTY_SECTIONS } from '../../mocks/education/transitWarranty';
 import { PATHS } from '../../routes/paths';
 
-const Testimonials: React.FC = () => {
+const TransitWarranty: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
@@ -21,16 +21,14 @@ const Testimonials: React.FC = () => {
               Education Centre
             </Link>
             {' '}
-            / Testimonials
+            / Transit Warranty Options
           </span>
         </nav>
 
         <div className="mt-6 text-center">
-          <h1 className="text-3xl font-bold text-navy">
-            What Our Customers Say
-          </h1>
+          <h1 className="text-3xl font-bold text-navy">Transit Warranty Options</h1>
           <p className="mt-3.5 text-lg font-bold text-navy">
-            Real feedback from businesses and individuals shipping with Parcelio
+            To start looking for answers, choose your category!
           </p>
         </div>
 
@@ -38,9 +36,11 @@ const Testimonials: React.FC = () => {
           <CategoryGrid />
         </div>
 
-        <section className="mt-12">
-          <TestimonialGrid testimonials={TESTIMONIALS} />
-        </section>
+        <div className="mt-12 space-y-10">
+          {TRANSIT_WARRANTY_SECTIONS.map((section) => (
+            <WarrantySection key={section.id} section={section} />
+          ))}
+        </div>
       </div>
 
       <div className="mx-auto mt-auto w-full max-w-container px-6 py-8">
@@ -50,4 +50,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default TransitWarranty;

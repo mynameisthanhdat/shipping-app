@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CtaBanner from '../../components/CtaBanner';
 import CategoryGrid from '../../components/Education/CategoryGrid';
-import TestimonialGrid from '../../components/Education/TestimonialGrid';
-import { TESTIMONIALS } from '../../mocks/education/testimonials';
+import FaqAccordion from '../../components/Education/FaqAccordion';
+import { FAQ_SECTION } from '../../mocks/education/faqs';
 import { PATHS } from '../../routes/paths';
 
-const Testimonials: React.FC = () => {
+const Faqs: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
@@ -21,16 +21,16 @@ const Testimonials: React.FC = () => {
               Education Centre
             </Link>
             {' '}
-            / Testimonials
+            / FAQ&apos;s
           </span>
         </nav>
 
         <div className="mt-6 text-center">
           <h1 className="text-3xl font-bold text-navy">
-            What Our Customers Say
+            Looking for answers? You&apos;re in the right place.
           </h1>
           <p className="mt-3.5 text-lg font-bold text-navy">
-            Real feedback from businesses and individuals shipping with Parcelio
+            To start looking for answers, choose your category!
           </p>
         </div>
 
@@ -39,7 +39,16 @@ const Testimonials: React.FC = () => {
         </div>
 
         <section className="mt-12">
-          <TestimonialGrid testimonials={TESTIMONIALS} />
+          <h2 className="text-start text-2xl font-bold text-navy">
+            {FAQ_SECTION.title}
+          </h2>
+          <p className="mt-4 text-sm leading-normal text-[#5a6472]">
+            {FAQ_SECTION.description}
+          </p>
+
+          <div className="mt-6">
+            <FaqAccordion items={FAQ_SECTION.items} />
+          </div>
         </section>
       </div>
 
@@ -50,4 +59,4 @@ const Testimonials: React.FC = () => {
   );
 };
 
-export default Testimonials;
+export default Faqs;
