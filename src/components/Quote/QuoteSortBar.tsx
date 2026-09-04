@@ -11,7 +11,7 @@ const QuoteSortBar: React.FC<QuoteSortBarProps> = ({ value, onChange }) => (
   <div className="flex flex-wrap items-center gap-3">
     <span
       id="quote-sort-label"
-      className="text-xs font-bold uppercase tracking-wider text-navy"
+      className="text-sm font-bold uppercase tracking-wider text-navy"
     >
       Sort by:
     </span>
@@ -27,7 +27,7 @@ const QuoteSortBar: React.FC<QuoteSortBarProps> = ({ value, onChange }) => (
             role="radio"
             aria-checked={selected}
             onClick={() => onChange(option.id)}
-            className={`rounded-md px-4 py-2.5 text-xs font-bold uppercase tracking-wider transition-colors ${
+            className={`rounded-md px-4 py-2.5 text-sm font-bold uppercase tracking-wider transition-colors ${
               selected
                 ? 'bg-brand text-white'
                 : 'bg-muted-surface/40 text-navy hover:bg-muted-surface/70'

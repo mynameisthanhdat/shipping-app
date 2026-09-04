@@ -1,8 +1,8 @@
 import React from 'react';
 import { CarrierQuote } from '../../types/quote';
 
-const HEAD_CELL = 'whitespace-nowrap px-3 py-2.5 text-left text-xs font-normal text-navy';
-const BODY_CELL = 'px-3 py-3 text-left text-xs text-navy';
+const HEAD_CELL = 'whitespace-nowrap px-3 py-2.5 text-left text-sm font-normal text-navy';
+const BODY_CELL = 'px-3 py-3 text-left text-sm text-navy';
 
 const formatHour = (hour: number) => {
   const suffix = hour < 12 ? 'am' : 'pm';
@@ -42,7 +42,7 @@ const CarrierQuoteTable: React.FC<CarrierQuoteTableProps> = ({
   onSelect,
 }) => (
   <div className="overflow-x-auto border-t border-black/10 pt-4">
-    <table className="w-full min-w-[720px] border-collapse">
+    <table className="w-full min-w-[960px] border-collapse">
       <caption className="mb-2 text-left text-base font-bold text-navy">
         Select a carrier for shipping
       </caption>
@@ -94,7 +94,7 @@ const CarrierQuoteTable: React.FC<CarrierQuoteTableProps> = ({
               <button
                 type="button"
                 onClick={() => onSelect(quote)}
-                className="whitespace-nowrap rounded-md bg-brand px-4 py-1.5 text-[9px] font-bold uppercase tracking-wider text-white transition-colors hover:bg-brand-hover"
+                className="whitespace-nowrap rounded-md bg-brand px-4 py-1.5 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-brand-hover"
               >
                 Book Now
               </button>

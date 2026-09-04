@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 import { MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
 
 const categoryLinkClass = ({ isActive }: { isActive: boolean }) =>
-  `flex min-h-24 items-center justify-center bg-muted-surface px-4 text-center text-base font-bold transition-colors md:text-lg ${
-    isActive ? 'text-brand' : 'text-navy hover:bg-brand hover:text-white'
+  `flex min-h-24 items-center justify-center px-4 text-center text-base font-bold transition-colors md:text-lg ${
+    isActive
+      ? 'bg-brand text-white'
+      : 'bg-muted-surface text-navy hover:bg-brand hover:text-white'
   }`;
 
 type CategoryGridProps = {

@@ -21,6 +21,12 @@ module.exports = {
            *  so an unfilled field never reads as filled in. */
           placeholder: '#a8adb8',
         },
+        /** Restricted / dangerous-goods callout. White text on DEFAULT is 5.4:1. */
+        danger: {
+          DEFAULT: '#c0392b',
+          surface: '#fdf3f1',
+          border: '#f0c4bd',
+        },
         /** Completed / active wizard step. */
         success: '#3fb984',
         /** Upcoming wizard step. */

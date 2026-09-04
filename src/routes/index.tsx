@@ -12,10 +12,15 @@ import PalletTransportServices from '../pages/OurServices/PalletTransportService
 import CarbonNeutralDelivery from '../pages/OurServices/CarbonNeutralDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import Tracking from '../pages/Education/Tracking';
+import TransitWarranty from '../pages/Education/TransitWarranty';
+import PackagingRequirements from '../pages/Education/PackagingRequirements';
+import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
+import Faqs from '../pages/Education/Faqs';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
+import CollectionDetailsStep from '../pages/GetAQuote/CollectionDetailsStep';
 import UpcomingStep from '../pages/GetAQuote/UpcomingStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
@@ -41,7 +46,11 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.education]: <Education />,
   [PATHS.educationTestimonials]: <Testimonials />,
   [PATHS.educationTracking]: <Tracking />,
+  [PATHS.educationTransitWarranty]: <TransitWarranty />,
+  [PATHS.educationPackaging]: <PackagingRequirements />,
+  [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.compareRates]: <CompareRates />,
+  [PATHS.educationFaqs]: <Faqs />,
 };
 
 /**
@@ -55,7 +64,8 @@ const quoteRoute: RouteObject = {
   children: [
     { index: true, element: <PackageDetailsStep /> },
     { path: 'select-quote', element: <SelectQuoteStep /> },
-    ...QUOTE_STEPS.slice(2).map<RouteObject>((step) => ({
+    { path: 'collection-details', element: <CollectionDetailsStep /> },
+    ...QUOTE_STEPS.slice(3).map<RouteObject>((step) => ({
       path: step.segment,
       element: <UpcomingStep step={step} />,
     })),
