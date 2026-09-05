@@ -1,5 +1,9 @@
 import { isCollectionDetailsComplete } from '../components/Quote/collectionFields';
-import { QuoteDraft, isPackageDetailsComplete } from '../types/quote';
+import {
+  QuoteDraft,
+  isAdditionalInformationComplete,
+  isPackageDetailsComplete,
+} from '../types/quote';
 import { PATHS } from './paths';
 
 export type QuoteStepId =
@@ -50,6 +54,7 @@ export const getCompletedStepCount = (draft: QuoteDraft): number => {
   if (!isPackageDetailsComplete(draft.packageDetails)) return 0;
   if (!draft.selectedQuoteId) return 1;
   if (!isCollectionDetailsComplete(draft.collectionDetails)) return 2;
+  if (!isAdditionalInformationComplete(draft.additionalInformation)) return 3;
 
-  return 3;
+  return 4;
 };

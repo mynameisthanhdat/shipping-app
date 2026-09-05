@@ -13,9 +13,15 @@ import {
 import DangerousGoodsNotice from './DangerousGoodsNotice';
 import PartyFieldset from './PartyFieldset';
 import { PARTY_ROLES, getPartyFields } from './collectionFields';
-import { Checkbox, FieldError, LABEL_CLASS, Radio, Select, TEXTAREA_CLASS } from './fields';
-
-const SECTION_TITLE = 'text-[15px] font-bold uppercase tracking-wide text-navy';
+import {
+  Checkbox,
+  FieldError,
+  LABEL_CLASS,
+  Radio,
+  SECTION_TITLE,
+  Select,
+  TEXTAREA_CLASS,
+} from './fields';
 
 type SideErrors = Partial<Record<PartyFieldName, string>>;
 
