@@ -21,7 +21,8 @@ import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
 import CollectionDetailsStep from '../pages/GetAQuote/CollectionDetailsStep';
-import UpcomingStep from '../pages/GetAQuote/UpcomingStep';
+import AdditionalInformationStep from '../pages/GetAQuote/AdditionalInformationStep';
+import PaymentStep from '../pages/GetAQuote/PaymentStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import {
@@ -31,7 +32,6 @@ import {
   PATHS,
   flattenNav,
 } from './paths';
-import { QUOTE_STEPS } from './quoteSteps';
 
 /** Pages that are fully built. Add an entry here when a new page lands. */
 const REAL_PAGES: Record<string, React.ReactElement> = {
@@ -55,8 +55,8 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
 
 /**
  * The quote wizard: one nested route per step, all sharing the stepper and draft
- * state held by the GetAQuote layout. Replace an `UpcomingStep` with the real
- * screen as each step is designed.
+ * state held by the GetAQuote layout. Step order and labels live in
+ * routes/quoteSteps.ts; the paths below must match its segments.
  */
 const quoteRoute: RouteObject = {
   path: PATHS.quote.replace(/^\//, ''),
@@ -65,10 +65,8 @@ const quoteRoute: RouteObject = {
     { index: true, element: <PackageDetailsStep /> },
     { path: 'select-quote', element: <SelectQuoteStep /> },
     { path: 'collection-details', element: <CollectionDetailsStep /> },
-    ...QUOTE_STEPS.slice(3).map<RouteObject>((step) => ({
-      path: step.segment,
-      element: <UpcomingStep step={step} />,
-    })),
+    { path: 'additional-information', element: <AdditionalInformationStep /> },
+    { path: 'payment', element: <PaymentStep /> },
   ],
 };
 
@@ -85,6 +83,7 @@ const MOCK_PAGES = flattenNav([
   ...FOOTER_SOLUTIONS,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
+  { label: 'Terms & Conditions', to: PATHS.terms },
 ]).filter(
   (page, index, all) =>
     !EXPLICIT_PATHS.has(page.to) &&

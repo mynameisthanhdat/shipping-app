@@ -2,7 +2,7 @@ import React from 'react';
 import { STREET_TYPES } from '../../mocks/collectionOptions';
 import { PartyDetails, PartyFieldName } from '../../types/quote';
 import { PartyFieldConfig } from './collectionFields';
-import { FIELD_CLASS, FieldError, Select } from './fields';
+import { FIELD_CLASS, FieldError, SECTION_TITLE, Select } from './fields';
 
 export type PartyFieldsetProps = {
   title: string;
@@ -27,7 +27,7 @@ const PartyFieldset: React.FC<PartyFieldsetProps> = ({
   onChange,
 }) => (
   <fieldset>
-    <legend className="text-[15px] font-bold uppercase tracking-wide text-navy">
+    <legend className={SECTION_TITLE}>
       {title}
     </legend>
 
