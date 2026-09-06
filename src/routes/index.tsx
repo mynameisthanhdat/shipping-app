@@ -16,6 +16,7 @@ import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
 import Faqs from '../pages/Education/Faqs';
+import Blog from '../pages/Education/Blog';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
@@ -49,6 +50,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
+  [PATHS.educationBlog]: <Blog />,
 };
 
 /**
