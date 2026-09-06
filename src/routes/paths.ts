@@ -78,7 +78,7 @@ export const MAIN_NAV: NavItem[] = [
     label: 'Locations',
     to: PATHS.locations,
     children: [
-      { label: 'Australia', to: PATHS.locationsAustralia },
+      { label: 'Australia', to: PATHS.locations },
       { label: 'New Zealand', to: `${PATHS.locations}/new-zealand` },
       { label: 'United Kingdom', to: `${PATHS.locations}/united-kingdom` },
       { label: 'United States', to: `${PATHS.locations}/united-states` },
