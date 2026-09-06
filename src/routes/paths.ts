@@ -19,6 +19,7 @@ export const PATHS = {
   ecommerce: '/ecommerce',
   api: '/api-for-developers',
   terms: '/terms-and-conditions',
+  contactUs: '/contact-us',
 
   // Submenu paths that have a real page behind them.
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,

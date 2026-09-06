@@ -2,6 +2,7 @@ import React from 'react';
 import { RouteObject } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
 import Home from '../pages/Home';
+import ContactUs from '../pages/ContactUs';
 import Education from '../pages/Education';
 import OurServices from '../pages/OurServices';
 import ExpertInterStateCouriersInAus from '../pages/OurServices/ExpertInterStateCouriersInAus';
@@ -36,6 +37,7 @@ import {
 /** Pages that are fully built. Add an entry here when a new page lands. */
 const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.home]: <Home />,
+  [PATHS.contactUs]: <ContactUs />,
   [PATHS.services]: <OurServices />,
   [PATHS.servicesExpertInterstateCouriers]: <ExpertInterStateCouriersInAus />,
   [PATHS.servicesSameDayCourier]: <SameDayCourierServices />,
