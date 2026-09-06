@@ -17,6 +17,7 @@ import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
 import Faqs from '../pages/Education/Faqs';
+import Locations from '../pages/Locations/Locations';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
@@ -25,6 +26,7 @@ import AdditionalInformationStep from '../pages/GetAQuote/AdditionalInformationS
 import PaymentStep from '../pages/GetAQuote/PaymentStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
+import { LOCATION_DETAIL_PAGES } from '../constants/locations';
 import {
   FOOTER_SERVICES,
   FOOTER_SOLUTIONS,
@@ -49,6 +51,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationTransitWarranty]: <TransitWarranty />,
   [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
+  [PATHS.locations]: <Locations />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
 };
@@ -81,6 +84,7 @@ const MOCK_PAGES = flattenNav([
   ...MAIN_NAV,
   ...FOOTER_SERVICES,
   ...FOOTER_SOLUTIONS,
+  ...LOCATION_DETAIL_PAGES,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
   { label: 'Terms & Conditions', to: PATHS.terms },
