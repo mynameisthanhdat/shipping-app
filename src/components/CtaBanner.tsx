@@ -14,7 +14,7 @@ type CtaBannerProps = {
 };
 
 const CtaBanner: React.FC<CtaBannerProps> = ({
-  title = "We've got you covered. Send with Transdirect and start saving today!",
+  title = "We've got you covered. Send with Parcelio and start saving today!",
   primaryAction = { label: 'Get a Quote', to: PATHS.quote },
   secondaryAction = { label: 'Compare Rates', to: PATHS.compareRates },
 }) => {
