@@ -18,6 +18,8 @@ import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
 import Faqs from '../pages/Education/Faqs';
+import Blog from '../pages/Education/Blog';
+import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
@@ -56,6 +58,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.locations]: <Locations />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
+  [PATHS.educationBlog]: <Blog />,
 };
 
 /**
@@ -109,6 +112,10 @@ export const routes: RouteObject[] = [
           element,
         })),
       quoteRoute,
+      {
+        path: `${PATHS.educationBlog.replace(/^\//, '')}/:slug`,
+        element: <BlogDetail />,
+      },
       ...MOCK_PAGES.map<RouteObject>((page) => ({
         path: page.to.replace(/^\//, ''),
         element: <PlaceholderPage title={page.label} />,
