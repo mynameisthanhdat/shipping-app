@@ -3,6 +3,7 @@ import { RouteObject } from 'react-router-dom';
 import MainLayout from '../components/layout/MainLayout';
 import Home from '../pages/Home';
 import ContactUs from '../pages/ContactUs';
+import Couriers from '../pages/Couriers';
 import Education from '../pages/Education';
 import OurServices from '../pages/OurServices';
 import ExpertInterStateCouriersInAus from '../pages/OurServices/ExpertInterStateCouriersInAus';
@@ -18,6 +19,9 @@ import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
 import Faqs from '../pages/Education/Faqs';
+import Blog from '../pages/Education/Blog';
+import BlogDetail from '../pages/Education/BlogDetail';
+import Locations from '../pages/Locations/Locations';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
@@ -26,6 +30,7 @@ import AdditionalInformationStep from '../pages/GetAQuote/AdditionalInformationS
 import PaymentStep from '../pages/GetAQuote/PaymentStep';
 import PlaceholderPage from '../pages/PlaceholderPage';
 import NotFoundPage from '../pages/NotFoundPage';
+import { LOCATION_DETAIL_PAGES } from '../constants/locations';
 import {
   FOOTER_SERVICES,
   FOOTER_SOLUTIONS,
@@ -38,6 +43,7 @@ import {
 const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.home]: <Home />,
   [PATHS.contactUs]: <ContactUs />,
+  [PATHS.couriers]: <Couriers />,
   [PATHS.services]: <OurServices />,
   [PATHS.servicesExpertInterstateCouriers]: <ExpertInterStateCouriersInAus />,
   [PATHS.servicesSameDayCourier]: <SameDayCourierServices />,
@@ -51,8 +57,10 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationTransitWarranty]: <TransitWarranty />,
   [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
+  [PATHS.locations]: <Locations />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
+  [PATHS.educationBlog]: <Blog />,
 };
 
 /**
@@ -83,6 +91,7 @@ const MOCK_PAGES = flattenNav([
   ...MAIN_NAV,
   ...FOOTER_SERVICES,
   ...FOOTER_SOLUTIONS,
+  ...LOCATION_DETAIL_PAGES,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
   { label: 'Terms & Conditions', to: PATHS.terms },
@@ -105,6 +114,10 @@ export const routes: RouteObject[] = [
           element,
         })),
       quoteRoute,
+      {
+        path: `${PATHS.educationBlog.replace(/^\//, '')}/:slug`,
+        element: <BlogDetail />,
+      },
       ...MOCK_PAGES.map<RouteObject>((page) => ({
         path: page.to.replace(/^\//, ''),
         element: <PlaceholderPage title={page.label} />,
