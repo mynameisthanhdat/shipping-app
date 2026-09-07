@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
+import { ACCOUNT_SIGNUP_LINK, MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
 import Logo from './Logo';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
 
         <div className="ml-auto flex items-center gap-6">
           <NavLink
-            to={PATHS.openAccount}
+            to={ACCOUNT_SIGNUP_LINK}
             className="hidden text-sm text-navy transition-colors hover:text-brand md:block"
           >
             Open account

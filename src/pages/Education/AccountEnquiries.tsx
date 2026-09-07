@@ -5,9 +5,9 @@ import AccountBenefits from "../../components/Education/AccountBenefits";
 import AccountFaqList from "../../components/Education/AccountFaqList";
 import AccountHowToSteps from "../../components/Education/AccountHowToSteps";
 import AccountMemberReviews from "../../components/Education/AccountMemberReviews";
-import AccountSignupForm from "../../components/Education/AccountSignupForm";
+import AccountSignupForm from "../../components/Account/AccountSignupForm";
 import CategoryGrid from "../../components/Education/CategoryGrid";
-import { PATHS } from "../../routes/paths";
+import { ACCOUNT_SIGNUP_ANCHOR, PATHS } from "../../routes/paths";
 import { AccountSignupDetails } from "../../types/account";
 
 const AccountEnquiries: React.FC = () => {
@@ -55,12 +55,12 @@ const AccountEnquiries: React.FC = () => {
             complete control.
           </p>
           <p className="mt-4 text-start">
-            <a
-              href="#account-signup"
+            <Link
+              to={`#${ACCOUNT_SIGNUP_ANCHOR}`}
               className="text-sm font-bold text-brand transition-colors hover:text-brand-hover"
             >
               Open an account now and start saving.
-            </a>
+            </Link>
           </p>
         </section>
 
@@ -110,7 +110,7 @@ const AccountEnquiries: React.FC = () => {
           </p>
         </section>
 
-        <section className="mt-12" id="account-signup">
+        <section className="mt-12 scroll-mt-8 focus:outline-none" id={ACCOUNT_SIGNUP_ANCHOR}>
           <h2 className="text-center text-2xl font-bold text-navy">
             Open Your Transdirect Shipping Account Today
           </h2>

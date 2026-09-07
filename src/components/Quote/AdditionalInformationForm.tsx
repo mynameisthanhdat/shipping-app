@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { PACKING_NOTES } from '../../mocks/additionalInformationContent';
 import { PATHS } from '../../routes/paths';
 import { AdditionalInformation } from '../../types/quote';
-import { Checkbox, FieldError, SECTION_TITLE } from './fields';
+import { Checkbox, FieldError, SECTION_TITLE } from '../ui/fields';
 
 const LINK = 'underline transition-colors hover:text-brand';
 

@@ -19,6 +19,7 @@ export const PATHS = {
   ecommerce: '/ecommerce',
   api: '/api-for-developers',
   terms: '/terms-and-conditions',
+  forgotPassword: '/forgot-password',
 
   // Submenu paths that have a real page behind them.
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,
@@ -37,6 +38,12 @@ export const PATHS = {
   educationAccountEnquiries: `${EDUCATION}/account-enquiries`,
   educationTracking: `${EDUCATION}/tracking`,
 } as const;
+
+/** Id of the signup form section on the Account Enquiries page. */
+export const ACCOUNT_SIGNUP_ANCHOR = 'account-signup';
+
+/** Deep link that lands on that page and scrolls straight to the form. */
+export const ACCOUNT_SIGNUP_LINK = `${PATHS.educationAccountEnquiries}#${ACCOUNT_SIGNUP_ANCHOR}`;
 
 export type NavItem = {
   label: string;

@@ -16,6 +16,8 @@ import TransitWarranty from '../pages/Education/TransitWarranty';
 import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
+import OpenAccount from '../pages/OpenAccount';
+import SignIn from '../pages/SignIn';
 import Faqs from '../pages/Education/Faqs';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
@@ -50,6 +52,8 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.compareRates]: <CompareRates />,
+  [PATHS.openAccount]: <OpenAccount />,
+  [PATHS.signIn]: <SignIn />,
   [PATHS.educationFaqs]: <Faqs />,
 };
 
@@ -84,6 +88,7 @@ const MOCK_PAGES = flattenNav([
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
   { label: 'Terms & Conditions', to: PATHS.terms },
+  { label: 'Forgot password', to: PATHS.forgotPassword },
 ]).filter(
   (page, index, all) =>
     !EXPLICIT_PATHS.has(page.to) &&

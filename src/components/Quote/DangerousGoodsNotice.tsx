@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { DANGEROUS_GOODS } from '../../mocks/collectionOptions';
 import { PATHS } from '../../routes/paths';
-import { Checkbox, FieldError } from './fields';
+import { Checkbox, FieldError } from '../ui/fields';
 
 const WarningIcon: React.FC = () => (
   <svg
