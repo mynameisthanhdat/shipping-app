@@ -11,10 +11,12 @@ export const LABEL_CLASS = 'mb-1.5 block text-sm uppercase tracking-wider text-m
 export const FieldError: React.FC<{ message?: string }> = ({ message }) =>
   message ? <p className="mt-1 text-sm text-red-600">{message}</p> : null;
 
+export const SECTION_TITLE = 'text-[15px] font-bold uppercase tracking-wide text-navy';
+
 export const TEXTAREA_CLASS = `${FIELD_CLASS} min-h-[84px] resize-y`;
 
 export type CheckboxProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> & {
-  label: string;
+  label: React.ReactNode;
 };
 
 export const Checkbox: React.FC<CheckboxProps> = ({ label, className = '', ...rest }) => (
@@ -29,11 +31,11 @@ export const Checkbox: React.FC<CheckboxProps> = ({ label, className = '', ...re
 );
 
 export type RadioProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> & {
-  label: string;
+  label: React.ReactNode;
 };
 
 export const Radio: React.FC<RadioProps> = ({ label, className = '', ...rest }) => (
-  <label className={`flex items-center gap-2 text-sm text-navy ${className}`}>
+  <label className={`flex cursor-pointer items-center gap-2 text-sm text-navy ${className}`}>
     <input {...rest} type="radio" className="h-3 w-3 shrink-0 accent-brand" />
     <span>{label}</span>
   </label>

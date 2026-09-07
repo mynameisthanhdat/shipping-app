@@ -108,6 +108,31 @@ export type CarrierQuote = {
 
 export type QuoteSortId = 'lowest-price' | 'fastest-delivery' | 'earliest-collection';
 
+/** Step 4 — the consents a booking cannot proceed without. */
+export type AdditionalInformation = {
+  transitWarrantyAccepted: boolean;
+  termsAccepted: boolean;
+  consignmentNoteAccepted: boolean;
+};
+
+export const createAdditionalInformation = (): AdditionalInformation => ({
+  transitWarrantyAccepted: false,
+  termsAccepted: false,
+  consignmentNoteAccepted: false,
+});
+
+export const isAdditionalInformationComplete = (value: AdditionalInformation): boolean =>
+  value.transitWarrantyAccepted && value.termsAccepted && value.consignmentNoteAccepted;
+
+/** Step 5 — payment method only. */
+export type PaymentMethod = 'paypal' | 'credit-card';
+
+export type PaymentSelection = {
+  method: PaymentMethod;
+};
+
+export const createPaymentSelection = (): PaymentSelection => ({ method: 'credit-card' });
+
 /**
  * The whole wizard state. Add `collectionDetails`, `additionalInformation` and
  * `payment` slices here as steps 3–5 are built, then widen
@@ -118,6 +143,13 @@ export type QuoteDraft = {
   /** Set by step 2 once the courier options screen exists. */
   selectedQuoteId: string | null;
   collectionDetails: CollectionDetails;
+  additionalInformation: AdditionalInformation;
+  /**
+   * Method only. Card details are NEVER stored here — they stay in the payment
+   * form's local state and go straight to the payment provider, so they never
+   * travel through shared wizard state that other steps can read or log.
+   */
+  payment: PaymentSelection;
 };
 
 let itemSequence = 0;
@@ -149,6 +181,8 @@ export const createQuoteDraft = (packageDetails?: PackageDetails): QuoteDraft =>
   packageDetails: packageDetails ?? createEmptyPackageDetails(),
   selectedQuoteId: null,
   collectionDetails: createCollectionDetails(),
+  additionalInformation: createAdditionalInformation(),
+  payment: createPaymentSelection(),
 });
 
 /** True once step 1 holds enough to price a shipment. */
