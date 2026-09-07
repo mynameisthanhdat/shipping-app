@@ -1,12 +1,12 @@
 const SERVICES = '/our-services';
 const EDUCATION = '/education';
-
+const LOCATIONS = '/locations';
 export const PATHS = {
   home: '/',
   services: SERVICES,
   couriers: '/couriers',
   education: EDUCATION,
-  locations: '/locations',
+  locations: LOCATIONS,
   compareRates: '/compare-rates',
   openAccount: '/open-account',
   signIn: '/sign-in',
@@ -78,7 +78,7 @@ export const MAIN_NAV: NavItem[] = [
     label: 'Locations',
     to: PATHS.locations,
     children: [
-      { label: 'Australia', to: `${PATHS.locations}/australia` },
+      { label: 'Australia', to: PATHS.locations },
       { label: 'New Zealand', to: `${PATHS.locations}/new-zealand` },
       { label: 'United Kingdom', to: `${PATHS.locations}/united-kingdom` },
       { label: 'United States', to: `${PATHS.locations}/united-states` },
