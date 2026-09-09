@@ -15,3 +15,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Weekly spend range: orange filled track + white thumb (high contrast). */
+.weekly-spend-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 9999px;
+  outline: none;
+  accent-color: #ffffff;
+}
+
+.weekly-spend-range::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+.weekly-spend-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: -6px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #e2683c;
+  box-shadow: 0 1px 3px rgba(21, 42, 71, 0.25);
+  cursor: pointer;
+}
+
+.weekly-spend-range::-moz-range-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: transparent;
+}
+
+.weekly-spend-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 2px solid #e2683c;
+  box-shadow: 0 1px 3px rgba(21, 42, 71, 0.25);
+  cursor: pointer;
+}

@@ -21,6 +21,13 @@ import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
+import Melbourne from '../pages/Locations/Melbourne';
+import MelbourneToSydney from '../pages/Locations/MelbourneToSydney';
+import MelbourneToBrisbane from '../pages/Locations/MelbourneToBrisbane';
+import MelbourneToPerth from '../pages/Locations/MelbourneToPerth';
+import MelbourneToAdelaide from '../pages/Locations/MelbourneToAdelaide';
+import MelbourneToDarwin from '../pages/Locations/MelbourneToDarwin';
+import MelbourneToCanberra from '../pages/Locations/MelbourneToCanberra';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
@@ -56,6 +63,14 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.locations]: <Locations />,
+  [PATHS.locationsMelbourne]: <Melbourne />,
+  // Interstate routes
+  [PATHS.locationsMelbourneToSydney]: <MelbourneToSydney />,
+  [PATHS.locationsMelbourneToBrisbane]: <MelbourneToBrisbane />,
+  [PATHS.locationsMelbourneToPerth]: <MelbourneToPerth />,
+  [PATHS.locationsMelbourneToAdelaide]: <MelbourneToAdelaide />,
+  [PATHS.locationsMelbourneToDarwin]: <MelbourneToDarwin />,
+  [PATHS.locationsMelbourneToCanberra]: <MelbourneToCanberra />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
   [PATHS.educationBlog]: <Blog />,

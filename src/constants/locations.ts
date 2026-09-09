@@ -31,6 +31,9 @@ export const POPULAR_ROUTES: LocationLink[] = [
   route('melbourne', 'sydney', 'From Melbourne to Sydney'),
   route('melbourne', 'brisbane', 'From Melbourne to Brisbane'),
   route('melbourne', 'perth', 'From Melbourne to Perth'),
+  route('melbourne', 'adelaide', 'From Melbourne to Adelaide'),
+  route('melbourne', 'darwin', 'From Melbourne to Darwin'),
+  route('melbourne', 'canberra', 'From Melbourne to Canberra'),
   route('sydney', 'melbourne', 'From Sydney to Melbourne'),
   route('sydney', 'brisbane', 'From Sydney to Brisbane'),
   route('sydney', 'perth', 'From Sydney to Perth'),
@@ -41,8 +44,20 @@ export const POPULAR_ROUTES: LocationLink[] = [
   route('perth', 'sydney', 'From Perth to Sydney'),
   route('perth', 'brisbane', 'From Perth to Brisbane'),
   route('adelaide', 'melbourne', 'From Adelaide to Melbourne'),
-  route('melbourne', 'adelaide', 'From Melbourne to Adelaide'),
 ];
 
+const REAL_LOCATION_PATHS = new Set<string>([
+  PATHS.locationsMelbourne,
+  PATHS.locationsMelbourneToSydney,
+  PATHS.locationsMelbourneToBrisbane,
+  PATHS.locationsMelbourneToPerth,
+  PATHS.locationsMelbourneToAdelaide,
+  PATHS.locationsMelbourneToDarwin,
+  PATHS.locationsMelbourneToCanberra,
+]);
+
 /** Detail paths that fall through to PlaceholderPage until city/route pages ship. */
-export const LOCATION_DETAIL_PAGES = [...LOCATION_CITIES, ...POPULAR_ROUTES];
+export const LOCATION_DETAIL_PAGES = [
+  ...LOCATION_CITIES.filter((item) => !REAL_LOCATION_PATHS.has(item.to)),
+  ...POPULAR_ROUTES.filter((item) => !REAL_LOCATION_PATHS.has(item.to)),
+];
