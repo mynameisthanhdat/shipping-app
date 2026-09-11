@@ -38,6 +38,19 @@ export const PATHS = {
   educationPackaging: `${EDUCATION}/packaging-requirements`,
   educationAccountEnquiries: `${EDUCATION}/account-enquiries`,
   educationTracking: `${EDUCATION}/tracking`,
+
+  // Locations submenu paths
+  locationsMelbourne: `${LOCATIONS}/melbourne`,
+  locationsSydney: `${LOCATIONS}/sydney`,
+  locationsPerth: `${LOCATIONS}/perth`,
+  locationsBrisbane: `${LOCATIONS}/brisbane`,
+  locationsAdelaide: `${LOCATIONS}/adelaide`,
+  locationsCanberra: `${LOCATIONS}/canberra`,
+  locationsHobart: `${LOCATIONS}/hobart`,
+  locationsDarwin: `${LOCATIONS}/darwin`,
+  locationsGoldCoast: `${LOCATIONS}/gold-coast`,
+  locationsSunshineCoast: `${LOCATIONS}/sunshine-coast`,
+  locationsGeelong: `${LOCATIONS}/geelong`,
 } as const;
 
 export type NavItem = {
@@ -80,12 +93,17 @@ export const MAIN_NAV: NavItem[] = [
     label: 'Locations',
     to: PATHS.locations,
     children: [
-      { label: 'Australia', to: PATHS.locations },
-      { label: 'New Zealand', to: `${PATHS.locations}/new-zealand` },
-      { label: 'United Kingdom', to: `${PATHS.locations}/united-kingdom` },
-      { label: 'United States', to: `${PATHS.locations}/united-states` },
-      { label: 'Canada', to: `${PATHS.locations}/canada` },
-      { label: 'Singapore', to: `${PATHS.locations}/singapore` },
+      { label: 'Melbourne', to: PATHS.locationsMelbourne },
+      { label: 'Sydney', to: PATHS.locationsSydney },
+      { label: 'Perth', to: PATHS.locationsPerth },
+      { label: 'Brisbane', to: PATHS.locationsBrisbane },
+      { label: 'Adelaide', to: PATHS.locationsAdelaide },
+      { label: 'Canberra', to: PATHS.locationsCanberra },
+      { label: 'Hobart', to: PATHS.locationsHobart },
+      { label: 'Darwin', to: PATHS.locationsDarwin },
+      { label: 'Gold Coast', to: PATHS.locationsGoldCoast },
+      { label: 'Sunshine Coast', to: PATHS.locationsSunshineCoast },
+      { label: 'Geelong', to: PATHS.locationsGeelong },
     ],
   },
   { label: 'Compare Rates', to: PATHS.compareRates },
