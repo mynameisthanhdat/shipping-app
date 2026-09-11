@@ -19,6 +19,7 @@ export const PATHS = {
   ecommerce: '/ecommerce',
   api: '/api-for-developers',
   terms: '/terms-and-conditions',
+  contactUs: '/contact-us',
   aboutUs: '/about-us',
 
   // Submenu paths that have a real page behind them.
