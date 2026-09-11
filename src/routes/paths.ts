@@ -49,13 +49,6 @@ export const PATHS = {
   locationsGoldCoast: `${LOCATIONS}/gold-coast`,
   locationsSunshineCoast: `${LOCATIONS}/sunshine-coast`,
   locationsGeelong: `${LOCATIONS}/geelong`,
-  // Interstate routes
-  locationsMelbourneToSydney: `${LOCATIONS}/melbourne/to-sydney`,
-  locationsMelbourneToBrisbane: `${LOCATIONS}/melbourne/to-brisbane`,
-  locationsMelbourneToPerth: `${LOCATIONS}/melbourne/to-perth`,
-  locationsMelbourneToAdelaide: `${LOCATIONS}/melbourne/to-adelaide`,
-  locationsMelbourneToDarwin: `${LOCATIONS}/melbourne/to-darwin`,
-  locationsMelbourneToCanberra: `${LOCATIONS}/melbourne/to-canberra`,
 } as const;
 
 export type NavItem = {
