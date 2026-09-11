@@ -38,6 +38,9 @@ export const PATHS = {
   educationPackaging: `${EDUCATION}/packaging-requirements`,
   educationAccountEnquiries: `${EDUCATION}/account-enquiries`,
   educationTracking: `${EDUCATION}/tracking`,
+
+  // Locations city pages
+  locationsDarwin: `${LOCATIONS}/darwin`,
 } as const;
 
 export type NavItem = {
