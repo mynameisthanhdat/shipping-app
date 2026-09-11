@@ -4,6 +4,7 @@ import MainLayout from '../components/layout/MainLayout';
 import Home from '../pages/Home';
 import ContactUs from '../pages/ContactUs';
 import AboutUs from '../pages/AboutUs';
+import TermsAndConditions from '../pages/TermsAndConditions';
 import Couriers from '../pages/Couriers';
 import Education from '../pages/Education';
 import OurServices from '../pages/OurServices';
@@ -45,6 +46,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.home]: <Home />,
   [PATHS.contactUs]: <ContactUs />,
   [PATHS.aboutUs]: <AboutUs />,
+  [PATHS.terms]: <TermsAndConditions />,
   [PATHS.couriers]: <Couriers />,
   [PATHS.services]: <OurServices />,
   [PATHS.servicesExpertInterstateCouriers]: <ExpertInterStateCouriersInAus />,
