@@ -6,7 +6,7 @@ import { PATHS } from '../../routes/paths';
 const HobartLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         Let Parcelio handle your shipping needs throughout Hobart and the surrounds
       </h2>
 

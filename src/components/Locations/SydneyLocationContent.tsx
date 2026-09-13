@@ -7,7 +7,7 @@ const startingFrom = '$5.10';
 const SydneyLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">The Best Couriers in Sydney and NSW</h2>
+      <h2 className="text-xl font-bold text-navy">The Best Couriers in Sydney and NSW</h2>
 
       <p className="mt-4 text-sm leading-relaxed text-navy">
         If you&apos;re after cheap couriers in Sydney and New South Wales who can offer
@@ -46,7 +46,7 @@ const SydneyLocationContent: React.FC = () => (
     </section>
 
     <section>
-      <h2 className="text-2xl font-bold text-navy">Prices</h2>
+      <h2 className="text-xl font-bold text-navy">Prices</h2>
       <p className="mt-4 text-sm leading-relaxed text-navy">
         At Parcelio, we not only provide a premium level of service, we also strive to keep
         our costs as low as possible. With local courier prices starting from {startingFrom},

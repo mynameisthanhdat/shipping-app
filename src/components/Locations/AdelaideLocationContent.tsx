@@ -8,7 +8,7 @@ const startingFrom = '$6.99';
 const AdelaideLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">Use our Adelaide couriers today</h2>
+      <h2 className="text-xl font-bold text-navy">Use our Adelaide couriers today</h2>
 
       <p className="mt-4 text-sm font-bold leading-relaxed text-navy">
         Organise your freight delivery across Adelaide and interstate with the courier
@@ -61,7 +61,7 @@ const AdelaideLocationContent: React.FC = () => (
     </section>
 
     <section>
-      <h2 className="text-2xl font-bold text-navy">Adelaide Courier Prices</h2>
+      <h2 className="text-xl font-bold text-navy">Adelaide Courier Prices</h2>
       <p className="mt-4 text-sm leading-relaxed text-navy">
         With prices starting as low as {startingFrom} for deliveries within Adelaide and
         South Australia, Parcelio makes it easy to stick to your budget while still

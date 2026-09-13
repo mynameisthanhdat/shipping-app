@@ -24,6 +24,7 @@ import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
+import Darwin from '../pages/Locations/Darwin';
 import Geelong from '../pages/Locations/Geelong';
 
 import Hobart from '../pages/Locations/Hobart';
@@ -73,6 +74,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.locations]: <Locations />,
+  [PATHS.locationsDarwin]: <Darwin />,
   [PATHS.locationsGeelong]: <Geelong />,
   [PATHS.locationsHobart]: <Hobart />,
   [PATHS.locationsSunshineCoast]: <SunshineCoast />,

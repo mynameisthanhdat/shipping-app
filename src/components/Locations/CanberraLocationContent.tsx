@@ -6,7 +6,7 @@ import { PATHS } from '../../routes/paths';
 const CanberraLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         Providing premium freight delivery throughout Canberra and beyond for residential
         and commercial clients
       </h2>

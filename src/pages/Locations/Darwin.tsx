@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import DarwinLocationContent from '../../components/Locations/DarwinLocationContent';
 import PackageDetailsForm from '../../components/Quote/PackageDetailsForm';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
-import MelbourneLocationContent from '../../components/Locations/MelbourneLocationContent';
 import { PATHS } from '../../routes/paths';
 import { QUOTE_STEPS, getQuoteStepPath } from '../../routes/quoteSteps';
 import { PackageDetails } from '../../types/quote';
 
 /**
- * City landing for Melbourne: quote step 1 entry + city marketing copy.
+ * City landing for Darwin: quote step 1 entry + city marketing copy.
  * Submitting hands package details into Get a Quote at step 2.
  */
-const Melbourne: React.FC = () => {
+const Darwin: React.FC = () => {
   const navigate = useNavigate();
 
   const handleQuoteSubmit = (packageDetails: PackageDetails) => {
@@ -28,7 +28,7 @@ const Melbourne: React.FC = () => {
         <Link to={PATHS.locations} className="transition-colors hover:text-navy">
           Locations
         </Link>
-        <span> / Couriers in Melbourne</span>
+        <span> / Couriers in Darwin, NT</span>
       </nav>
 
       <section aria-label="Get a Quote" className="mt-10">
@@ -43,11 +43,11 @@ const Melbourne: React.FC = () => {
 
       <div className="mt-12 border-t border-black/10 pt-10">
         <div className="mx-auto max-w-4xl">
-          <MelbourneLocationContent />
+          <DarwinLocationContent />
         </div>
       </div>
     </article>
   );
 };
 
-export default Melbourne;
+export default Darwin;
