@@ -1,20 +1,33 @@
 import React from 'react';
-import { TransitWarrantyItem } from '../../mocks/education/transitWarranty';
+import { Link } from 'react-router-dom';
+import {
+  TransitWarrantyItem,
+  getTransitWarrantyDetailPath,
+} from '../../mocks/education/transitWarranty';
+import { hasTransitWarrantyDetail } from '../../mocks/education/transitWarrantyDetails';
 
 type WarrantyCardProps = {
   item: TransitWarrantyItem;
 };
 
-const WarrantyCard: React.FC<WarrantyCardProps> = ({ item }) => (
-  <article className="rounded-lg border border-muted-surface/60 bg-white px-7 py-6">
-    <h3 className="text-base font-bold text-navy">{item.title}</h3>
-    <a
-      href={item.href}
-      className="mt-3 inline-block text-xs text-brand transition-colors hover:text-brand-hover"
-    >
-      {item.linkLabel}
-    </a>
-  </article>
-);
+const linkClass =
+  'mt-3 inline-block text-xs text-brand transition-colors hover:text-brand-hover';
+
+const WarrantyCard: React.FC<WarrantyCardProps> = ({ item }) => {
+  const hasDetail = hasTransitWarrantyDetail(item.id);
+
+  return (
+    <article className="rounded-lg border border-muted-surface/60 bg-white px-7 py-6">
+      <h3 className="text-base font-bold text-navy">{item.title}</h3>
+      {hasDetail ? (
+        <Link to={getTransitWarrantyDetailPath(item.id)} className={linkClass}>
+          {item.linkLabel}
+        </Link>
+      ) : (
+        <span className={`${linkClass} cursor-default opacity-50`}>{item.linkLabel}</span>
+      )}
+    </article>
+  );
+};
 
 export default WarrantyCard;

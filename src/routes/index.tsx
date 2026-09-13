@@ -23,6 +23,7 @@ import CompareRates from '../pages/CompareRates';
 import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
+import TransitWarrantyDetail from '../pages/Education/TransitWarrantyDetail';
 import Locations from '../pages/Locations/Locations';
 import Darwin from '../pages/Locations/Darwin';
 import Geelong from '../pages/Locations/Geelong';
@@ -144,6 +145,10 @@ export const routes: RouteObject[] = [
       {
         path: `${PATHS.educationBlog.replace(/^\//, '')}/:slug`,
         element: <BlogDetail />,
+      },
+      {
+        path: `${PATHS.educationTransitWarranty.replace(/^\//, '')}/:slug`,
+        element: <TransitWarrantyDetail />,
       },
       ...MOCK_PAGES.map<RouteObject>((page) => ({
         path: page.to.replace(/^\//, ''),
