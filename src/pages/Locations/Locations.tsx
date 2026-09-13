@@ -3,10 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import LocationLinkList from '../../components/Locations/LocationLinkList';
 import PackageDetailsForm from '../../components/Quote/PackageDetailsForm';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
-import {
-  LOCATION_CITIES,
-  POPULAR_ROUTES,
-} from '../../constants/locations';
+import { LOCATION_CITIES } from '../../constants/locations';
 import { PATHS } from '../../routes/paths';
 import { QUOTE_STEPS, getQuoteStepPath } from '../../routes/quoteSteps';
 import { PackageDetails } from '../../types/quote';
@@ -50,17 +47,6 @@ const Locations: React.FC = () => {
           And beyond! Find out more about our locations today, or get a quick quote
           online to find out how affordable we make freight shipping.
         </p>
-
-        <h2 className="mt-8 text-2xl font-bold text-navy">Popular Routes</h2>
-
-        <p className="mt-4">
-          Whether you&apos;re moving items in the heart of Melbourne, up north in
-          Brisbane or out in regional Western Australia, we can help you get your
-          freight there. Simply get a quote or view our popular courier routes
-          below:
-        </p>
-
-        <LocationLinkList items={POPULAR_ROUTES} />
       </div>
 
       <section aria-label="Get a Quote" className="mt-12 border-t border-black/10 pt-10">

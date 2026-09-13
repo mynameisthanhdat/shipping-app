@@ -25,6 +25,8 @@ import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
 import Hobart from '../pages/Locations/Hobart';
+import Sydney from '../pages/Locations/Sydney';
+import Melbourne from '../pages/Locations/Melbourne';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
@@ -64,6 +66,8 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.locations]: <Locations />,
   [PATHS.locationsHobart]: <Hobart />,
+  [PATHS.locationsSydney]: <Sydney />,
+  [PATHS.locationsMelbourne]: <Melbourne />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
   [PATHS.educationBlog]: <Blog />,
