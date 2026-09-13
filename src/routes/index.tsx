@@ -25,6 +25,17 @@ import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
 import Darwin from '../pages/Locations/Darwin';
+import Geelong from '../pages/Locations/Geelong';
+
+import Hobart from '../pages/Locations/Hobart';
+import SunshineCoast from '../pages/Locations/SunshineCoast';
+import GoldCoast from '../pages/Locations/GoldCoast';
+import Adelaide from '../pages/Locations/Adelaide';
+import Canberra from '../pages/Locations/Canberra';
+import Perth from '../pages/Locations/Perth';
+import Brisbane from '../pages/Locations/Brisbane';
+import Sydney from '../pages/Locations/Sydney';
+import Melbourne from '../pages/Locations/Melbourne';
 import GetAQuote from '../pages/GetAQuote';
 import PackageDetailsStep from '../pages/GetAQuote/PackageDetailsStep';
 import SelectQuoteStep from '../pages/GetAQuote/SelectQuoteStep';
@@ -64,6 +75,16 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.locations]: <Locations />,
   [PATHS.locationsDarwin]: <Darwin />,
+  [PATHS.locationsGeelong]: <Geelong />,
+  [PATHS.locationsHobart]: <Hobart />,
+  [PATHS.locationsSunshineCoast]: <SunshineCoast />,
+  [PATHS.locationsGoldCoast]: <GoldCoast />,
+  [PATHS.locationsAdelaide]: <Adelaide />,
+  [PATHS.locationsCanberra]: <Canberra />,
+  [PATHS.locationsPerth]: <Perth />,
+  [PATHS.locationsBrisbane]: <Brisbane />,
+  [PATHS.locationsSydney]: <Sydney />,
+  [PATHS.locationsMelbourne]: <Melbourne />,
   [PATHS.compareRates]: <CompareRates />,
   [PATHS.educationFaqs]: <Faqs />,
   [PATHS.educationBlog]: <Blog />,
