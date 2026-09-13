@@ -24,6 +24,7 @@ import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
+import Perth from '../pages/Locations/Perth';
 import Brisbane from '../pages/Locations/Brisbane';
 import Sydney from '../pages/Locations/Sydney';
 import Melbourne from '../pages/Locations/Melbourne';
@@ -65,6 +66,7 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.educationPackaging]: <PackagingRequirements />,
   [PATHS.educationAccountEnquiries]: <AccountEnquiries />,
   [PATHS.locations]: <Locations />,
+  [PATHS.locationsPerth]: <Perth />,
   [PATHS.locationsBrisbane]: <Brisbane />,
   [PATHS.locationsSydney]: <Sydney />,
   [PATHS.locationsMelbourne]: <Melbourne />,
