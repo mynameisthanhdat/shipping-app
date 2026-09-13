@@ -24,6 +24,7 @@ import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
 import Locations from '../pages/Locations/Locations';
+
 import Hobart from '../pages/Locations/Hobart';
 import Sydney from '../pages/Locations/Sydney';
 import Melbourne from '../pages/Locations/Melbourne';
