@@ -8,7 +8,7 @@ const startingFrom = '$5.10';
 const PerthLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         Perth Courier Services and Freight Transport
       </h2>
 
@@ -39,7 +39,7 @@ const PerthLocationContent: React.FC = () => (
     </section>
 
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         Save 30% on Perth&apos;s Best Courier &amp; Freight Services
       </h2>
 
@@ -69,7 +69,7 @@ const PerthLocationContent: React.FC = () => (
     </section>
 
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         Cheap Couriers, Parcel Delivery and Freight Transport from Perth
       </h2>
 

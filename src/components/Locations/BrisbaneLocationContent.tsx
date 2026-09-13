@@ -8,7 +8,7 @@ const startingFrom = '$6.99';
 const BrisbaneLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         Find out about our Brisbane courier service
       </h2>
 
@@ -57,7 +57,7 @@ const BrisbaneLocationContent: React.FC = () => (
     </section>
 
     <section>
-      <h2 className="text-2xl font-bold text-navy">Prices</h2>
+      <h2 className="text-xl font-bold text-navy">Prices</h2>
       <p className="mt-4 text-sm leading-relaxed text-navy">
         With our local prices starting out as low as {startingFrom}, you can trust Parcelio
         to deliver a service that suits your budget perfectly and even leaves you with a

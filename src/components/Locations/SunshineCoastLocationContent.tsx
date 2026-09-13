@@ -6,7 +6,7 @@ import { PATHS } from '../../routes/paths';
 const SunshineCoastLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         The reliable Sunshine Coast courier company for deliveries large and small
       </h2>
 

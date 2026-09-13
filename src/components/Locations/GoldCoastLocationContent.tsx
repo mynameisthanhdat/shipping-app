@@ -6,7 +6,7 @@ import { PATHS } from '../../routes/paths';
 const GoldCoastLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-navy">
         We have Couriers on the Gold Coast, QLD
       </h2>
 
