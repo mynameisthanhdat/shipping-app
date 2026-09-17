@@ -21,7 +21,7 @@ import {
   SECTION_TITLE,
   Select,
   TEXTAREA_CLASS,
-} from './fields';
+} from '../ui/fields';
 
 type SideErrors = Partial<Record<PartyFieldName, string>>;
 

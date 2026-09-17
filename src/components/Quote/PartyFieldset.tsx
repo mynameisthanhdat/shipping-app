@@ -2,7 +2,7 @@ import React from 'react';
 import { STREET_TYPES } from '../../mocks/collectionOptions';
 import { PartyDetails, PartyFieldName } from '../../types/quote';
 import { PartyFieldConfig } from './collectionFields';
-import { FIELD_CLASS, FieldError, SECTION_TITLE, Select } from './fields';
+import { FIELD_CLASS, FieldError, SECTION_TITLE, Select } from '../ui/fields';
 
 export type PartyFieldsetProps = {
   title: string;

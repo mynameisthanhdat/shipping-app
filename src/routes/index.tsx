@@ -20,6 +20,9 @@ import TransitWarranty from '../pages/Education/TransitWarranty';
 import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
+import OpenAccount from '../pages/OpenAccount';
+import SignIn from '../pages/SignIn';
+import ForgotPassword from '../pages/ForgotPassword';
 import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
@@ -87,6 +90,9 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.locationsSydney]: <Sydney />,
   [PATHS.locationsMelbourne]: <Melbourne />,
   [PATHS.compareRates]: <CompareRates />,
+  [PATHS.openAccount]: <OpenAccount />,
+  [PATHS.signIn]: <SignIn />,
+  [PATHS.forgotPassword]: <ForgotPassword />,
   [PATHS.educationFaqs]: <Faqs />,
   [PATHS.educationBlog]: <Blog />,
 };
@@ -122,9 +128,7 @@ const MOCK_PAGES = flattenNav([
   ...LOCATION_DETAIL_PAGES,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
-  // Linked from blog posts but no longer in any nav column.
-  { label: 'Pricing', to: PATHS.pricing },
-  { label: 'Ecommerce', to: PATHS.ecommerce },
+  { label: 'Terms & Conditions', to: PATHS.terms },
 ]).filter(
   (page, index, all) =>
     !EXPLICIT_PATHS.has(page.to) &&

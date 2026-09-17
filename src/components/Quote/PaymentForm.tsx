@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { EXPIRY_MONTHS, PAYMENT_METHODS, getExpiryYears } from '../../mocks/paymentOptions';
 import { PaymentMethod } from '../../types/quote';
-import { FIELD_CLASS, FieldError, Radio, SECTION_TITLE, Select } from './fields';
+import { FIELD_CLASS, FieldError, Radio, SECTION_TITLE, Select } from '../ui/fields';
 
 /**
  * Card details live here and nowhere else — never in the shared wizard draft.

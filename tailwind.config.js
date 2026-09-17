@@ -48,7 +48,9 @@ module.exports = {
         container: '1140px',
       },
       boxShadow: {
-        card: '0 4px 16px rgba(20, 20, 20, 0.10)',
+        card: '0 4px 16px rgba(21, 42, 71, 0.08)',
+        /** Soft lift under a primary action, tinted to the brand colour. */
+        brand: '0 6px 18px rgba(226, 104, 60, 0.28)',
       },
     },
   },

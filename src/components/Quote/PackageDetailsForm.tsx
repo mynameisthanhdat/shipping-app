@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ITEM_TYPES, POSTCODES } from '../../mocks/quoteOptions';
-import { FIELD_CLASS, FieldError, LABEL_CLASS, Radio, Select } from './fields';
+import { FIELD_CLASS, FieldError, LABEL_CLASS, Radio, Select } from '../ui/fields';
 import {
   AddressType,
   ItemTypeId,

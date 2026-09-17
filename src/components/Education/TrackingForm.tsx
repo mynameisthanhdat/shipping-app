@@ -3,7 +3,7 @@ import {
   TrackingLookup,
   createEmptyTrackingLookup,
 } from '../../types/tracking';
-import { FIELD_CLASS, FieldError } from '../Quote/fields';
+import { FIELD_CLASS, FieldError } from '../ui/fields';
 
 type FormErrors = Record<string, string>;
 
