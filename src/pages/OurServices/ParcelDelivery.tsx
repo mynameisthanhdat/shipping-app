@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import PackageDetailsForm from '../../components/Quote/PackageDetailsForm';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
 import { OUR_SERVICES_CONTENT } from '../../mocks/ourServices';
@@ -9,7 +10,7 @@ import { PackageDetails } from '../../types/quote';
 const { parcelDelivery } = OUR_SERVICES_CONTENT;
 
 const TextLink: React.FC<React.PropsWithChildren<{ to: string }>> = ({ to, children }) => (
-  <Link to={to} className="underline underline-offset-2 transition-colors hover:text-brand">
+  <Link to={to} className="underline underline-offset-2 transition-colors hover:text-brand-deep">
     {children}
   </Link>
 );
@@ -22,12 +23,14 @@ const ParcelDelivery: React.FC = () => {
   };
 
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <TextLink to={PATHS.home}>Home</TextLink> /{' '}
-        <TextLink to={PATHS.services}>Our services</TextLink> /{' '}
-        <span aria-current="page">{parcelDelivery.breadcrumb}</span>
-      </nav>
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-ink sm:pt-8">
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: 'Our services', to: PATHS.services },
+          { label: parcelDelivery.breadcrumb },
+        ]}
+      />
 
       <div className="mx-auto mt-7 max-w-[760px] sm:mt-5">
         <h1 className="text-center text-2xl font-bold leading-tight sm:text-[26px]">
@@ -39,7 +42,7 @@ const ParcelDelivery: React.FC = () => {
             <p>{parcelDelivery.lead}</p>
             <p>
               {parcelDelivery.courierNetwork.prefix}{' '}
-              <TextLink to={PATHS.courierNetwork}>
+              <TextLink to={PATHS.couriers}>
                 {parcelDelivery.courierNetwork.linkLabel}
               </TextLink>
               , {parcelDelivery.courierNetwork.suffix}

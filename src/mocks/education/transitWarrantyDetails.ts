@@ -45,7 +45,7 @@ export const TRANSIT_WARRANTY_DETAILS: Record<string, TransitWarrantyDetail> = {
     id: 'allied-express',
     pageTitle: 'Allied Express Road Express Transit Warranty Cover',
     intro:
-      'By requesting Parcelio Pty Ltd (“the Company”) provide one or other of the warranties it offers in respect of loss or damage to goods defined hereunder, the Customer agrees to these warranty terms and conditions (WTCs) which are supplementary to the trading terms and conditions (TTCs) of the Company. Accordingly, the Customer agrees that it has received and read the TTCs which are deemed incorporated herein. To the extent of any inconsistency between the interpretation, meaning or application of these WTCs and the TTCs, the WTCs shall prevail.',
+      'By requesting Bee Direct Pty Ltd (“the Company”) provide one or other of the warranties it offers in respect of loss or damage to goods defined hereunder, the Customer agrees to these warranty terms and conditions (WTCs) which are supplementary to the trading terms and conditions (TTCs) of the Company. Accordingly, the Customer agrees that it has received and read the TTCs which are deemed incorporated herein. To the extent of any inconsistency between the interpretation, meaning or application of these WTCs and the TTCs, the WTCs shall prevail.',
     sections: [
       {
         id: 'definitions',
@@ -221,7 +221,7 @@ export const TRANSIT_WARRANTY_DETAILS: Record<string, TransitWarrantyDetail> = {
     ],
     additionalCover: {
       title: 'Additional Cover for Excluded Items',
-      body: 'Upon negotiation with the Customer in writing, the Company may agree to greater responsibility and liability than set out in this Parcelio Warranty document upon payment of additional charges by the Customer as required. Applicable rates for greater responsibility and liability are subject of discussion and negotiation between the parties. If you wish to negotiate a greater level of liability with the company please contact us.',
+      body: 'Upon negotiation with the Customer in writing, the Company may agree to greater responsibility and liability than set out in this Bee Direct Warranty document upon payment of additional charges by the Customer as required. Applicable rates for greater responsibility and liability are subject of discussion and negotiation between the parties. If you wish to negotiate a greater level of liability with the company please contact us.',
       contactTo: PATHS.contactUs,
       contactLabel: 'Contact us',
     },

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from '../../components/CtaBanner';
 import CategoryGrid from '../../components/Education/CategoryGrid';
 import FaqAccordion from '../../components/Education/FaqAccordion';
@@ -10,26 +10,19 @@ const Faqs: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span>
-            {' '}
-            /{' '}
-            <Link to={PATHS.education} className="transition-colors hover:text-navy">
-              Education Centre
-            </Link>
-            {' '}
-            / FAQ&apos;s
-          </span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Education Centre', to: PATHS.education },
+            { label: "FAQ's" },
+          ]}
+        />
 
         <div className="mt-6 text-center">
-          <h1 className="text-3xl font-bold text-navy">
+          <h1 className="text-3xl font-bold text-ink">
             Looking for answers? You&apos;re in the right place.
           </h1>
-          <p className="mt-3.5 text-lg font-bold text-navy">
+          <p className="mt-3.5 text-lg font-bold text-ink">
             To start looking for answers, choose your category!
           </p>
         </div>
@@ -39,7 +32,7 @@ const Faqs: React.FC = () => {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-start text-2xl font-bold text-navy">
+          <h2 className="text-start text-2xl font-bold text-ink">
             {FAQ_SECTION.title}
           </h2>
           <p className="mt-4 text-sm leading-normal text-[#5a6472]">

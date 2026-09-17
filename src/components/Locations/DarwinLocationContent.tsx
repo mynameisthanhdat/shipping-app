@@ -6,23 +6,23 @@ import { PATHS } from '../../routes/paths';
 const DarwinLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-ink">
         Trust the freight specialists to get your package delivered safely across Darwin
         and the surrounds
       </h2>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
-        Parcelio&apos;s vast experience working in Darwin and throughout the Northern
+      <p className="mt-4 text-sm leading-relaxed text-ink">
+        Bee Direct&apos;s vast experience working in Darwin and throughout the Northern
         Territory allows us to provide the efficient, timely, and reliable courier services
         you require. We have worked with numerous individuals and businesses over the
         years, ensuring our freight delivery services meet their specific requirements.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         Our team of couriers can provide a number of services, including:
       </p>
 
-      <ul className="mt-1 list-disc space-y-2 pl-5 text-sm leading-relaxed text-navy">
+      <ul className="mt-1 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink">
         <li>
           <span className="font-bold">Interstate Courier Services</span> – for packages
           that need delivering to other states and territories outside of Northern
@@ -39,23 +39,23 @@ const DarwinLocationContent: React.FC = () => (
         </li>
       </ul>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
+      <p className="mt-4 text-sm leading-relaxed text-ink">
         To learn more about how our Darwin couriers can help you, get in contact with the
-        team at Parcelio today. You can also check out our various other Australian
+        team at Bee Direct today. You can also check out our various other Australian
         locations.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         <Link
           to={PATHS.quote}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           Get an instant quote
         </Link>
         {' or '}
         <Link
           to={PATHS.compareRates}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           compare rates
         </Link>

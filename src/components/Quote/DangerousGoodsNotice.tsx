@@ -59,7 +59,7 @@ const DangerousGoodsNotice: React.FC<DangerousGoodsNoticeProps> = ({
       Dangerous goods declaration
     </h2>
 
-    <p className="mt-2 text-sm text-navy">
+    <p className="mt-2 text-sm text-ink">
       Please see some examples of Dangerous Goods which are restricted throughout our network.
     </p>
 

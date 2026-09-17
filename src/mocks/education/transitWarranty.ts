@@ -62,9 +62,9 @@ export const TRANSIT_WARRANTY_SECTIONS: TransitWarrantySection[] = [
         linkLabel: "Click for MRL Global's Transit Warranty details",
       },
       {
-        id: 'transdirect-same-day',
-        title: 'Transdirect Same Day Transit Warranty',
-        linkLabel: "Click for Transdirect Same Day's Transit Warranty details",
+        id: 'bee-direct-same-day',
+        title: 'Bee Direct Same Day Transit Warranty',
+        linkLabel: "Click for Bee Direct Same Day's Transit Warranty details",
       },
       {
         id: 'capital-transport',

@@ -11,14 +11,14 @@ type WarrantyCardProps = {
 };
 
 const linkClass =
-  'mt-3 inline-block text-xs text-brand transition-colors hover:text-brand-hover';
+  'mt-3 inline-block text-xs text-brand-deep transition-colors hover:text-brand-deep-hover';
 
 const WarrantyCard: React.FC<WarrantyCardProps> = ({ item }) => {
   const hasDetail = hasTransitWarrantyDetail(item.id);
 
   return (
     <article className="rounded-lg border border-muted-surface/60 bg-white px-7 py-6">
-      <h3 className="text-base font-bold text-navy">{item.title}</h3>
+      <h3 className="text-base font-bold text-ink">{item.title}</h3>
       {hasDetail ? (
         <Link to={getTransitWarrantyDetailPath(item.id)} className={linkClass}>
           {item.linkLabel}

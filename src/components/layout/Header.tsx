@@ -4,7 +4,7 @@ import { MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
 import Logo from './Logo';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-  `text-sm transition-colors hover:text-brand ${isActive ? 'text-brand' : 'text-navy'}`;
+  `text-sm transition-colors hover:text-brand-deep ${isActive ? 'text-brand-deep' : 'text-ink'}`;
 
 const ChevronDown: React.FC<{ open: boolean }> = ({ open }) => (
   <svg
@@ -65,8 +65,8 @@ const NavDropdown: React.FC<{ item: NavItem }> = ({ item }) => {
                 to={child.to}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `block px-5 py-2.5 text-sm transition-colors hover:bg-navy/5 hover:text-brand ${
-                    isActive ? 'text-brand' : 'text-navy'
+                  `block px-5 py-2.5 text-sm transition-colors hover:bg-ink/5 hover:text-brand-deep ${
+                    isActive ? 'text-brand-deep' : 'text-ink'
                   }`
                 }
               >
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white">
       <div className="mx-auto flex h-[84px] max-w-container items-center gap-8 px-6">
-        <Logo className="text-xl text-navy" />
+        <Logo className="text-xl text-ink" />
 
         <nav className="hidden flex-1 items-center gap-8 lg:flex">
           {MAIN_NAV.map((item) =>
@@ -101,19 +101,19 @@ const Header: React.FC = () => {
         <div className="ml-auto flex items-center gap-6">
           <NavLink
             to={PATHS.openAccount}
-            className="hidden text-sm text-navy transition-colors hover:text-brand md:block"
+            className="hidden text-sm text-ink transition-colors hover:text-brand-deep md:block"
           >
             Open account
           </NavLink>
           <NavLink
             to={PATHS.signIn}
-            className="hidden text-sm text-navy transition-colors hover:text-brand md:block"
+            className="hidden text-sm text-ink transition-colors hover:text-brand-deep md:block"
           >
             Sign in
           </NavLink>
           <Link
             to={PATHS.quote}
-            className="rounded bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-hover"
+            className="rounded bg-brand px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-brand-hover"
           >
             Get a Quote
           </Link>

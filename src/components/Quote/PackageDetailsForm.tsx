@@ -246,7 +246,7 @@ const PackageDetailsForm: React.FC<PackageDetailsFormProps> = ({
                 <button
                   type="button"
                   onClick={() => removeItem(item.id)}
-                  className="justify-self-start text-sm text-muted underline transition-colors hover:text-navy sm:col-span-2 md:col-span-6"
+                  className="justify-self-start text-sm text-muted underline transition-colors hover:text-ink sm:col-span-2 md:col-span-6"
                 >
                   Remove item {index + 1}
                 </button>
@@ -259,7 +259,7 @@ const PackageDetailsForm: React.FC<PackageDetailsFormProps> = ({
       <button
         type="button"
         onClick={addItem}
-        className="mt-4 text-sm font-semibold text-brand transition-colors hover:text-brand-hover"
+        className="mt-4 text-sm font-semibold text-brand-deep transition-colors hover:text-brand-deep-hover"
       >
         + Add Item
       </button>
@@ -267,7 +267,7 @@ const PackageDetailsForm: React.FC<PackageDetailsFormProps> = ({
       <div className="mt-8 flex justify-end">
         <button
           type="submit"
-          className="rounded-md bg-brand px-9 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-brand-hover"
+          className="rounded-md bg-brand px-9 py-3.5 text-sm font-semibold uppercase tracking-wide text-ink transition-colors hover:bg-brand-hover"
         >
           {submitLabel}
         </button>

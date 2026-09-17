@@ -18,8 +18,8 @@ const QuoteStepper: React.FC<QuoteStepperProps> = ({ currentIndex, completedCoun
 
         const circle = (
           <span
-            className={`flex h-11 w-11 items-center justify-center rounded-full text-lg font-bold text-white ${
-              isReached ? 'bg-success' : 'bg-step'
+            className={`flex h-11 w-11 items-center justify-center rounded-full text-lg font-bold ${
+              isReached ? 'bg-brand text-ink' : 'bg-step text-white'
             }`}
           >
             {index + 1}
@@ -29,7 +29,7 @@ const QuoteStepper: React.FC<QuoteStepperProps> = ({ currentIndex, completedCoun
         const label = (
           <span
             className={`mt-2.5 block text-center text-sm leading-tight ${
-              isReached ? 'font-bold text-navy' : 'text-muted'
+              isReached ? 'font-bold text-ink' : 'text-muted'
             }`}
           >
             {step.label}

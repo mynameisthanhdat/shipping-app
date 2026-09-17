@@ -1,8 +1,9 @@
 /**
  * Mock rate data for the Compare Rates page.
  *
- * Figures for the Sydney lane mirror the published Transdirect rate cards
- * (https://www.transdirect.com.au/compare-rates/). Every other lane is modelled
+ * Figures for the Sydney lane mirror the rate cards published by Transdirect
+ * (https://www.transdirect.com.au/compare-rates/), the reference site this data
+ * was taken from. Every other lane is modelled
  * from road distance and billable weight, so the numbers stay plausible and
  * monotonic but are NOT real quotes. Swap this file for an API call when the
  * pricing service is ready.

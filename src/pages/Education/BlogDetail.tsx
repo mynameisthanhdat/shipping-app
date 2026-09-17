@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from '../../components/CtaBanner';
 import BlogArticleBody from '../../components/Education/BlogArticleBody';
 import { getBlogPostBySlug } from '../../mocks/education/blog';
@@ -17,21 +18,18 @@ const BlogDetail: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span> / </span>
-          <Link to={PATHS.educationBlog} className="transition-colors hover:text-navy">
-            Blog
-          </Link>
-          <span> / {shortTitle}</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Blog', to: PATHS.educationBlog },
+            { label: shortTitle },
+          ]}
+        />
 
         <article className="mt-6">
           <header className="text-center">
-            <h1 className="text-3xl font-bold text-navy">{post.title}</h1>
-            <p className="mt-3.5 text-xs font-bold uppercase tracking-wide text-brand">
+            <h1 className="text-3xl font-bold text-ink">{post.title}</h1>
+            <p className="mt-3.5 text-xs font-bold uppercase tracking-wide text-brand-deep">
               {post.categoryLabel}
               <span className="mx-2" aria-hidden="true">
                 •
@@ -56,7 +54,7 @@ const BlogDetail: React.FC = () => {
 
       <div className="mx-auto mt-auto w-full max-w-container px-6 py-8">
         <CtaBanner
-          title="Ready to automate your store's shipping? Connect Parcelio and start selling smarter today!"
+          title="Ready to automate your store's shipping? Connect Bee Direct and start selling smarter today!"
           primaryAction={{ label: 'Connect My Store', to: PATHS.ecommerce }}
           secondaryAction={{ label: 'See Plans & Pricing', to: PATHS.pricing }}
         />

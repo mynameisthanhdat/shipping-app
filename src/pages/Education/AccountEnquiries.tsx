@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from "../../components/CtaBanner";
 import AccountBenefits from "../../components/Education/AccountBenefits";
 import AccountFaqList from "../../components/Education/AccountFaqList";
@@ -19,25 +20,19 @@ const AccountEnquiries: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span> / </span>
-          <Link
-            to={PATHS.education}
-            className="transition-colors hover:text-navy"
-          >
-            Education Centre
-          </Link>
-          <span> / Account Enquiries</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Education Centre', to: PATHS.education },
+            { label: 'Account Enquiries' },
+          ]}
+        />
 
         <div className="mt-6 text-center">
-          <h1 className="text-3xl font-bold text-navy">
-            Open A Free Shipping Account With Transdirect
+          <h1 className="text-3xl font-bold text-ink">
+            Open A Free Shipping Account With Bee Direct
           </h1>
-          <p className="mt-3.5 text-lg font-bold text-navy">
+          <p className="mt-3.5 text-lg font-bold text-ink">
             To start looking for answers, choose your category!
           </p>
         </div>
@@ -48,7 +43,7 @@ const AccountEnquiries: React.FC = () => {
 
         <section className="mt-12">
           <p className="text-start text-sm leading-relaxed text-muted">
-            Want to save on every delivery you book? Open a free Transdirect
+            Want to save on every delivery you book? Open a free Bee Direct
             shipping account to enjoy member-only discounts, faster bookings and
             real-time parcel tracking – all from one simple-to-use dashboard. No
             matter what your shipping needs are, our courier account puts you in
@@ -57,7 +52,7 @@ const AccountEnquiries: React.FC = () => {
           <p className="mt-4 text-start">
             <a
               href="#account-signup"
-              className="text-sm font-bold text-brand transition-colors hover:text-brand-hover"
+              className="text-sm font-bold text-brand-deep transition-colors hover:text-brand-deep-hover"
             >
               Open an account now and start saving.
             </a>
@@ -65,7 +60,7 @@ const AccountEnquiries: React.FC = () => {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-bold text-navy">
+          <h2 className="text-2xl font-bold text-ink">
             Save on Shipping by Becoming a Member
           </h2>
           <div className="mt-6">
@@ -74,8 +69,8 @@ const AccountEnquiries: React.FC = () => {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-bold text-navy">
-            How to Open a Transdirect Shipping Account
+          <h2 className="text-2xl font-bold text-ink">
+            How to Open a Bee Direct Shipping Account
           </h2>
           <div className="mt-6">
             <AccountHowToSteps />
@@ -83,7 +78,7 @@ const AccountEnquiries: React.FC = () => {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-bold text-navy">
+          <h2 className="text-2xl font-bold text-ink">
             Reviews from Our Shipping Account Members
           </h2>
           <div className="mt-6">
@@ -92,11 +87,11 @@ const AccountEnquiries: React.FC = () => {
         </section>
 
         <section className="mt-12 text-center">
-          <h2 className="text-2xl font-bold text-navy">
+          <h2 className="text-2xl font-bold text-ink">
             Shipping Guidelines and Restrictions
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-muted">
-            Transdirect accepts most items for transport, from small parcels to
+            Bee Direct accepts most items for transport, from small parcels to
             larger freight deliveries. The maximum length we can carry is 5
             metres (500cm).
           </p>
@@ -111,8 +106,8 @@ const AccountEnquiries: React.FC = () => {
         </section>
 
         <section className="mt-12" id="account-signup">
-          <h2 className="text-center text-2xl font-bold text-navy">
-            Open Your Transdirect Shipping Account Today
+          <h2 className="text-center text-2xl font-bold text-ink">
+            Open Your Bee Direct Shipping Account Today
           </h2>
           <p className="mt-3 text-center text-sm leading-relaxed text-muted">
             Ready to start saving? Take advantage of membership discounts by
@@ -124,7 +119,7 @@ const AccountEnquiries: React.FC = () => {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-center text-2xl font-bold text-navy">
+          <h2 className="text-center text-2xl font-bold text-ink">
             Shipping Account FAQs
           </h2>
           <div className="mt-8">

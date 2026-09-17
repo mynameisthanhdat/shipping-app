@@ -5,7 +5,7 @@ const formatPrice = (value: number) => `$${value.toFixed(2)}`;
 
 const RateTableCard: React.FC<{ card: RateCard }> = ({ card }) => (
   <section className="rounded-xl border border-black/10 px-5 py-5">
-    <h3 className="text-center text-base font-bold text-navy">{card.title}</h3>
+    <h3 className="text-center text-base font-bold text-ink">{card.title}</h3>
 
     <table className="mt-4 w-full border-collapse">
       <thead>
@@ -36,15 +36,15 @@ const RateTableCard: React.FC<{ card: RateCard }> = ({ card }) => (
         {card.rows.map((row) => (
           <tr key={row.weight}>
             <th scope="row" className="py-1.5 pr-2 text-left">
-              <span className="inline-block rounded bg-muted-surface/40 px-2 py-1 text-xs font-semibold text-navy">
+              <span className="inline-block rounded bg-muted-surface/40 px-2 py-1 text-xs font-semibold text-ink">
                 {row.weight}
               </span>
             </th>
             <td className="py-1.5 text-left text-xs text-muted">{row.itemType}</td>
-            <td className="py-1.5 text-right text-sm font-semibold text-navy-light">
+            <td className="py-1.5 text-right text-sm font-semibold text-ink-light">
               {formatPrice(row.member)}
             </td>
-            <td className="py-1.5 text-right text-sm font-semibold text-navy-light">
+            <td className="py-1.5 text-right text-sm font-semibold text-ink-light">
               {formatPrice(row.frequentUser)}
             </td>
           </tr>

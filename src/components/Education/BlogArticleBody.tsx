@@ -16,7 +16,7 @@ const BlogArticleBody: React.FC<BlogArticleBodyProps> = ({
     {blocks.map((block, index) => {
       if (block.type === 'heading') {
         return (
-          <h2 key={`${block.type}-${index}`} className="text-xl font-bold text-navy">
+          <h2 key={`${block.type}-${index}`} className="text-xl font-bold text-ink">
             {block.number}. {block.content}
           </h2>
         );
@@ -43,7 +43,7 @@ const BlogArticleBody: React.FC<BlogArticleBodyProps> = ({
       );
     })}
 
-    <h2 className="pt-2 text-xl font-bold text-navy">{closingTitle}</h2>
+    <h2 className="pt-2 text-xl font-bold text-ink">{closingTitle}</h2>
     <p className="text-sm leading-relaxed text-muted md:text-base">{closingBody}</p>
   </div>
 );

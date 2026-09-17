@@ -20,15 +20,15 @@ const PaymentStep: React.FC = () => {
       {submitted ? (
         <div className="border-t border-black/10 pt-8">
           <div className="rounded-lg border border-black/10 bg-muted-surface/20 p-6">
-            <h2 className="text-[15px] font-bold text-navy">Booking details captured</h2>
-            <p className="mt-2 text-sm text-navy">
+            <h2 className="text-[15px] font-bold text-ink">Booking details captured</h2>
+            <p className="mt-2 text-sm text-ink">
               Card details validated and the booking is ready to submit. No charge has been
               made — the payment provider and booking API are not connected yet.
             </p>
             <button
               type="button"
               onClick={() => setSubmitted(false)}
-              className="mt-5 rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-navy transition-colors hover:bg-muted-surface/70"
+              className="mt-5 rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-muted-surface/70"
             >
               Back to payment
             </button>

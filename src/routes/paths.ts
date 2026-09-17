@@ -11,16 +11,14 @@ export const PATHS = {
   openAccount: '/open-account',
   signIn: '/sign-in',
   quote: '/get-a-quote',
-  trackShipment: '/track-shipment',
-  courierNetwork: '/courier-network',
   pricing: '/pricing',
   business: '/business',
   individuals: '/individuals-and-families',
   ecommerce: '/ecommerce',
   api: '/api-for-developers',
   terms: '/terms-and-conditions',
-  contactUs: '/contact-us',
   aboutUs: '/about-us',
+  contactUs: '/contact-us',
 
   // Submenu paths that have a real page behind them.
   servicesExpertInterstateCouriers: `${SERVICES}/expert-inter-state-couriers-in-aus`,
@@ -110,17 +108,15 @@ export const MAIN_NAV: NavItem[] = [
 ];
 
 export const FOOTER_SERVICES: NavItem[] = [
-  { label: 'Track Shipment', to: PATHS.trackShipment },
+  { label: 'Track Shipment', to: PATHS.educationTracking },
   { label: 'Get a Quote', to: PATHS.quote },
-  { label: 'Courier Network', to: PATHS.courierNetwork },
-  { label: 'Pricing', to: PATHS.pricing },
+  { label: 'Courier Network', to: PATHS.couriers },
 ];
 
-export const FOOTER_SOLUTIONS: NavItem[] = [
-  { label: 'Business', to: PATHS.business },
-  { label: 'Individuals & Families', to: PATHS.individuals },
-  { label: 'Ecommerce', to: PATHS.ecommerce },
-  { label: 'API for Developers', to: PATHS.api },
+export const FOOTER_CONTACT: NavItem[] = [
+  { label: 'About us', to: PATHS.aboutUs },
+  { label: 'Contact us', to: PATHS.contactUs },
+  { label: 'Terms and conditions', to: PATHS.terms },
 ];
 
 /** Flattens a nav tree into a single list of items, parents included. */

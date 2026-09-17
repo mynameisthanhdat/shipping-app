@@ -5,7 +5,7 @@ import { PATHS } from '../../routes/paths';
 import { AdditionalInformation } from '../../types/quote';
 import { Checkbox, FieldError, SECTION_TITLE } from './fields';
 
-const LINK = 'underline transition-colors hover:text-brand';
+const LINK = 'underline transition-colors hover:text-brand-deep';
 
 type ConsentKey = keyof AdditionalInformation;
 
@@ -89,7 +89,7 @@ const AdditionalInformationForm: React.FC<AdditionalInformationFormProps> = ({
 
         <ul className="mt-5 list-disc space-y-4 pl-5">
           {PACKING_NOTES.map((note) => (
-            <li key={note} className="text-sm leading-relaxed text-navy">
+            <li key={note} className="text-sm leading-relaxed text-ink">
               {note}
             </li>
           ))}
@@ -125,13 +125,13 @@ const AdditionalInformationForm: React.FC<AdditionalInformationFormProps> = ({
         <button
           type="button"
           onClick={onBack}
-          className="rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-navy transition-colors hover:bg-muted-surface/70"
+          className="rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-muted-surface/70"
         >
           Back
         </button>
         <button
           type="submit"
-          className="rounded-md bg-brand px-8 py-2.5 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-brand-hover"
+          className="rounded-md bg-brand px-8 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-brand-hover"
         >
           Next
         </button>

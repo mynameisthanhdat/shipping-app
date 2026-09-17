@@ -6,20 +6,20 @@ import { PATHS } from '../../routes/paths';
 const HobartLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-xl font-bold text-navy">
-        Let Parcelio handle your shipping needs throughout Hobart and the surrounds
+      <h2 className="text-xl font-bold text-ink">
+        Let Bee Direct handle your shipping needs throughout Hobart and the surrounds
       </h2>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
-        Parcelio is proud to provide premium courier services across Hobart, with a focus
+      <p className="mt-4 text-sm leading-relaxed text-ink">
+        Bee Direct is proud to provide premium courier services across Hobart, with a focus
         on reliability, cost-efficiency, and timely turnarounds. We specialise in assisting
         residents and commercial clients right across Australia with their custom shipping
         needs, including throughout Tasmania.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">Our courier services include:</p>
+      <p className="mt-3 text-sm leading-relaxed text-ink">Our courier services include:</p>
 
-      <ul className="mt-1 list-disc space-y-0.5 pl-5 text-sm leading-relaxed text-navy">
+      <ul className="mt-1 list-disc space-y-0.5 pl-5 text-sm leading-relaxed text-ink">
         <li>Interstate Delivery to states and territories across Australia</li>
         <li>Same Day Delivery to help you stick with your speedy timeframe</li>
         <li>Overnight Delivery for slightly less demanding turnaround times</li>
@@ -29,22 +29,22 @@ const HobartLocationContent: React.FC = () => (
         </li>
       </ul>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
-        Contact the couriers at Parcelio today and find out more about how we can assist
+      <p className="mt-4 text-sm leading-relaxed text-ink">
+        Contact the couriers at Bee Direct today and find out more about how we can assist
         you in Hobart or in one of our many other locations throughout Australia.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         <Link
           to={PATHS.quote}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           Get an instant quote
         </Link>
         {' or '}
         <Link
           to={PATHS.compareRates}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           compare rates
         </Link>

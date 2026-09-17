@@ -29,8 +29,8 @@ const BlogTopicFilter: React.FC<BlogTopicFilterProps> = ({
           onClick={() => onChange(topic.id)}
           className={`rounded-full px-5 py-2 text-sm font-bold transition-colors ${
             isActive
-              ? 'bg-brand text-white'
-              : 'bg-muted-surface/40 text-navy hover:bg-brand hover:text-white'
+              ? 'bg-brand text-ink'
+              : 'bg-muted-surface/40 text-ink hover:bg-brand hover:text-ink'
           }`}
         >
           {topic.label}

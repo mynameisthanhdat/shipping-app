@@ -3,9 +3,9 @@ import { CARRIER_QUOTES } from '../../mocks/carrierQuotes';
 import { ITEM_TYPES } from '../../mocks/quoteOptions';
 import { CollectionDetails, PartyDetails, QuoteDraft } from '../../types/quote';
 
-const ROW = 'text-sm text-navy';
+const ROW = 'text-sm text-ink';
 const KEY = 'font-bold';
-const INDENT = 'pl-4 text-sm text-navy';
+const INDENT = 'pl-4 text-sm text-ink';
 
 const Row: React.FC<{ label: string; value: string }> = ({ label, value }) => (
   <p className={ROW}>
@@ -66,7 +66,7 @@ const QuoteSummaryBar: React.FC<QuoteSummaryBarProps> = ({ draft, variant = 'com
   const extraItems = packageDetails.items.length - 1;
   const isFull = variant === 'full';
 
-  const columnTitle = `text-sm font-bold text-navy${isFull ? ' uppercase tracking-wide' : ''}`;
+  const columnTitle = `text-sm font-bold text-ink${isFull ? ' uppercase tracking-wide' : ''}`;
   const instructions = isFull ? listInstructions(collectionDetails) : [];
   const addressType = (type: string) => (type === 'commercial' ? 'Commercial' : 'Residential');
 

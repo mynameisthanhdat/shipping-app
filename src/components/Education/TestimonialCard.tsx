@@ -6,7 +6,7 @@ type TestimonialCardProps = {
 };
 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => (
-  <div className="text-sm font-bold text-brand" aria-label={`${rating} out of 5 stars`}>
+  <div className="text-sm font-bold text-brand-deep" aria-label={`${rating} out of 5 stars`}>
     {'★'.repeat(rating)}
     {'☆'.repeat(5 - rating)}
   </div>
@@ -21,7 +21,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => (
     </p>
 
     <footer className="mt-5">
-      <p className="text-sm font-bold text-navy">{testimonial.authorName}</p>
+      <p className="text-sm font-bold text-ink">{testimonial.authorName}</p>
       <p className="mt-1 text-xs text-muted">{testimonial.authorRole}</p>
     </footer>
   </article>

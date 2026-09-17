@@ -8,7 +8,7 @@ type ShippingTypeSelectorProps = {
 
 const ShippingTypeSelector: React.FC<ShippingTypeSelectorProps> = ({ value, onChange }) => (
   <div>
-    <h2 className="text-sm font-bold text-navy">What are you shipping?</h2>
+    <h2 className="text-sm font-bold text-ink">What are you shipping?</h2>
 
     <div
       role="radiogroup"
@@ -27,11 +27,11 @@ const ShippingTypeSelector: React.FC<ShippingTypeSelectorProps> = ({ value, onCh
             onClick={() => onChange(type.id)}
             className={`rounded-lg border px-4 py-5 text-center transition-colors ${
               selected
-                ? 'border-brand bg-brand/[0.03]'
-                : 'border-black/10 hover:border-navy/30'
+                ? 'border-brand-deep bg-brand-soft'
+                : 'border-black/10 hover:border-ink/30'
             }`}
           >
-            <span className="block text-sm font-bold text-navy">{type.label}</span>
+            <span className="block text-sm font-bold text-ink">{type.label}</span>
             <span className="mt-1 block text-xs text-muted">{type.description}</span>
           </button>
         );

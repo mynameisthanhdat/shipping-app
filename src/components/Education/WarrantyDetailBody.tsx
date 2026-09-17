@@ -62,7 +62,7 @@ const WarrantyDetailBody: React.FC<WarrantyDetailBodyProps> = ({ detail }) => (
     <div className="mt-10 space-y-10">
       {detail.sections.map((section) => (
         <section key={section.id}>
-          <h2 className="text-2xl font-bold text-navy">{section.title}</h2>
+          <h2 className="text-2xl font-bold text-ink">{section.title}</h2>
           <div className="mt-4 space-y-4">
             {section.blocks.map((block, index) => (
               <WarrantyBlock key={`${section.id}-${block.type}-${index}`} block={block} />
@@ -73,12 +73,12 @@ const WarrantyDetailBody: React.FC<WarrantyDetailBodyProps> = ({ detail }) => (
     </div>
 
     <section className="mt-10">
-      <h2 className="text-2xl font-bold text-navy">{detail.additionalCover.title}</h2>
+      <h2 className="text-2xl font-bold text-ink">{detail.additionalCover.title}</h2>
       <p className="mt-4 text-sm leading-relaxed text-muted">
         {detail.additionalCover.body}{' '}
         <Link
           to={detail.additionalCover.contactTo}
-          className="font-semibold text-brand transition-colors hover:text-brand-hover"
+          className="font-semibold text-brand-deep transition-colors hover:text-brand-deep-hover"
         >
           {detail.additionalCover.contactLabel}
         </Link>

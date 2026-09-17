@@ -1,15 +1,15 @@
 {
-  "short_name": "Parcelio",
-  "name": "Parcelio — Affordable shipping for everyone",
+  "short_name": "Bee Direct",
+  "name": "Bee Direct — Affordable shipping for everyone",
   "icons": [
     {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "128x128"
+      "src": "logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#152a47",
+  "theme_color": "#f6be00",
   "background_color": "#ffffff"
 }

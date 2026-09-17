@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { PATHS } from '../../routes/paths';
 
 const Hero: React.FC = () => (
-  <section className="bg-navy">
+  <section className="bg-ink">
     <div className="mx-auto w-full max-w-container px-6 pb-20 pt-14 md:pb-32 md:pt-14">
-      <span className="inline-flex rounded-full bg-navy-light px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-brand">
+      <span className="inline-flex rounded-full bg-ink-light px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-brand-deep">
         TRUSTED BY 50,000+ BUSINESSES
       </span>
 
@@ -22,7 +22,7 @@ const Hero: React.FC = () => (
       <div className="mt-8 flex flex-wrap gap-4">
         <Link
           to={PATHS.quote}
-          className="inline-flex items-center justify-center rounded bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-hover"
+          className="inline-flex items-center justify-center rounded bg-brand px-5 py-2.5 text-sm font-semibold text-ink transition-colors hover:bg-brand-hover"
         >
           Get Instant Quote
         </Link>

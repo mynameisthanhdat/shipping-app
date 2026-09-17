@@ -1,18 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import { OUR_SERVICES_CONTENT } from '../../mocks/ourServices';
 import { PATHS } from '../../routes/paths';
 
 const { carbonNeutral } = OUR_SERVICES_CONTENT;
-
-const BreadcrumbLink: React.FC<React.PropsWithChildren<{ to: string }>> = ({
-  to,
-  children,
-}) => (
-  <Link to={to} className="transition-colors hover:text-navy">
-    {children}
-  </Link>
-);
 
 const HighlightedParagraph: React.FC<{
   text: string;
@@ -34,12 +25,14 @@ const HighlightedParagraph: React.FC<{
 };
 
 const CarbonNeutralDelivery: React.FC = () => (
-  <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
-    <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-      <BreadcrumbLink to={PATHS.home}>Home</BreadcrumbLink> /{' '}
-      <BreadcrumbLink to={PATHS.services}>Our services</BreadcrumbLink> /{' '}
-      <span aria-current="page">{carbonNeutral.breadcrumb}</span>
-    </nav>
+  <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-ink sm:pt-8">
+    <Breadcrumb
+      items={[
+        { label: 'Home', to: PATHS.home },
+        { label: 'Our services', to: PATHS.services },
+        { label: carbonNeutral.breadcrumb },
+      ]}
+    />
 
     <div className="mx-auto mt-7 max-w-[760px] sm:mt-5">
       <h1 className="text-center text-2xl font-bold leading-tight sm:text-[26px]">

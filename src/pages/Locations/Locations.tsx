@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import LocationLinkList from '../../components/Locations/LocationLinkList';
 import PackageDetailsForm from '../../components/Quote/PackageDetailsForm';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
@@ -16,24 +17,24 @@ const Locations: React.FC = () => {
   };
 
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-8 text-navy">
-      <nav aria-label="Breadcrumb" className="text-sm text-muted">
-        <Link to={PATHS.home} className="transition-colors hover:text-navy">
-          Home
-        </Link>
-        <span> / Locations</span>
-      </nav>
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-8 text-ink">
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: 'Locations' },
+        ]}
+      />
 
-      <h1 className="mt-6 text-center text-3xl font-bold text-navy">
+      <h1 className="mt-6 text-center text-3xl font-bold text-ink">
         Courier Locations Australia
       </h1>
 
       <div className="mx-auto mt-10 max-w-4xl text-sm leading-relaxed">
         <p>
-          Parcelio offers our premier{' '}
+          Bee Direct offers our premier{' '}
           <Link
             to={PATHS.couriers}
-            className="underline underline-offset-2 transition-colors hover:text-brand"
+            className="underline underline-offset-2 transition-colors hover:text-brand-deep"
           >
             courier services
           </Link>{' '}

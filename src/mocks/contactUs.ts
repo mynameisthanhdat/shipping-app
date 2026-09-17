@@ -44,14 +44,14 @@ export const CONTACT_US_CONTENT: ContactUsContent = {
   subtitle:
     'Have a question about shipping rates, tracking, or your account? Our team is here to help.',
   about: {
-    heading: 'About Parcelio',
+    heading: 'About Bee Direct',
     description:
-      'Parcelio is Australia’s fastest-growing courier comparison platform. We help businesses and individuals find the best shipping rates across every major carrier, backed by a team that’s always just a message away.',
+      'Bee Direct is Australia’s fastest-growing courier comparison platform. We help businesses and individuals find the best shipping rates across every major carrier, backed by a team that’s always just a message away.',
   },
   contactDetails: {
     heading: 'Contact Details',
     phone: '1300 123 456',
-    email: 'support@parcelio.com.au',
+    email: 'support@beedirect.com.au',
     address: 'Level 4, 123 Collins Street, Melbourne VIC 3000',
     hours: 'Mon–Fri, 9am–6pm AEST',
   },
@@ -69,7 +69,7 @@ export const CONTACT_US_CONTENT: ContactUsContent = {
   membership: {
     heading: 'Become a Member',
     description:
-      'Join Parcelio Membership and unlock exclusive discounted rates, priority support, and faster processing on every shipment.',
+      'Join Bee Direct Membership and unlock exclusive discounted rates, priority support, and faster processing on every shipment.',
     buttonLabel: 'Become a Member',
     to: PATHS.openAccount,
   },

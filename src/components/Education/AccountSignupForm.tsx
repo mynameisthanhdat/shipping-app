@@ -11,7 +11,7 @@ import { FIELD_CLASS, FieldError, Select } from '../Quote/fields';
 
 type FormErrors = Record<string, string>;
 
-const LABEL_CLASS = 'mb-1.5 block text-sm font-bold text-navy';
+const LABEL_CLASS = 'mb-1.5 block text-sm font-bold text-ink';
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const validate = (details: AccountSignupDetails): FormErrors => {
@@ -197,7 +197,7 @@ const AccountSignupForm: React.FC<AccountSignupFormProps> = ({
 
       <button
         type="submit"
-        className="mt-6 inline-flex items-center justify-center rounded-md bg-brand px-8 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+        className="mt-6 inline-flex items-center justify-center rounded-md bg-brand px-8 py-3 text-sm font-bold text-ink transition-colors hover:bg-brand-hover"
       >
         {submitLabel}
       </button>

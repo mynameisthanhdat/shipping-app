@@ -5,7 +5,7 @@ import { PATHS } from '../../routes/paths';
 
 const CourierNetwork: React.FC = () => (
   <section>
-    <h2 className="text-2xl font-bold text-navy">Trusted Courier Network</h2>
+    <h2 className="text-2xl font-bold text-ink">Trusted Courier Network</h2>
     <p className="mt-2 text-sm leading-relaxed text-muted">
       We partner with leading carriers to get your parcel there
     </p>
@@ -17,7 +17,7 @@ const CourierNetwork: React.FC = () => (
             className="h-20 w-full max-w-[220px] bg-muted-surface"
             aria-hidden="true"
           />
-          <p className="mt-3 text-center text-sm font-semibold text-navy">
+          <p className="mt-3 text-center text-sm font-semibold text-ink">
             {partner.name}
           </p>
         </li>
@@ -27,7 +27,7 @@ const CourierNetwork: React.FC = () => (
     <div className="mt-8 flex justify-center">
       <Link
         to={PATHS.couriers}
-        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-bold text-ink transition-colors hover:bg-brand-hover"
       >
         Show more
       </Link>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../components/ui/Breadcrumb';
 import { OUR_SERVICES_CONTENT, ServiceItem } from '../mocks/ourServices';
 import { PATHS } from '../routes/paths';
 
@@ -9,7 +10,7 @@ const ServiceTitle: React.FC<Pick<ServiceItem, 'title' | 'to'>> = ({ title, to }
   if (!to) return <strong>{title}:</strong>;
 
   return (
-    <Link to={to} className="underline underline-offset-2 hover:text-brand">
+    <Link to={to} className="underline underline-offset-2 hover:text-brand-deep">
       {title}:
     </Link>
   );
@@ -34,16 +35,16 @@ const HighlightedText: React.FC<{ text: string; highlightedText?: string }> = ({
 
 const OurServices: React.FC = () => {
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <Link to={PATHS.home} className="transition-colors hover:text-brand">
-          Home
-        </Link>{' '}
-        / <span aria-current="page">{hub.breadcrumb}</span>
-      </nav>
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-ink sm:pt-8">
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: hub.breadcrumb },
+        ]}
+      />
 
       <div className="mx-auto mt-7 max-w-[760px] sm:mt-5">
-        <h1 className="text-center text-2xl font-bold leading-tight text-navy sm:text-[26px]">
+        <h1 className="text-center text-2xl font-bold leading-tight text-ink sm:text-[26px]">
           {hub.title}
         </h1>
 

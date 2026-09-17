@@ -48,7 +48,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 import { LOCATION_DETAIL_PAGES } from '../constants/locations';
 import {
   FOOTER_SERVICES,
-  FOOTER_SOLUTIONS,
+  FOOTER_CONTACT,
   MAIN_NAV,
   PATHS,
   flattenNav,
@@ -118,11 +118,13 @@ const EXPLICIT_PATHS = new Set<string>([...Object.keys(REAL_PAGES), PATHS.quote]
 const MOCK_PAGES = flattenNav([
   ...MAIN_NAV,
   ...FOOTER_SERVICES,
-  ...FOOTER_SOLUTIONS,
+  ...FOOTER_CONTACT,
   ...LOCATION_DETAIL_PAGES,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
-  { label: 'Terms & Conditions', to: PATHS.terms },
+  // Linked from blog posts but no longer in any nav column.
+  { label: 'Pricing', to: PATHS.pricing },
+  { label: 'Ecommerce', to: PATHS.ecommerce },
 ]).filter(
   (page, index, all) =>
     !EXPLICIT_PATHS.has(page.to) &&

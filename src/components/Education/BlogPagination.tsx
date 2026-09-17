@@ -16,13 +16,13 @@ const BlogPagination: React.FC<BlogPaginationProps> = ({
   return (
     <nav
       aria-label="Blog pagination"
-      className="flex flex-wrap items-center justify-center gap-4 text-sm text-navy"
+      className="flex flex-wrap items-center justify-center gap-4 text-sm text-ink"
     >
       <button
         type="button"
         disabled={currentPage <= 1}
         onClick={() => onChange(currentPage - 1)}
-        className="font-bold transition-colors hover:text-brand disabled:cursor-not-allowed disabled:text-muted-placeholder"
+        className="font-bold transition-colors hover:text-brand-deep disabled:cursor-not-allowed disabled:text-muted-placeholder"
       >
         ‹ Prev
       </button>
@@ -33,8 +33,8 @@ const BlogPagination: React.FC<BlogPaginationProps> = ({
           type="button"
           aria-current={page === currentPage ? 'page' : undefined}
           onClick={() => onChange(page)}
-          className={`min-w-6 font-bold transition-colors hover:text-brand ${
-            page === currentPage ? 'text-navy' : 'text-muted'
+          className={`min-w-6 font-bold transition-colors hover:text-brand-deep ${
+            page === currentPage ? 'text-ink' : 'text-muted'
           }`}
         >
           {page}
@@ -45,7 +45,7 @@ const BlogPagination: React.FC<BlogPaginationProps> = ({
         type="button"
         disabled={currentPage >= totalPages}
         onClick={() => onChange(currentPage + 1)}
-        className="font-bold transition-colors hover:text-brand disabled:cursor-not-allowed disabled:text-muted-placeholder"
+        className="font-bold transition-colors hover:text-brand-deep disabled:cursor-not-allowed disabled:text-muted-placeholder"
       >
         Next ›
       </button>

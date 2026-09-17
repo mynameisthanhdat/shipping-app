@@ -46,7 +46,7 @@ export const FAQS: FaqItem[] = [
   {
     question: 'Is it free to become a member?',
     answer:
-      'Yes, creating a Parcelio account is 100% free. There are no setup costs, no monthly fees, and no minimum spending commitments. You only pay when you ship.',
+      'Yes, creating a Bee Direct account is 100% free. There are no setup costs, no monthly fees, and no minimum spending commitments. You only pay when you ship.',
   },
   {
     question: 'Can I send large or heavy items?',
