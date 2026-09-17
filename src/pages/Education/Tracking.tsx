@@ -1,15 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from '../../components/CtaBanner';
 import CategoryGrid from '../../components/Education/CategoryGrid';
 import TrackingForm from '../../components/Education/TrackingForm';
 import TrackingHelpLinks from '../../components/Education/TrackingHelpLinks';
+import TrackingDemoHint from '../../components/Tracking/TrackingDemoHint';
 import { PATHS } from '../../routes/paths';
 import { TrackingLookup } from '../../types/tracking';
 
 const Tracking: React.FC = () => {
 
-  const handleSubmit = (trackingLookup: TrackingLookup) => alert('Tracking lookup submitted');
+  const navigate = useNavigate();
+
+  const handleSubmit = ({ consignmentNumber }: TrackingLookup) =>
+    navigate(`${PATHS.educationTracking}/${encodeURIComponent(consignmentNumber.trim())}`);
 
   return (
     <div className="flex min-h-full flex-1 flex-col">
@@ -44,6 +49,8 @@ const Tracking: React.FC = () => {
           <div className="mt-8">
             <TrackingForm onSubmit={handleSubmit} />
           </div>
+
+          <TrackingDemoHint className="mx-auto mt-8 max-w-lg" />
           <p className="mt-6 text-sm leading-relaxed text-muted">
             If your order status isn&apos;t here yet, don&apos;t worry, we&apos;re working
             to get your order into the shipping process.

@@ -16,6 +16,7 @@ import PalletTransportServices from '../pages/OurServices/PalletTransportService
 import CarbonNeutralDelivery from '../pages/OurServices/CarbonNeutralDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import Tracking from '../pages/Education/Tracking';
+import TrackingDetail from '../pages/Education/TrackingDetail';
 import TransitWarranty from '../pages/Education/TransitWarranty';
 import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
@@ -151,6 +152,10 @@ export const routes: RouteObject[] = [
       {
         path: `${PATHS.educationBlog.replace(/^\//, '')}/:slug`,
         element: <BlogDetail />,
+      },
+      {
+        path: `${PATHS.educationTracking.replace(/^\//, '')}/:consignmentNumber`,
+        element: <TrackingDetail />,
       },
       {
         path: `${PATHS.educationTransitWarranty.replace(/^\//, '')}/:slug`,

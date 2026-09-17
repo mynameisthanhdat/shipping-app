@@ -63,7 +63,7 @@ const TrackingForm: React.FC<TrackingFormProps> = ({
           id="consignment-number"
           type="text"
           value={lookup.consignmentNumber}
-          placeholder="DATIST-09"
+          placeholder="BD-100001"
           onChange={(event) => patch({ consignmentNumber: event.target.value })}
           className={FIELD_CLASS}
         />
