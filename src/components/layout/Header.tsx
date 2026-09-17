@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { ACCOUNT_SIGNUP_LINK, MAIN_NAV, NavItem, PATHS } from '../../routes/paths';
 import Logo from './Logo';
+import MobileNav from './MobileNav';
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   `text-sm transition-colors hover:text-brand-deep ${isActive ? 'text-brand-deep' : 'text-ink'}`;
@@ -80,7 +81,25 @@ const NavDropdown: React.FC<{ item: NavItem }> = ({ item }) => {
   );
 };
 
+const MenuIcon: React.FC = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    strokeLinecap="round"
+    aria-hidden="true"
+    className="h-6 w-6"
+  >
+    <path d="M4 7h16M4 12h16M4 17h16" />
+  </svg>
+);
+
 const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  // Stable identity: MobileNav closes itself from an effect that depends on it.
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
+
   return (
     <header className="bg-white">
       <div className="mx-auto flex h-[84px] max-w-container items-center gap-8 px-6">
@@ -98,7 +117,7 @@ const Header: React.FC = () => {
           )}
         </nav>
 
-        <div className="ml-auto flex items-center gap-6">
+        <div className="ml-auto flex items-center gap-3 sm:gap-6">
           <NavLink
             to={ACCOUNT_SIGNUP_LINK}
             className="hidden text-sm text-ink transition-colors hover:text-brand-deep md:block"
@@ -117,8 +136,20 @@ const Header: React.FC = () => {
           >
             Get a Quote
           </Link>
+
+          <button
+            type="button"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
+            aria-expanded={menuOpen}
+            className="-mr-1.5 rounded-md p-1.5 text-ink transition-colors hover:bg-brand-soft lg:hidden"
+          >
+            <MenuIcon />
+          </button>
         </div>
       </div>
+
+      <MobileNav open={menuOpen} onClose={closeMenu} />
     </header>
   );
 };
