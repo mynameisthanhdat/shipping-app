@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { EXPIRY_MONTHS, PAYMENT_METHODS, getExpiryYears } from '../../mocks/paymentOptions';
 import { PaymentMethod } from '../../types/quote';
-import { FIELD_CLASS, FieldError, Radio, SECTION_TITLE, Select } from './fields';
+import { FIELD_CLASS, FieldError, Radio, SECTION_TITLE, Select } from '../ui/fields';
 
 /**
  * Card details live here and nowhere else — never in the shared wizard draft.
@@ -67,7 +67,7 @@ const FieldRow: React.FC<{
   children: React.ReactNode;
 }> = ({ htmlFor, label, children }) => (
   <div className="md:grid md:grid-cols-[190px_1fr] md:gap-4">
-    <label htmlFor={htmlFor} className="mb-1.5 block text-sm font-bold text-navy md:mb-0 md:self-center">
+    <label htmlFor={htmlFor} className="mb-1.5 block text-sm font-bold text-ink md:mb-0 md:self-center">
       {label}
     </label>
     <div>{children}</div>
@@ -143,7 +143,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
       </section>
 
       {isPayPal ? (
-        <p className="rounded-lg border border-black/10 bg-muted-surface/20 p-4 text-sm text-navy">
+        <p className="rounded-lg border border-black/10 bg-muted-surface/20 p-4 text-sm text-ink">
           PayPal checkout is not connected yet, so this option cannot be completed. Choose
           credit card to continue.
         </p>
@@ -230,14 +230,14 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
         <button
           type="button"
           onClick={onBack}
-          className="rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-navy transition-colors hover:bg-muted-surface/70"
+          className="rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-muted-surface/70"
         >
           Back
         </button>
         <button
           type="submit"
           disabled={isPayPal}
-          className="rounded-md bg-brand px-8 py-2.5 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-brand-hover disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-md bg-brand px-8 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-brand-hover disabled:cursor-not-allowed disabled:opacity-40"
         >
           Process order
         </button>

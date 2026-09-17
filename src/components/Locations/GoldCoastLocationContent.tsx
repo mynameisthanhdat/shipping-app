@@ -6,23 +6,23 @@ import { PATHS } from '../../routes/paths';
 const GoldCoastLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-xl font-bold text-navy">
+      <h2 className="text-xl font-bold text-ink">
         We have Couriers on the Gold Coast, QLD
       </h2>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
+      <p className="mt-4 text-sm leading-relaxed text-ink">
         Looking for a Gold Coast Courier to move a package locally or interstate?
         We&apos;re the most reliable and cost effective freight and shipping company in
         Australia and we&apos;ve perfected the art of delivering packages of all sizes in
-        the quickest and safest ways possible. Parcelio provides a premium level of courier
+        the quickest and safest ways possible. Bee Direct provides a premium level of courier
         service to residents and business owners throughout Queensland. We are dedicated to
         making sure our valued customers receive reliable, cost-effective and timely
         services.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         So whether you&apos;re delivering to clients or just remembered it&apos;s your
-        mum&apos;s birthday and need to send her gift off pronto, Parcelio is the company
+        mum&apos;s birthday and need to send her gift off pronto, Bee Direct is the company
         that will make it seem all too easy. Our expert couriers are available to cater to
         your delivery needs 24 hours a day. That means that if it&apos;s past five p.m. and
         you need the item to arrive at its destination by the next morning, we can make it
@@ -30,7 +30,7 @@ const GoldCoastLocationContent: React.FC = () => (
         those times when you&apos;re time-pressured. Our Gold Coast Courier services:
       </p>
 
-      <ul className="mt-1 list-disc space-y-0.5 pl-5 text-sm leading-relaxed text-navy">
+      <ul className="mt-1 list-disc space-y-0.5 pl-5 text-sm leading-relaxed text-ink">
         <li>Local deliveries</li>
         <li>Interstate deliveries to various states and territories outside of Queensland</li>
         <li>Door to door pickup and drop off services</li>
@@ -47,8 +47,8 @@ const GoldCoastLocationContent: React.FC = () => (
         </li>
       </ul>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
-        Parcelio exists to meet your delivery needs. We strive to provide every one of our
+      <p className="mt-4 text-sm leading-relaxed text-ink">
+        Bee Direct exists to meet your delivery needs. We strive to provide every one of our
         customers with exceptional service that ensures they use us again and to maintain
         our excellent reputation nationwide. We have an online quote tool which shows you
         what to expect to pay before you&apos;ve committed and we give you access to a clear
@@ -57,29 +57,29 @@ const GoldCoastLocationContent: React.FC = () => (
         in Australia.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
-        Contact Parcelio today, and find out how our experienced couriers can assist you on
+      <p className="mt-3 text-sm leading-relaxed text-ink">
+        Contact Bee Direct today, and find out how our experienced couriers can assist you on
         the Gold Coast or in any of our many locations nationwide.
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         <Link
           to={PATHS.quote}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           Get an instant quote
         </Link>
         {' or '}
         <Link
           to={PATHS.compareRates}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           compare rates
         </Link>
         {' — or '}
         <Link
-          to={PATHS.trackShipment}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          to={PATHS.educationTracking}
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           track a shipment
         </Link>

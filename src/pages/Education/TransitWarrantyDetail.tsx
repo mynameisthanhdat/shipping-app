@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Navigate, useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from '../../components/CtaBanner';
 import WarrantyDetailBody from '../../components/Education/WarrantyDetailBody';
 import { getTransitWarrantyItemById } from '../../mocks/education/transitWarranty';
@@ -21,27 +22,18 @@ const TransitWarrantyDetail: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span> / </span>
-          <Link to={PATHS.education} className="transition-colors hover:text-navy">
-            Education Centre
-          </Link>
-          <span> / </span>
-          <Link
-            to={PATHS.educationTransitWarranty}
-            className="transition-colors hover:text-navy"
-          >
-            Transit Warranty Options
-          </Link>
-          <span> / {listItem.title}</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Education Centre', to: PATHS.education },
+            { label: 'Transit Warranty Options', to: PATHS.educationTransitWarranty },
+            { label: listItem.title },
+          ]}
+        />
 
         <article className="mt-6">
           <header className="text-center">
-            <h1 className="text-3xl font-bold text-navy">{detail.pageTitle}</h1>
+            <h1 className="text-3xl font-bold text-ink">{detail.pageTitle}</h1>
           </header>
 
           <div className="mt-10">

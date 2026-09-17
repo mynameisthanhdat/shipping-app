@@ -8,7 +8,7 @@ type LocationSelectorProps = {
 
 const LocationSelector: React.FC<LocationSelectorProps> = ({ value, onChange }) => (
   <div>
-    <h2 className="text-sm font-bold text-navy">Where are you sending from?</h2>
+    <h2 className="text-sm font-bold text-ink">Where are you sending from?</h2>
 
     <div
       role="radiogroup"
@@ -27,8 +27,8 @@ const LocationSelector: React.FC<LocationSelectorProps> = ({ value, onChange }) 
             onClick={() => onChange(city.id)}
             className={`rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors ${
               selected
-                ? 'border-brand bg-brand text-white'
-                : 'border-black/10 text-navy hover:border-navy/30'
+                ? 'border-brand bg-brand text-ink'
+                : 'border-black/10 text-ink hover:border-ink/30'
             }`}
           >
             {city.label}

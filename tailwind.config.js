@@ -6,13 +6,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: {
-          DEFAULT: '#152a47',
-          light: '#1d3557',
+        /**
+         * Bee Direct palette: honey yellow + near black.
+         *
+         * Yellow is a light colour, so it only works as a FILL. White text on
+         * it sits at 1.7:1 — unreadable. Pair `bg-brand` with `text-ink`
+         * (10.8:1) and use `brand-deep` whenever the brand colour has to be
+         * text or a border on a light surface.
+         */
+        ink: {
+          DEFAULT: '#141414',
+          light: '#2f2f2f',
         },
         brand: {
-          DEFAULT: '#e2683c',
-          hover: '#cf5a30',
+          /** Fills: buttons, badges, active pills. Always with ink text. */
+          DEFAULT: '#f6be00',
+          hover: '#e0a800',
+          /** Text and borders on light surfaces — 6.3:1 on white. */
+          deep: '#7a5c00',
+          'deep-hover': '#5c4500',
+          /** Tinted surface for selected states and callouts. */
+          soft: '#fff8e1',
         },
         muted: {
           DEFAULT: '#666666',
@@ -27,16 +41,16 @@ module.exports = {
           surface: '#fdf3f1',
           border: '#f0c4bd',
         },
-        /** Completed / active wizard step. */
-        success: '#3fb984',
-        /** Upcoming wizard step. */
-        step: '#5f6b7a',
+        /** Upcoming wizard step. Reached steps use `brand`. */
+        step: '#575757',
       },
       maxWidth: {
         container: '1140px',
       },
       boxShadow: {
         card: '0 4px 16px rgba(21, 42, 71, 0.08)',
+        /** Soft lift under a primary action, tinted to the brand colour. */
+        brand: '0 6px 18px rgba(226, 104, 60, 0.28)',
       },
     },
   },

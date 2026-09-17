@@ -5,7 +5,7 @@ type PackagingChecklistProps = {
 };
 
 const PackagingChecklist: React.FC<PackagingChecklistProps> = ({ items }) => (
-  <ul className="list-disc space-y-1.5 pl-6 text-sm leading-relaxed text-navy marker:text-navy">
+  <ul className="list-disc space-y-1.5 pl-6 text-sm leading-relaxed text-ink marker:text-ink">
     {items.map((item) => (
       <li key={item}>{item}</li>
     ))}

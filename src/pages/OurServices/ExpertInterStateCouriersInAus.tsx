@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import PackageDetailsForm from '../../components/Quote/PackageDetailsForm';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
 import { OUR_SERVICES_CONTENT } from '../../mocks/ourServices';
@@ -16,20 +17,17 @@ const ExpertInterStateCouriersInAus: React.FC = () => {
   };
 
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <Link to={PATHS.home} className="transition-colors hover:text-brand">
-          Home
-        </Link>{' '}
-        /{' '}
-        <Link to={PATHS.services} className="transition-colors hover:text-brand">
-          Our services
-        </Link>{' '}
-        / <span aria-current="page">{interstate.breadcrumb}</span>
-      </nav>
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-ink sm:pt-8">
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: 'Our services', to: PATHS.services },
+          { label: interstate.breadcrumb },
+        ]}
+      />
 
       <div className="mx-auto mt-7 max-w-[760px] sm:mt-5">
-        <h1 className="text-center text-2xl font-bold leading-tight text-navy sm:text-[26px]">
+        <h1 className="text-center text-2xl font-bold leading-tight text-ink sm:text-[26px]">
           {interstate.title}
         </h1>
 
@@ -63,7 +61,7 @@ const ExpertInterStateCouriersInAus: React.FC = () => {
           </section>
 
           <details className="group">
-            <summary className="inline-flex cursor-pointer list-none items-center gap-10 rounded bg-brand px-3 py-2 text-sm text-white transition-colors hover:bg-brand-hover [&::-webkit-details-marker]:hidden">
+            <summary className="inline-flex cursor-pointer list-none items-center gap-10 rounded bg-brand px-3 py-2 text-sm text-ink transition-colors hover:bg-brand-hover [&::-webkit-details-marker]:hidden">
               <span>{interstate.moreInformation.label}</span>
               <svg
                 viewBox="0 0 24 24"

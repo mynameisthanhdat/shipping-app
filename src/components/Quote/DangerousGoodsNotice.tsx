@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { DANGEROUS_GOODS } from '../../mocks/collectionOptions';
 import { PATHS } from '../../routes/paths';
-import { Checkbox, FieldError } from './fields';
+import { Checkbox, FieldError } from '../ui/fields';
 
 const WarningIcon: React.FC = () => (
   <svg
@@ -59,7 +59,7 @@ const DangerousGoodsNotice: React.FC<DangerousGoodsNoticeProps> = ({
       Dangerous goods declaration
     </h2>
 
-    <p className="mt-2 text-sm text-navy">
+    <p className="mt-2 text-sm text-ink">
       Please see some examples of Dangerous Goods which are restricted throughout our network.
     </p>
 

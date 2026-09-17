@@ -4,7 +4,7 @@ import RateHighlightCard from './RateHighlightCard';
 
 const CompareInstantRates: React.FC = () => (
   <section>
-    <h2 className="text-2xl font-bold text-navy">Compare Instant Shipping Rates</h2>
+    <h2 className="text-2xl font-bold text-ink">Compare Instant Shipping Rates</h2>
     <p className="mt-2 text-sm leading-relaxed text-muted">
       Real examples from our most popular shipping routes
     </p>

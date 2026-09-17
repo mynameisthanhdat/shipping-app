@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       <div className="mx-auto w-full max-w-container px-6">
         <div className="relative z-10 -mt-12 md:-mt-16">
           <section className="rounded-xl border border-black/10 bg-white px-6 py-7 shadow-card md:px-8">
-            <h2 className="text-lg font-bold text-navy">
+            <h2 className="text-lg font-bold text-ink">
               Instant quote. Book now and Save!
             </h2>
             <div className="mt-6">

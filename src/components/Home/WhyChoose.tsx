@@ -7,9 +7,9 @@ const WhyChoose: React.FC = () => {
   const rightColumn = WHY_CHOOSE_FEATURES.slice(midpoint);
 
   return (
-    <section className="rounded-xl bg-navy px-6 pt-7 pb-12 text-center">
+    <section className="rounded-xl bg-ink px-6 pt-7 pb-12 text-center">
         <h2 className="text-2xl font-bold text-white">
-          Why Businesses Choose Parcelio
+          Why Businesses Choose Bee Direct
         </h2>
         <div className="mt-10 grid gap-x-12 gap-y-4 sm:grid-cols-2">
           {[leftColumn, rightColumn].map((column, columnIndex) => (

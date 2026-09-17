@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Breadcrumb from '../components/ui/Breadcrumb';
 import Faq from '../components/CompareRates/Faq';
 import HowItWorks from '../components/CompareRates/HowItWorks';
 import LocationSelector from '../components/CompareRates/LocationSelector';
@@ -24,15 +24,15 @@ const CompareRates: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span> / Compare Rates</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Compare Rates' },
+          ]}
+        />
 
         <div className="mt-8 text-center">
-          <h1 className="text-3xl font-bold text-navy">
+          <h1 className="text-3xl font-bold text-ink">
             Domestic Shipping Rates &amp; Calculator
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-muted">
@@ -45,13 +45,13 @@ const CompareRates: React.FC = () => {
           <ShippingTypeSelector value={shippingType} onChange={setShippingType} />
           <LocationSelector value={origin} onChange={setOrigin} />
 
-          <p className="text-center text-sm font-bold text-navy">
+          <p className="text-center text-sm font-bold text-ink">
             Spending more than $1,000/week on freight? Contact us directly for the best rates.
           </p>
         </div>
 
         <div className="mt-12 text-center">
-          <h2 className="text-2xl font-bold text-navy">
+          <h2 className="text-2xl font-bold text-ink">
             Examples of our Domestic Delivery rates
           </h2>
           <p className="mt-2 text-sm text-muted">

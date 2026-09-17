@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import DarwinLocationContent from '../../components/Locations/DarwinLocationContent';
 import PackageDetailsForm from '../../components/Quote/PackageDetailsForm';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
@@ -19,17 +20,14 @@ const Darwin: React.FC = () => {
   };
 
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-8 text-navy">
-      <nav aria-label="Breadcrumb" className="text-sm text-muted">
-        <Link to={PATHS.home} className="transition-colors hover:text-navy">
-          Home
-        </Link>
-        <span> / </span>
-        <Link to={PATHS.locations} className="transition-colors hover:text-navy">
-          Locations
-        </Link>
-        <span> / Couriers in Darwin, NT</span>
-      </nav>
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-8 text-ink">
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: 'Locations', to: PATHS.locations },
+          { label: 'Couriers in Darwin, NT' },
+        ]}
+      />
 
       <section aria-label="Get a Quote" className="mt-10">
         <QuoteStepper currentIndex={0} completedCount={0} />

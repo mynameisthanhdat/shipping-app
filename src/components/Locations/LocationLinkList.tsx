@@ -7,12 +7,12 @@ type LocationLinkListProps = {
 };
 
 const LocationLinkList: React.FC<LocationLinkListProps> = ({ items }) => (
-  <ul className="my-0 list-disc pl-5 text-sm leading-relaxed text-navy">
+  <ul className="my-0 list-disc pl-5 text-sm leading-relaxed text-ink">
     {items.map((item) => (
       <li key={item.to}>
         <Link
           to={item.to}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           {item.label}
         </Link>

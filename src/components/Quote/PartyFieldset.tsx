@@ -2,7 +2,7 @@ import React from 'react';
 import { STREET_TYPES } from '../../mocks/collectionOptions';
 import { PartyDetails, PartyFieldName } from '../../types/quote';
 import { PartyFieldConfig } from './collectionFields';
-import { FIELD_CLASS, FieldError, SECTION_TITLE, Select } from './fields';
+import { FIELD_CLASS, FieldError, SECTION_TITLE, Select } from '../ui/fields';
 
 export type PartyFieldsetProps = {
   title: string;
@@ -40,7 +40,7 @@ const PartyFieldset: React.FC<PartyFieldsetProps> = ({
           <div key={field.name} className="md:grid md:grid-cols-[190px_1fr] md:gap-4">
             <label
               htmlFor={field.kind === 'collection-point' ? undefined : id}
-              className="mb-1.5 block text-sm font-bold text-navy md:mb-0 md:self-center"
+              className="mb-1.5 block text-sm font-bold text-ink md:mb-0 md:self-center"
             >
               {field.label}
               {field.required && '*'}
@@ -50,7 +50,7 @@ const PartyFieldset: React.FC<PartyFieldsetProps> = ({
               {field.kind === 'collection-point' ? (
                 <button
                   type="button"
-                  className="rounded-md bg-muted-surface/40 px-4 py-2.5 text-sm font-bold uppercase tracking-wider text-navy transition-colors hover:bg-muted-surface/70"
+                  className="rounded-md bg-muted-surface/40 px-4 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-muted-surface/70"
                 >
                   Select collection point
                 </button>

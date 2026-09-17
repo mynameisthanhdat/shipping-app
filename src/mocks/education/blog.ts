@@ -30,7 +30,7 @@ export const BLOG_TOPICS: BlogTopic[] = [
   { id: 'express-delivery', label: 'Express Delivery' },
   { id: 'packaging', label: 'Packaging' },
   { id: 'sustainability', label: 'Sustainability' },
-  { id: 'parcelio-news', label: 'Parcelio News' },
+  { id: 'bee-direct-news', label: 'Bee Direct News' },
 ];
 
 /** Blog posts — temporary mock until blog API exists. */
@@ -114,7 +114,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     closingTitle: 'Ready for Your Busiest Quarter Yet?',
     closingBody:
-      'Peak season rewards the sellers who plan early. Connect your store to Parcelio, lock in your rates, and let the bookings, labels and tracking take care of themselves while you focus on selling.',
+      'Peak season rewards the sellers who plan early. Connect your store to Bee Direct, lock in your rates, and let the bookings, labels and tracking take care of themselves while you focus on selling.',
   },
   {
     id: 'express-or-standard',

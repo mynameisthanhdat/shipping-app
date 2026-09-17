@@ -1,13 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FREIGHT_AUDIENCES, FREIGHT_SERVICES } from '../../mocks/home';
-import { PATHS } from '../../routes/paths';
 
 const CheckList: React.FC<{ items: string[] }> = ({ items }) => (
   <ul className="mt-5 space-y-3">
     {items.map((item) => (
       <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted">
-        <span className="mt-0.5 font-bold text-brand" aria-hidden="true">
+        <span className="mt-0.5 font-bold text-brand-deep" aria-hidden="true">
           ✓
         </span>
         <span>{item}</span>
@@ -19,7 +17,7 @@ const CheckList: React.FC<{ items: string[] }> = ({ items }) => (
 const AustraliaWideFreight: React.FC = () => (
   <section>
     <div className="text-center">
-      <h2 className="text-2xl font-bold text-navy">
+      <h2 className="text-2xl font-bold text-ink">
         Take advantage of cheap freight Australia wide
       </h2>
     </div>
@@ -42,12 +40,12 @@ const AustraliaWideFreight: React.FC = () => (
             mind. Your goods are safe with us.
           </p>
           <p>
-            Parcelio isn&apos;t just for interstate deliveries. Our customers actually
+            Bee Direct isn&apos;t just for interstate deliveries. Our customers actually
             find our local courier service rates are cheaper than those at the post
             office.
           </p>
 
-          <h3 className="pt-2 text-base font-bold text-navy">What we do:</h3>
+          <h3 className="pt-2 text-base font-bold text-ink">What we do:</h3>
           <CheckList items={FREIGHT_SERVICES} />
         </div>
       </article>
@@ -59,7 +57,7 @@ const AustraliaWideFreight: React.FC = () => (
             affordable, experienced and reliable couriers in Australia.
           </p>
 
-          <h3 className="text-base font-bold text-navy">We have options to suit:</h3>
+          <h3 className="text-base font-bold text-ink">We have options to suit:</h3>
           <CheckList items={FREIGHT_AUDIENCES} />
 
           <p>
@@ -72,7 +70,7 @@ const AustraliaWideFreight: React.FC = () => (
             We look forward to helping you with your courier, freight and shipping
             delivery needs, no matter how big or small they may be.
           </p>
-          <p className="font-semibold text-navy">The Parcelio team</p>
+          <p className="font-semibold text-ink">The Bee Direct team</p>
         </div>
       </article>
     </div>

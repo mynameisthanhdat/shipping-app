@@ -5,7 +5,7 @@ const AccountHowToSteps: React.FC = () => (
   <ol className="space-y-5">
     {ACCOUNT_STEPS.map((step) => (
       <li key={step.id}>
-        <h3 className="text-base font-bold text-navy">{step.title}</h3>
+        <h3 className="text-base font-bold text-ink">{step.title}</h3>
         <p className="mt-1.5 text-sm leading-relaxed text-muted">{step.body}</p>
       </li>
     ))}

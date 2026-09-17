@@ -6,7 +6,7 @@ const city = (slug: string, label: string): LocationLink => ({
   to: `${PATHS.locations}/${slug}`,
 });
 
-/** Australian cities served by Parcelio courier network. */
+/** Australian cities served by Bee Direct courier network. */
 export const LOCATION_CITIES: LocationLink[] = [
   city('melbourne', 'Melbourne'),
   city('sydney', 'Sydney'),

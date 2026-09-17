@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from '../../components/CtaBanner';
 import BlogPagination from '../../components/Education/BlogPagination';
 import BlogPostList from '../../components/Education/BlogPostList';
@@ -27,20 +27,17 @@ const Blog: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span> / </span>
-          <Link to={PATHS.education} className="transition-colors hover:text-navy">
-            Education Centre
-          </Link>
-          <span> / Blog</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Education Centre', to: PATHS.education },
+            { label: 'Blog' },
+          ]}
+        />
 
         <div className="mt-6 text-center">
-          <h1 className="text-3xl font-bold text-navy">The Parcelio Blog</h1>
-          <p className="mt-3.5 text-lg font-bold text-navy">
+          <h1 className="text-3xl font-bold text-ink">The Bee Direct Blog</h1>
+          <p className="mt-3.5 text-lg font-bold text-ink">
             Shipping tips, ecommerce know-how and courier news for Australian sellers
           </p>
         </div>
@@ -50,7 +47,7 @@ const Blog: React.FC = () => {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-center text-xl font-bold text-navy md:text-2xl">
+          <h2 className="text-center text-xl font-bold text-ink md:text-2xl">
             Browse by Topic
           </h2>
           <div className="mt-6">
@@ -76,7 +73,7 @@ const Blog: React.FC = () => {
 
       <div className="mx-auto mt-auto w-full max-w-container px-6 py-8">
         <CtaBanner
-          title="Ready to automate your store's shipping? Connect Parcelio and start selling smarter today!"
+          title="Ready to automate your store's shipping? Connect Bee Direct and start selling smarter today!"
           primaryAction={{ label: 'Connect My Store', to: "#" }}
           secondaryAction={{ label: 'See Plans & Pricing', to: "#" }}
         />

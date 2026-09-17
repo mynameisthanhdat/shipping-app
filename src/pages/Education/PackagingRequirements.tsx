@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import CtaBanner from "../../components/CtaBanner";
 import CartonMeasurementCard from "../../components/Education/CartonMeasurementCard";
 import CategoryGrid from "../../components/Education/CategoryGrid";
@@ -11,25 +11,19 @@ const PackagingRequirements: React.FC = () => {
   return (
     <div className="flex min-h-full flex-1 flex-col">
       <div className="mx-auto mb-4 w-full max-w-container px-6 pt-8">
-        <nav aria-label="Breadcrumb" className="text-sm text-muted">
-          <Link to={PATHS.home} className="transition-colors hover:text-navy">
-            Home
-          </Link>
-          <span> / </span>
-          <Link
-            to={PATHS.education}
-            className="transition-colors hover:text-navy"
-          >
-            Education Centre
-          </Link>
-          <span> / Packaging Requirements</span>
-        </nav>
+        <Breadcrumb
+          items={[
+            { label: 'Home', to: PATHS.home },
+            { label: 'Education Centre', to: PATHS.education },
+            { label: 'Packaging Requirements' },
+          ]}
+        />
 
         <div className="mt-6 text-center">
-          <h1 className="text-3xl font-bold text-navy">
+          <h1 className="text-3xl font-bold text-ink">
             Packaging Requirements for Courier, Parcel &amp; Freight
           </h1>
-          <p className="mt-3.5 text-lg font-bold text-navy">
+          <p className="mt-3.5 text-lg font-bold text-ink">
             To start looking for answers, choose your category!
           </p>
         </div>
@@ -39,12 +33,12 @@ const PackagingRequirements: React.FC = () => {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-bold text-navy">
+          <h2 className="text-2xl font-bold text-ink">
             Packaging Requirements
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-muted">
             The following are guidelines to follow before you ship with
-            Parcelio.
+            Bee Direct.
           </p>
           <div className="mt-5">
             <PackagingChecklist items={PACKAGING_REQUIREMENTS_ITEMS} />
@@ -55,7 +49,7 @@ const PackagingRequirements: React.FC = () => {
             about packaging your shipment, contact our customer service team on{" "}
             <a
               href="tel:1300000000"
-              className="font-semibold text-brand transition-colors hover:text-brand-hover"
+              className="font-semibold text-brand-deep transition-colors hover:text-brand-deep-hover"
             >
               1300 000 000
             </a>
@@ -64,7 +58,7 @@ const PackagingRequirements: React.FC = () => {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-2xl font-bold text-navy">Measuring the Carton</h2>
+          <h2 className="text-2xl font-bold text-ink">Measuring the Carton</h2>
           <p className="mt-3 text-sm leading-relaxed text-muted">
             To correctly measure the size of your carton, please review the
             illustration below:

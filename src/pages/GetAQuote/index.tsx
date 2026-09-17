@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, Navigate, Outlet, useLocation } from 'react-router-dom';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
+import Breadcrumb from '../../components/ui/Breadcrumb';
 import { QuoteProvider, useQuote } from '../../components/Quote/QuoteContext';
 import QuoteStepper from '../../components/Quote/QuoteStepper';
 import {
@@ -28,14 +29,14 @@ const QuoteFlow: React.FC = () => {
 
   return (
     <div className="mx-auto w-full max-w-container px-6 pt-8 pb-16">
-      <nav aria-label="Breadcrumb" className="text-sm text-muted">
-        <Link to={PATHS.home} className="transition-colors hover:text-navy">
-          Home
-        </Link>
-        <span> / Get a Quote</span>
-      </nav>
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: 'Get a Quote' },
+        ]}
+      />
 
-      <h1 className="mt-6 text-center text-3xl font-bold text-navy">
+      <h1 className="mt-6 text-center text-3xl font-bold text-ink">
         Get a Quote
       </h1>
 

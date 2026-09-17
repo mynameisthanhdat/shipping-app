@@ -11,7 +11,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: 'sarah-mitchell',
     rating: 5,
     content:
-      "Parcelio cut our shipping costs by 30% and the booking process takes less than five minutes. Couldn't be happier.",
+      "Bee Direct cut our shipping costs by 30% and the booking process takes less than five minutes. Couldn't be happier.",
     authorName: 'Sarah Mitchell',
     authorRole: 'Online Retailer',
   },
@@ -27,7 +27,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: 'priya-nair',
     rating: 5,
     content:
-      'Switching to Parcelio was the best decision for our small business. Support team is fantastic.',
+      'Switching to Bee Direct was the best decision for our small business. Support team is fantastic.',
     authorName: 'Priya Nair',
     authorRole: 'Founder, Nair Home Goods',
   },
@@ -51,7 +51,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: 'david-obrien',
     rating: 5,
     content:
-      'Needed to send a parcel interstate last minute and Parcelio had the best rate by far.',
+      'Needed to send a parcel interstate last minute and Bee Direct had the best rate by far.',
     authorName: "David O'Brien",
     authorRole: 'Individual Customer',
   },

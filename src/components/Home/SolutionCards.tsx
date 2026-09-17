@@ -67,7 +67,7 @@ const SOLUTION_ICONS: Record<string, React.ReactNode> = {
 
 const SolutionCards: React.FC = () => (
   <section>
-    <h2 className="text-2xl font-bold text-navy">Solutions Built Around You</h2>
+    <h2 className="text-2xl font-bold text-ink">Solutions Built Around You</h2>
     <p className="mt-2 text-sm leading-relaxed text-muted">
       Choose the shipping experience that fits your needs
     </p>
@@ -80,10 +80,10 @@ const SolutionCards: React.FC = () => (
         >
           <div className="h-1.5 bg-brand" aria-hidden="true" />
           <div className="p-6">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand text-ink">
               {SOLUTION_ICONS[item.id]}
             </span>
-            <h3 className="mt-4 text-base font-bold text-navy">{item.title}</h3>
+            <h3 className="mt-4 text-base font-bold text-ink">{item.title}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted">{item.description}</p>
           </div>
         </article>

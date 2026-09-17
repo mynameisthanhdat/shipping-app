@@ -6,7 +6,7 @@ type FaqAccordionProps = {
 };
 
 const FaqAnswer: React.FC<{ blocks: FaqAnswerBlock[] }> = ({ blocks }) => (
-  <div className="space-y-3 text-sm leading-normal text-navy">
+  <div className="space-y-3 text-sm leading-normal text-ink">
     {blocks.map((block, index) =>
       block.type === 'paragraph' ? (
         <p key={index}>{block.content}</p>
@@ -39,8 +39,8 @@ const FaqAccordionItem: React.FC<FaqAccordionItemProps> = ({ item, isOpen, onTog
       aria-expanded={isOpen}
       onClick={onToggle}
     >
-      <span className="text-base font-bold text-navy">{item.question}</span>
-      <span className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center text-base font-bold text-navy">
+      <span className="text-base font-bold text-ink">{item.question}</span>
+      <span className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center text-base font-bold text-ink">
         <span
           aria-hidden
           className={`absolute transition-all duration-300 ease-in-out motion-reduce:transition-none ${

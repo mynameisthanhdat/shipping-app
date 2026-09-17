@@ -18,7 +18,7 @@ const AccountMemberReviews: React.FC = () => (
     <p className="mt-4">
       <Link
         to={PATHS.educationTestimonials}
-        className="text-sm font-bold text-brand transition-colors hover:text-brand-hover"
+        className="text-sm font-bold text-brand-deep transition-colors hover:text-brand-deep-hover"
       >
         See more member feedback
       </Link>

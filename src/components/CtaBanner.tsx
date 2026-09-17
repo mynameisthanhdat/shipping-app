@@ -14,23 +14,23 @@ type CtaBannerProps = {
 };
 
 const CtaBanner: React.FC<CtaBannerProps> = ({
-  title = "We've got you covered. Send with Parcelio and start saving today!",
+  title = "We've got you covered. Send with Bee Direct and start saving today!",
   primaryAction = { label: 'Get a Quote', to: PATHS.quote },
   secondaryAction = { label: 'Compare Rates', to: PATHS.compareRates },
 }) => {
   return (
-    <section className="rounded-xl bg-navy px-6 py-7 text-center">
+    <section className="rounded-xl bg-ink px-6 py-7 text-center">
       <p className="text-xl font-bold text-white">{title}</p>
       <div className="mt-4 flex flex-wrap items-center justify-center gap-5">
         <Link
           to={secondaryAction.to}
-          className="inline-flex items-center justify-center rounded-md bg-white px-8 py-2.5 text-sm font-bold text-navy transition-colors hover:bg-white/90"
+          className="inline-flex items-center justify-center rounded-md bg-white px-8 py-2.5 text-sm font-bold text-ink transition-colors hover:bg-white/90"
         >
           {secondaryAction.label}
         </Link>
         <Link
           to={primaryAction.to}
-          className="inline-flex items-center justify-center rounded-md bg-brand px-8 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+          className="inline-flex items-center justify-center rounded-md bg-brand px-8 py-2.5 text-sm font-bold text-ink transition-colors hover:bg-brand-hover"
         >
           {primaryAction.label}
         </Link>

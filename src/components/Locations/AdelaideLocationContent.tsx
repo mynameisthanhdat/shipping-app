@@ -8,22 +8,22 @@ const startingFrom = '$6.99';
 const AdelaideLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
-      <h2 className="text-xl font-bold text-navy">Use our Adelaide couriers today</h2>
+      <h2 className="text-xl font-bold text-ink">Use our Adelaide couriers today</h2>
 
-      <p className="mt-4 text-sm font-bold leading-relaxed text-navy">
+      <p className="mt-4 text-sm font-bold leading-relaxed text-ink">
         Organise your freight delivery across Adelaide and interstate with the courier
-        experts at Parcelio
+        experts at Bee Direct
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         Looking for Adelaide couriers that are reliable, timely, and cost efficient?
-        Parcelio is the company to call. We operate right across the nation, including
+        Bee Direct is the company to call. We operate right across the nation, including
         throughout Adelaide and South Australia, and have a wealth of experience within the
         courier industry. Whether you are a commercial or residential customer, we can
         assist you with:
       </p>
 
-      <ul className="mt-1 list-disc space-y-2 pl-5 text-sm leading-relaxed text-navy">
+      <ul className="mt-1 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink">
         <li>
           <span className="font-bold">Pickup and Drop off</span> – Your consignment will be
           in our capable hands from the moment we pick it up from your door, to the minute
@@ -54,34 +54,34 @@ const AdelaideLocationContent: React.FC = () => (
         </li>
       </ul>
 
-      <p className="mt-4 text-sm leading-relaxed text-navy">
-        Talk to the team at Parcelio about our freight services today, or discover the
+      <p className="mt-4 text-sm leading-relaxed text-ink">
+        Talk to the team at Bee Direct about our freight services today, or discover the
         various other locations throughout Australia we can service.
       </p>
     </section>
 
     <section>
-      <h2 className="text-xl font-bold text-navy">Adelaide Courier Prices</h2>
-      <p className="mt-4 text-sm leading-relaxed text-navy">
+      <h2 className="text-xl font-bold text-ink">Adelaide Courier Prices</h2>
+      <p className="mt-4 text-sm leading-relaxed text-ink">
         With prices starting as low as {startingFrom} for deliveries within Adelaide and
-        South Australia, Parcelio makes it easy to stick to your budget while still
+        South Australia, Bee Direct makes it easy to stick to your budget while still
         benefiting from our quality service. Whether you want your goods to travel a large
         or small distance, there&apos;s no need to look anywhere else for your freight and
-        shipping needs — Parcelio has you covered. Get a free online quote for our courier
+        shipping needs — Bee Direct has you covered. Get a free online quote for our courier
         service and find out exactly how little your shipment will cost. We think
         you&apos;ll be pleasantly surprised.
       </p>
-      <p className="mt-3 text-sm leading-relaxed text-navy">
+      <p className="mt-3 text-sm leading-relaxed text-ink">
         <Link
           to={PATHS.quote}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           Get an instant quote
         </Link>
         {' or '}
         <Link
           to={PATHS.compareRates}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           compare rates
         </Link>

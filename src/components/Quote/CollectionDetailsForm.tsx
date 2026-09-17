@@ -21,7 +21,7 @@ import {
   SECTION_TITLE,
   Select,
   TEXTAREA_CLASS,
-} from './fields';
+} from '../ui/fields';
 
 type SideErrors = Partial<Record<PartyFieldName, string>>;
 
@@ -125,7 +125,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
       />
 
       <div className="border-t border-black/10 pt-8">
-        <label htmlFor="product-description" className="text-sm font-bold text-navy">
+        <label htmlFor="product-description" className="text-sm font-bold text-ink">
           Product description*
         </label>
         <textarea
@@ -139,7 +139,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
       </div>
 
       <fieldset className="flex flex-wrap items-center gap-x-8 gap-y-3">
-        <legend className="float-left mr-8 text-sm font-bold text-navy">Are you?</legend>
+        <legend className="float-left mr-8 text-sm font-bold text-ink">Are you?</legend>
         {PARTY_ROLES.map((role) => (
           <Radio
             key={role.id}
@@ -180,7 +180,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
           <div className="md:grid md:grid-cols-[190px_1fr] md:gap-4">
             <label
               htmlFor="collection-date"
-              className="mb-1.5 block text-sm font-bold text-navy md:mb-0 md:self-center"
+              className="mb-1.5 block text-sm font-bold text-ink md:mb-0 md:self-center"
             >
               Date*
             </label>
@@ -205,7 +205,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
           <div className="md:grid md:grid-cols-[190px_1fr] md:gap-4">
             <label
               htmlFor="pickup-window"
-              className="mb-1.5 block text-sm font-bold text-navy md:mb-0 md:self-center"
+              className="mb-1.5 block text-sm font-bold text-ink md:mb-0 md:self-center"
             >
               Pickup time window
             </label>
@@ -215,7 +215,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
               type="text"
               value={pickupWindow}
               readOnly
-              className="w-full cursor-default rounded-lg border border-black/10 bg-white px-4 py-3 text-sm text-navy"
+              className="w-full cursor-default rounded-lg border border-black/10 bg-white px-4 py-3 text-sm text-ink"
             />
           </div>
         </div>
@@ -226,7 +226,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
 
         <div className="mt-5 grid gap-10 md:grid-cols-2">
           <div>
-            <h3 className="text-sm font-bold text-navy">Pickup</h3>
+            <h3 className="text-sm font-bold text-ink">Pickup</h3>
 
             <Checkbox
               className="mt-3"
@@ -250,7 +250,7 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
           </div>
 
           <div className="md:border-l md:border-black/10 md:pl-10">
-            <h3 className="text-sm font-bold text-navy">Delivery</h3>
+            <h3 className="text-sm font-bold text-ink">Delivery</h3>
 
             <Checkbox
               className="mt-3"
@@ -297,13 +297,13 @@ const CollectionDetailsForm: React.FC<CollectionDetailsFormProps> = ({
         <button
           type="button"
           onClick={onBack}
-          className="rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-navy transition-colors hover:bg-muted-surface/70"
+          className="rounded-md bg-muted-surface/40 px-6 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-muted-surface/70"
         >
           Back
         </button>
         <button
           type="submit"
-          className="rounded-md bg-brand px-8 py-2.5 text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-brand-hover"
+          className="rounded-md bg-brand px-8 py-2.5 text-sm font-bold uppercase tracking-wider text-ink transition-colors hover:bg-brand-hover"
         >
           Next
         </button>

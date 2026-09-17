@@ -16,10 +16,14 @@ import PalletTransportServices from '../pages/OurServices/PalletTransportService
 import CarbonNeutralDelivery from '../pages/OurServices/CarbonNeutralDelivery';
 import Testimonials from '../pages/Education/Testimonials';
 import Tracking from '../pages/Education/Tracking';
+import TrackingDetail from '../pages/Education/TrackingDetail';
 import TransitWarranty from '../pages/Education/TransitWarranty';
 import PackagingRequirements from '../pages/Education/PackagingRequirements';
 import AccountEnquiries from '../pages/Education/AccountEnquiries';
 import CompareRates from '../pages/CompareRates';
+import OpenAccount from '../pages/OpenAccount';
+import SignIn from '../pages/SignIn';
+import ForgotPassword from '../pages/ForgotPassword';
 import Faqs from '../pages/Education/Faqs';
 import Blog from '../pages/Education/Blog';
 import BlogDetail from '../pages/Education/BlogDetail';
@@ -48,7 +52,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 import { LOCATION_DETAIL_PAGES } from '../constants/locations';
 import {
   FOOTER_SERVICES,
-  FOOTER_SOLUTIONS,
+  FOOTER_CONTACT,
   MAIN_NAV,
   PATHS,
   flattenNav,
@@ -87,6 +91,9 @@ const REAL_PAGES: Record<string, React.ReactElement> = {
   [PATHS.locationsSydney]: <Sydney />,
   [PATHS.locationsMelbourne]: <Melbourne />,
   [PATHS.compareRates]: <CompareRates />,
+  [PATHS.openAccount]: <OpenAccount />,
+  [PATHS.signIn]: <SignIn />,
+  [PATHS.forgotPassword]: <ForgotPassword />,
   [PATHS.educationFaqs]: <Faqs />,
   [PATHS.educationBlog]: <Blog />,
 };
@@ -118,7 +125,7 @@ const EXPLICIT_PATHS = new Set<string>([...Object.keys(REAL_PAGES), PATHS.quote]
 const MOCK_PAGES = flattenNav([
   ...MAIN_NAV,
   ...FOOTER_SERVICES,
-  ...FOOTER_SOLUTIONS,
+  ...FOOTER_CONTACT,
   ...LOCATION_DETAIL_PAGES,
   { label: 'Open account', to: PATHS.openAccount },
   { label: 'Sign in', to: PATHS.signIn },
@@ -145,6 +152,10 @@ export const routes: RouteObject[] = [
       {
         path: `${PATHS.educationBlog.replace(/^\//, '')}/:slug`,
         element: <BlogDetail />,
+      },
+      {
+        path: `${PATHS.educationTracking.replace(/^\//, '')}/:consignmentNumber`,
+        element: <TrackingDetail />,
       },
       {
         path: `${PATHS.educationTransitWarranty.replace(/^\//, '')}/:slug`,

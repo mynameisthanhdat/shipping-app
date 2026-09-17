@@ -3,7 +3,7 @@ import { CALCULATOR_STEPS } from '../../mocks/compareRatesContent';
 
 const HowItWorks: React.FC = () => (
   <section>
-    <h2 className="text-center text-2xl font-bold text-navy">
+    <h2 className="text-center text-2xl font-bold text-ink">
       How Our Shipping Rate Calculator Works
     </h2>
 
@@ -15,11 +15,11 @@ const HowItWorks: React.FC = () => (
         >
           <span
             aria-hidden="true"
-            className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-sm font-bold text-white"
+            className="flex h-9 w-9 items-center justify-center rounded-full bg-brand text-sm font-bold text-ink"
           >
             {index + 1}
           </span>
-          <h3 className="mt-4 text-center text-sm font-bold text-navy">{step.title}</h3>
+          <h3 className="mt-4 text-center text-sm font-bold text-ink">{step.title}</h3>
           <p className="mt-2 text-center text-xs leading-relaxed text-muted">
             {step.description}
           </p>

@@ -1,20 +1,12 @@
 import React, { FormEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../components/ui/Breadcrumb';
 import CtaBanner from '../components/CtaBanner';
 import { CONTACT_US_CONTENT } from '../mocks/contactUs';
 import { PATHS } from '../routes/paths';
 
-const BreadcrumbLink: React.FC<React.PropsWithChildren<{ to: string }>> = ({
-  to,
-  children,
-}) => (
-  <Link to={to} className="transition-colors hover:text-navy">
-    {children}
-  </Link>
-);
-
 const fieldClassName =
-  'w-full rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-navy outline-none transition-colors focus:border-navy';
+  'w-full rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-ink outline-none transition-colors focus:border-ink';
 
 const ContactUs: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -26,17 +18,19 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
-      <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-        <BreadcrumbLink to={PATHS.home}>Home</BreadcrumbLink> /{' '}
-        <span aria-current="page">{CONTACT_US_CONTENT.breadcrumb}</span>
-      </nav>
+    <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-ink sm:pt-8">
+      <Breadcrumb
+        items={[
+          { label: 'Home', to: PATHS.home },
+          { label: CONTACT_US_CONTENT.breadcrumb },
+        ]}
+      />
 
       <header className="mt-7 text-center">
         <h1 className="text-2xl font-bold leading-tight sm:text-[26px]">
           {CONTACT_US_CONTENT.title}
         </h1>
-        <p className="mt-3 text-sm text-slate-500">{CONTACT_US_CONTENT.subtitle}</p>
+        <p className="mt-3 text-sm text-muted">{CONTACT_US_CONTENT.subtitle}</p>
       </header>
 
       <section className="mt-10 grid gap-10 rounded-lg border border-slate-200 px-7 py-6 md:grid-cols-2 md:px-10">
@@ -53,7 +47,7 @@ const ContactUs: React.FC = () => {
               Email:{' '}
               <a
                 href={`mailto:${CONTACT_US_CONTENT.contactDetails.email}`}
-                className="transition-colors hover:text-brand"
+                className="transition-colors hover:text-brand-deep"
               >
                 {CONTACT_US_CONTENT.contactDetails.email}
               </a>
@@ -86,7 +80,7 @@ const ContactUs: React.FC = () => {
 
           <button
             type="submit"
-            className="mt-4 rounded-md bg-brand px-8 py-2.5 font-bold text-white transition-colors hover:bg-brand-hover"
+            className="mt-4 rounded-md bg-brand px-8 py-2.5 font-bold text-ink transition-colors hover:bg-brand-hover"
           >
             {CONTACT_US_CONTENT.form.submitLabel}
           </button>
@@ -104,7 +98,7 @@ const ContactUs: React.FC = () => {
         <p className="mt-3 text-[13px]">{CONTACT_US_CONTENT.membership.description}</p>
         <Link
           to={CONTACT_US_CONTENT.membership.to}
-          className="mt-6 inline-flex rounded-md bg-brand px-6 py-2.5 text-xs font-bold text-white transition-colors hover:bg-brand-hover"
+          className="mt-6 inline-flex rounded-md bg-brand px-6 py-2.5 text-xs font-bold text-ink transition-colors hover:bg-brand-hover"
         >
           {CONTACT_US_CONTENT.membership.buttonLabel}
         </Link>

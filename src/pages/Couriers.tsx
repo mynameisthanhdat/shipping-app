@@ -1,16 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../components/ui/Breadcrumb';
 import { COURIERS_CONTENT, CourierTextSegment } from '../mocks/couriers';
 import { PATHS } from '../routes/paths';
-
-const BreadcrumbLink: React.FC<React.PropsWithChildren<{ to: string }>> = ({
-  to,
-  children,
-}) => (
-  <Link to={to} className="transition-colors hover:text-navy">
-    {children}
-  </Link>
-);
 
 const RichParagraph: React.FC<{ segments: CourierTextSegment[] }> = ({ segments }) => (
   <p>
@@ -19,7 +11,7 @@ const RichParagraph: React.FC<{ segments: CourierTextSegment[] }> = ({ segments 
         <Link
           key={`${segment.text}-${index}`}
           to={segment.to}
-          className="underline underline-offset-2 transition-colors hover:text-brand"
+          className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
           {segment.text}
         </Link>
@@ -31,11 +23,13 @@ const RichParagraph: React.FC<{ segments: CourierTextSegment[] }> = ({ segments 
 );
 
 const Couriers: React.FC = () => (
-  <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-navy sm:pt-8">
-    <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
-      <BreadcrumbLink to={PATHS.home}>Home</BreadcrumbLink> /{' '}
-      <span aria-current="page">{COURIERS_CONTENT.breadcrumb}</span>
-    </nav>
+  <article className="mx-auto w-full max-w-container px-6 pb-24 pt-5 text-ink sm:pt-8">
+    <Breadcrumb
+      items={[
+        { label: 'Home', to: PATHS.home },
+        { label: COURIERS_CONTENT.breadcrumb },
+      ]}
+    />
 
     <div className="mx-auto mt-7 max-w-[760px] sm:mt-5">
       <h1 className="text-center text-2xl font-bold leading-tight sm:text-[26px]">
@@ -64,7 +58,7 @@ const Couriers: React.FC = () => (
                 <Link
                   key={provider.name}
                   to={provider.to}
-                  className="flex aspect-square flex-col items-center justify-center bg-[#ff7478] px-2 text-center text-sm font-bold leading-tight text-white transition-colors hover:bg-brand"
+                  className="flex aspect-square flex-col items-center justify-center bg-[#ff7478] px-2 text-center text-sm font-bold leading-tight text-ink transition-colors hover:bg-brand"
                 >
                   <span>{label}</span>
                   <span>{number}</span>

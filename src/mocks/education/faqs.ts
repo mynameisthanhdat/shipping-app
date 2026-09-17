@@ -19,7 +19,7 @@ export const FAQ_SECTION: FaqSection = {
   id: 'road-freight-services',
   title: 'Our Road Freight Services Work',
   description:
-    'At Transdirect we strive to make the shipping process as quick and easy as possible. If you follow our simple steps your package will be on its way in no time.',
+    'At Bee Direct we strive to make the shipping process as quick and easy as possible. If you follow our simple steps your package will be on its way in no time.',
   items: [
     {
       id: 'how-to-book',
@@ -93,7 +93,7 @@ export const FAQ_SECTION: FaqSection = {
       id: 'packaging-service',
       question: 'Can you package my item for me?',
       answer: [
-        { type: 'paragraph', content: 'We do not offer a packaging service at Transdirect. However it is vital that your item is packaged to manufacturers specifications, or an appropriate equivalent. If you have insurance or warranty on your booking, sufficient packaging will directly affect validity of coverage. For help and guidance on packaging your own goods for transit please refer to Packaging Requirements.' },
+        { type: 'paragraph', content: 'We do not offer a packaging service at Bee Direct. However it is vital that your item is packaged to manufacturers specifications, or an appropriate equivalent. If you have insurance or warranty on your booking, sufficient packaging will directly affect validity of coverage. For help and guidance on packaging your own goods for transit please refer to Packaging Requirements.' },
       ],
     },
     {
@@ -108,14 +108,14 @@ export const FAQ_SECTION: FaqSection = {
       id: 'max-length',
       question: 'What can the maximum length of my parcel be?',
       answer: [
-        { type: 'paragraph', content: 'The maximum length that Transdirect can carry is 5m or 500cm.' },
+        { type: 'paragraph', content: 'The maximum length that Bee Direct can carry is 5m or 500cm.' },
       ],
     },
     {
       id: 'over-25kg',
       question: 'What if my item is over 25kgs?',
       answer: [
-        { type: 'paragraph', content: 'If your item is over 25kg Transdirect can still carry your goods; however your items will need to be packaged on a pallet/skid or crate, and you will need to provide lifting assistance at the sending and receiving locations. If assistance is not available, you will need to select the Hydraulic tailgate option for the applicable location.' },
+        { type: 'paragraph', content: 'If your item is over 25kg Bee Direct can still carry your goods; however your items will need to be packaged on a pallet/skid or crate, and you will need to provide lifting assistance at the sending and receiving locations. If assistance is not available, you will need to select the Hydraulic tailgate option for the applicable location.' },
       ],
     },
     {
@@ -129,7 +129,7 @@ export const FAQ_SECTION: FaqSection = {
       id: 'transit-warranty',
       question: 'Are my goods covered by a Transit Warranty?',
       answer: [
-        { type: 'paragraph', content: 'Only two carriers bookable through Transdirect have cover included.' },
+        { type: 'paragraph', content: 'Only two carriers bookable through Bee Direct have cover included.' },
         { type: 'paragraph', content: 'Couriers Please = Limited liability domestic complimentary cover of up to $1000 not including the first $100 of loss, so if you claimed the max amount you get $900 max.' },
         { type: 'paragraph', content: 'Aramex = Limited liability domestic complimentary cover of up to $1500 per Base Label (so $1500 max per parcel). Please note their strict 24 hour incident notification period for damage on delivery.' },
         { type: 'paragraph', content: 'Every other carrier you need to add a Warranty when at the quote stage and the applicable fee is added on the booking. The fee is calculated when you declare the value of the goods. Please note that the Warranty coverage on the booking is a maximum of $4500 not including the first $100 of loss.' },
@@ -190,7 +190,7 @@ export const FAQ_SECTION: FaqSection = {
       id: 'carbon-neutral',
       question: 'What does certified carbon-neutral shipping mean?',
       answer: [
-        { type: 'paragraph', content: 'To become carbon neutral, Transdirect has partnered with the Carbon Reduction Institute to offset 100% of the emissions of our freight services. We were audited to identify the amount of carbon created and were able to offset our emissions through Carbon Reduction Institute’s certified program — neutralising our footprint. Regular audits ensure the number of offsets is matched to the number of carbon emissions created by our freight services. We launched this initiative September 2019, becoming one of only two Australian shipping providers to offer carbon-offset services to all of our clients.' },
+        { type: 'paragraph', content: 'To become carbon neutral, Bee Direct has partnered with the Carbon Reduction Institute to offset 100% of the emissions of our freight services. We were audited to identify the amount of carbon created and were able to offset our emissions through Carbon Reduction Institute’s certified program — neutralising our footprint. Regular audits ensure the number of offsets is matched to the number of carbon emissions created by our freight services. We launched this initiative September 2019, becoming one of only two Australian shipping providers to offer carbon-offset services to all of our clients.' },
         { type: 'paragraph', content: 'Learn more about carbon offsets and the NoCO2 certification.' },
       ],
     },
@@ -225,7 +225,7 @@ export const FAQ_SECTION: FaqSection = {
       question: 'What is a Residential Surcharge?',
       answer: [
         { type: 'paragraph', content: 'Some carriers charge an additional fee to service residential locations due to the cost and difficulty in collecting or delivering with such premises — getting a HGV into tight areas or negotiating gravel driveways with bulky freight is a challenge for those providers.' },
-        { type: 'paragraph', content: 'Any residential surcharge will always be reflected in the Transdirect Quote tool so long as you ensure that you have declared your building type accurately, along with accurate weight and dimensions.' },
+        { type: 'paragraph', content: 'Any residential surcharge will always be reflected in the Bee Direct Quote tool so long as you ensure that you have declared your building type accurately, along with accurate weight and dimensions.' },
         { type: 'paragraph', content: 'Please note that a business registered to a home does not make it a Commercial Building and residential surcharges will be applicable.' },
       ],
     },
@@ -246,7 +246,7 @@ export const FAQ_SECTION: FaqSection = {
       id: 'auction-house-pickup',
       question: 'Can I arrange Pick up from an Auction House?',
       answer: [
-        { type: 'paragraph', content: 'If as a Transdirect member you are the Auction house then you may do so; however if you are a consumer having made a purchase then collections from Auction houses are not permitted.' },
+        { type: 'paragraph', content: 'If as a Bee Direct member you are the Auction house then you may do so; however if you are a consumer having made a purchase then collections from Auction houses are not permitted.' },
       ],
     },
     {
@@ -348,7 +348,7 @@ export const FAQ_SECTION: FaqSection = {
       id: 'multi-pickup',
       question: 'What is a Multi Pick Up?',
       answer: [
-        { type: 'paragraph', content: 'Multipickup is a volume discount offered by Transdirect to all members booking a bulk collection from the same location. You can book Multi pick up batches of 3, 7, 10 or 21. For instructions please see our helpful multipickup step-by-step guide and How-to video.' },
+        { type: 'paragraph', content: 'Multipickup is a volume discount offered by Bee Direct to all members booking a bulk collection from the same location. You can book Multi pick up batches of 3, 7, 10 or 21. For instructions please see our helpful multipickup step-by-step guide and How-to video.' },
       ],
     },
   ],

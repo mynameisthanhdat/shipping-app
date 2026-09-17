@@ -41,7 +41,7 @@ export const ACCOUNT_BENEFITS: AccountBenefit[] = [
   {
     id: 'discount-secure',
     title: 'Your Volume-based Shipping Discounts Stay Secure',
-    body: "Worried about losing your discount if your shipping slows down? Don't be. At Transdirect, your most recent discount level stays in place, even if your volume drops. It's our way of rewarding loyalty and supporting small businesses through seasonal peaks and troughs.",
+    body: "Worried about losing your discount if your shipping slows down? Don't be. At Bee Direct, your most recent discount level stays in place, even if your volume drops. It's our way of rewarding loyalty and supporting small businesses through seasonal peaks and troughs.",
   },
 ];
 
@@ -87,12 +87,12 @@ export const ACCOUNT_REVIEWS: AccountReview[] = [
 export const ACCOUNT_FAQS: AccountFaq[] = [
   {
     id: 'free-account',
-    question: 'Is it free to open a shipping account with Transdirect?',
+    question: 'Is it free to open a shipping account with Bee Direct?',
     answer: 'Yes. There are no setup or subscription fees. Your account is 100% free.',
   },
   {
     id: 'who-can-open',
-    question: 'Who can open a Transdirect account?',
+    question: 'Who can open a Bee Direct account?',
     answer:
       'Anyone, from individuals to large organisations, can open a courier account and start saving.',
   },

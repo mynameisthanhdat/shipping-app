@@ -12,7 +12,6 @@ export type AccountSignupDetails = {
   email: string;
   password: string;
   weeklySpend: string;
-  discountAccountType: string;
 };
 
 export const createEmptyAccountSignup = (): AccountSignupDetails => ({
@@ -23,7 +22,6 @@ export const createEmptyAccountSignup = (): AccountSignupDetails => ({
   email: '',
   password: '',
   weeklySpend: '',
-  discountAccountType: '',
 });
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -39,3 +37,16 @@ export const isAccountSignupComplete = (details: AccountSignupDetails): boolean 
       details.password.length >= 6 &&
       details.weeklySpend
   );
+
+/** Credentials captured by the login form. */
+export type LoginCredentials = {
+  email: string;
+  password: string;
+  rememberMe: boolean;
+};
+
+export const createEmptyLogin = (): LoginCredentials => ({
+  email: '',
+  password: '',
+  rememberMe: false,
+});

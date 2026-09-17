@@ -5,7 +5,7 @@ import { PATHS } from '../../routes/paths';
 
 const RateExampleGrid: React.FC = () => (
   <section>
-    <h2 className="text-2xl font-bold text-navy">
+    <h2 className="text-2xl font-bold text-ink">
       Examples of our Domestic and International Rates
     </h2>
     <p className="mt-2 text-sm leading-relaxed text-muted">
@@ -15,8 +15,8 @@ const RateExampleGrid: React.FC = () => (
     <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {RATE_EXAMPLES.map((item) => (
         <article key={item.id} className="rounded-xl bg-muted-surface/30 p-6">
-          <p className="text-3xl font-bold text-navy">{item.price}</p>
-          <h3 className="mt-2 text-sm font-bold text-navy">{item.label}</h3>
+          <p className="text-3xl font-bold text-ink">{item.price}</p>
+          <h3 className="mt-2 text-sm font-bold text-ink">{item.label}</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
         </article>
       ))}
@@ -25,7 +25,7 @@ const RateExampleGrid: React.FC = () => (
     <div className="mt-8 flex justify-center">
       <Link
         to={PATHS.compareRates}
-        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+        className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-sm font-bold text-ink transition-colors hover:bg-brand-hover"
       >
         See more
       </Link>

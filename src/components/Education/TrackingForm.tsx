@@ -3,11 +3,11 @@ import {
   TrackingLookup,
   createEmptyTrackingLookup,
 } from '../../types/tracking';
-import { FIELD_CLASS, FieldError } from '../Quote/fields';
+import { FIELD_CLASS, FieldError } from '../ui/fields';
 
 type FormErrors = Record<string, string>;
 
-const LABEL_CLASS = 'mb-1.5 block text-sm font-bold text-navy';
+const LABEL_CLASS = 'mb-1.5 block text-sm font-bold text-ink';
 
 const validate = (lookup: TrackingLookup): FormErrors => {
   const errors: FormErrors = {};
@@ -63,7 +63,7 @@ const TrackingForm: React.FC<TrackingFormProps> = ({
           id="consignment-number"
           type="text"
           value={lookup.consignmentNumber}
-          placeholder="DATIST-09"
+          placeholder="BD-100001"
           onChange={(event) => patch({ consignmentNumber: event.target.value })}
           className={FIELD_CLASS}
         />
@@ -73,7 +73,7 @@ const TrackingForm: React.FC<TrackingFormProps> = ({
       <div className="mt-6 flex justify-center">
         <button
           type="submit"
-          className="inline-flex items-center justify-center rounded-md bg-brand px-8 py-3 text-sm font-bold text-white transition-colors hover:bg-brand-hover"
+          className="inline-flex items-center justify-center rounded-md bg-brand px-8 py-3 text-sm font-bold text-ink transition-colors hover:bg-brand-hover"
         >
           {submitLabel}
         </button>
