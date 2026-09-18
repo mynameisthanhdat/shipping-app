@@ -27,7 +27,7 @@ const OpenAccount: React.FC = () => {
         <div className="mt-10 text-center">
           <h1 className="text-3xl font-bold text-ink">Create Your Free Account</h1>
           <p className="mx-auto mt-3.5 max-w-xl text-muted">
-            Join Bee Direct in minutes and start saving on every shipment with member-only rates.
+            Join BEE DIRECT in minutes and start saving on every shipment with member-only rates.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const OpenAccount: React.FC = () => {
       </div>
 
       <div className="mx-auto mt-16 w-full max-w-container px-6 pb-8">
-        <CtaBanner title="We've got you covered. Send with Bee Direct and start saving today!" />
+        <CtaBanner title="We've got you covered. Send with BEE DIRECT and start saving today!" />
       </div>
     </div>
   );

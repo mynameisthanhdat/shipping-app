@@ -36,7 +36,7 @@ const Blog: React.FC = () => {
         />
 
         <div className="mt-6 text-center">
-          <h1 className="text-3xl font-bold text-ink">The Bee Direct Blog</h1>
+          <h1 className="text-3xl font-bold text-ink">The BEE DIRECT Blog</h1>
           <p className="mt-3.5 text-lg font-bold text-ink">
             Shipping tips, ecommerce know-how and courier news for Australian sellers
           </p>
@@ -73,7 +73,7 @@ const Blog: React.FC = () => {
 
       <div className="mx-auto mt-auto w-full max-w-container px-6 py-8">
         <CtaBanner
-          title="Ready to automate your store's shipping? Connect Bee Direct and start selling smarter today!"
+          title="Ready to automate your store's shipping? Connect BEE DIRECT and start selling smarter today!"
           primaryAction={{ label: 'Connect My Store', to: "#" }}
           secondaryAction={{ label: 'See Plans & Pricing', to: "#" }}
         />

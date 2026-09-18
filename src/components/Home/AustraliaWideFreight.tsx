@@ -40,7 +40,7 @@ const AustraliaWideFreight: React.FC = () => (
             mind. Your goods are safe with us.
           </p>
           <p>
-            Bee Direct isn&apos;t just for interstate deliveries. Our customers actually
+            BEE DIRECT isn&apos;t just for interstate deliveries. Our customers actually
             find our local courier service rates are cheaper than those at the post
             office.
           </p>
@@ -70,7 +70,7 @@ const AustraliaWideFreight: React.FC = () => (
             We look forward to helping you with your courier, freight and shipping
             delivery needs, no matter how big or small they may be.
           </p>
-          <p className="font-semibold text-ink">The Bee Direct team</p>
+          <p className="font-semibold text-ink">The BEE DIRECT team</p>
         </div>
       </article>
     </div>

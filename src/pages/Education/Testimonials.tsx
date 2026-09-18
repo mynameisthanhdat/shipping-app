@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
             What Our Customers Say
           </h1>
           <p className="mt-3.5 text-lg font-bold text-ink">
-            Real feedback from businesses and individuals shipping with Bee Direct
+            Real feedback from businesses and individuals shipping with BEE DIRECT
           </p>
         </div>
 

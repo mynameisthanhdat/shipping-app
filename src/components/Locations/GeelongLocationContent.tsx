@@ -7,11 +7,11 @@ const GeelongLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
       <h2 className="text-xl font-bold text-ink">
-        Trust the team at Bee Direct for all your Geelong courier needs
+        Trust the team at BEE DIRECT for all your Geelong courier needs
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Bee Direct has years of experience within the courier industry, providing
+        BEE DIRECT has years of experience within the courier industry, providing
         cost-effective, reliable and timely freight deliveries throughout Geelong and the
         surrounds. We work with both individuals and businesses on tasks of all scales,
         ensuring that each of our clients receives the very best level of service.

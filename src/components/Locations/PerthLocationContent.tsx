@@ -13,7 +13,7 @@ const PerthLocationContent: React.FC = () => (
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        With 100,000+ small business customers, Bee Direct is the Perth courier company you
+        With 100,000+ small business customers, BEE DIRECT is the Perth courier company you
         can trust to deliver. Local, interstate and international — our Perth couriers are
         ready to handle all of your shipping, freight and delivery needs.
       </p>
@@ -27,7 +27,7 @@ const PerthLocationContent: React.FC = () => (
       <p className="mt-3 text-sm leading-relaxed text-ink">
         We&apos;re proud to pass along exclusive savings of up to 30% with Perth courier
         companies including Couriers Please, TNT, Toll Priority, Direct Couriers, Allied
-        Express, and more. Plus, our Bee Direct members can save even more — you can{' '}
+        Express, and more. Plus, our BEE DIRECT members can save even more — you can{' '}
         <Link
           to={PATHS.openAccount}
           className="underline underline-offset-2 transition-colors hover:text-brand-deep"
@@ -46,11 +46,11 @@ const PerthLocationContent: React.FC = () => (
       <p className="mt-4 text-sm leading-relaxed text-ink">
         Our expertise in the industry, commitment to providing a wide range of courier and
         shipping services, plus our localised knowledge for Western Australia all go into
-        making Bee Direct the best choice for courier services in Perth.
+        making BEE DIRECT the best choice for courier services in Perth.
       </p>
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
-        Trust Bee Direct with your shipping needs and you can:
+        Trust BEE DIRECT with your shipping needs and you can:
       </p>
 
       <ul className="mt-1 list-disc space-y-0.5 pl-5 text-sm leading-relaxed text-ink">
@@ -74,7 +74,7 @@ const PerthLocationContent: React.FC = () => (
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Our team at Bee Direct are not only passionate about providing exceptional levels of
+        Our team at BEE DIRECT are not only passionate about providing exceptional levels of
         service, but also the best budget-friendly prices. In fact, quotes for our local
         Perth couriers start from only {startingFrom} — incredible value, cheaper than
         parcel post!
@@ -82,7 +82,7 @@ const PerthLocationContent: React.FC = () => (
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
         So whether you need to ship large pallets or small parcels, in a quick, safe and
-        economical way, you&apos;ve come to the right place. Let Bee Direct help you with our
+        economical way, you&apos;ve come to the right place. Let BEE DIRECT help you with our
         first-rate courier, freight and shipping delivery solutions. Get a quick instant
         quote, then book the best price online today. Discover how easy and affordable
         we&apos;ve made it for you to send parcels and packages between Perth and other
@@ -90,13 +90,13 @@ const PerthLocationContent: React.FC = () => (
       </p>
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
-        Don&apos;t forget: Bee Direct members save the most, so if you ship often but
+        Don&apos;t forget: BEE DIRECT members save the most, so if you ship often but
         haven&apos;t signed up yet,{' '}
         <Link
           to={PATHS.openAccount}
           className="underline underline-offset-2 transition-colors hover:text-brand-deep"
         >
-          become a Bee Direct Member now
+          become a BEE DIRECT Member now
         </Link>
         !
       </p>

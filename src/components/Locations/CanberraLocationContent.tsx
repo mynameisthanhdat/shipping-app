@@ -12,7 +12,7 @@ const CanberraLocationContent: React.FC = () => (
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        At Bee Direct, we understand that each of our clients have different requirements for
+        At BEE DIRECT, we understand that each of our clients have different requirements for
         their courier needs. That is why we specialise in a diverse spectrum of services,
         ensuring we can assist with your freight delivery specifications no matter what
         they are.
@@ -31,7 +31,7 @@ const CanberraLocationContent: React.FC = () => (
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
         Find out more about the courier Canberra trusts for reliability, affordability, and
-        time efficiency by contacting Bee Direct today. You can also learn more about the
+        time efficiency by contacting BEE DIRECT today. You can also learn more about the
         various locations around Australia we service.
       </p>
 

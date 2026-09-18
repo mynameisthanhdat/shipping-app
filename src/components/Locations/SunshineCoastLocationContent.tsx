@@ -11,7 +11,7 @@ const SunshineCoastLocationContent: React.FC = () => (
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        The team at Bee Direct understands the importance of having your freight delivered
+        The team at BEE DIRECT understands the importance of having your freight delivered
         safely, in a timely manner, and at a competitive cost. That&apos;s why we offer a
         premium courier service right across the Sunshine Coast, designed to meet the
         varying needs of both individuals and businesses.
@@ -27,7 +27,7 @@ const SunshineCoastLocationContent: React.FC = () => (
       </ul>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Find out more about Bee Direct&apos;s Sunshine Coast courier services today, or check
+        Find out more about BEE DIRECT&apos;s Sunshine Coast courier services today, or check
         out the various other locations around Australia that we service.
       </p>
 

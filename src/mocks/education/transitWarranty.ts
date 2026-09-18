@@ -63,8 +63,8 @@ export const TRANSIT_WARRANTY_SECTIONS: TransitWarrantySection[] = [
       },
       {
         id: 'bee-direct-same-day',
-        title: 'Bee Direct Same Day Transit Warranty',
-        linkLabel: "Click for Bee Direct Same Day's Transit Warranty details",
+        title: 'BEE DIRECT Same Day Transit Warranty',
+        linkLabel: "Click for BEE DIRECT Same Day's Transit Warranty details",
       },
       {
         id: 'capital-transport',

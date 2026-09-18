@@ -16,7 +16,7 @@ const SENDABLE_ITEMS = [
 
 const TESTIMONIALS = [
   'Booked a pickup on a Tuesday, had it delivered interstate by Friday morning, no surprises along the way. That’s exactly what I needed.',
-  'I run a small business and time-sensitive deliveries used to be a headache. Bee Direct’s tracking actually kept me updated instead of leaving me guessing.',
+  'I run a small business and time-sensitive deliveries used to be a headache. BEE DIRECT’s tracking actually kept me updated instead of leaving me guessing.',
 ];
 
 export type QuoteLocationContentProps = {
@@ -33,7 +33,7 @@ const QuoteLocationContent: React.FC<QuoteLocationContentProps> = ({ city = 'Mel
     <section>
       <h2 className={HEADING}>{`Reliable Couriers and Freight Delivery Across ${city}`}</h2>
       <p className={`${BODY} mt-3`}>
-        {`Sending something across the city or across the country? Bee Direct makes ${city} shipping simple. Compare courier options side by side and book with confidence, all in one place. We connect individuals and businesses with a network of dependable couriers, backed by flexible service levels and rates that don't punish you for shopping around — because you won't need to.`}
+        {`Sending something across the city or across the country? BEE DIRECT makes ${city} shipping simple. Compare courier options side by side and book with confidence, all in one place. We connect individuals and businesses with a network of dependable couriers, backed by flexible service levels and rates that don't punish you for shopping around — because you won't need to.`}
       </p>
       <p className={`${BODY} mt-3`}>
         <Link to={PATHS.quote} className={LINK}>
@@ -44,13 +44,13 @@ const QuoteLocationContent: React.FC<QuoteLocationContentProps> = ({ city = 'Mel
     </section>
 
     <section>
-      <h2 className={HEADING}>{`Why Ship with Bee Direct in ${city}?`}</h2>
+      <h2 className={HEADING}>{`Why Ship with BEE DIRECT in ${city}?`}</h2>
 
       <div className="mt-4 space-y-4">
         <div>
           <h3 className={BODY}>{`Compare ${city} Couriers in Seconds`}</h3>
           <p className={BODY}>
-            Bee Direct pulls live pricing and service options from a network of national and
+            BEE DIRECT pulls live pricing and service options from a network of national and
             regional couriers, so you can weigh up cost and speed in one screen instead of
             requesting quotes one by one.
           </p>
@@ -79,7 +79,7 @@ const QuoteLocationContent: React.FC<QuoteLocationContentProps> = ({ city = 'Mel
     </section>
 
     <section>
-      <h2 className={HEADING}>{`Why Ship with Bee Direct in ${city}?`}</h2>
+      <h2 className={HEADING}>{`Why Ship with BEE DIRECT in ${city}?`}</h2>
 
       <div className="mt-3 space-y-1">
         {TESTIMONIALS.map((quote) => (

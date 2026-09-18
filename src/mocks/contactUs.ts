@@ -44,9 +44,9 @@ export const CONTACT_US_CONTENT: ContactUsContent = {
   subtitle:
     'Have a question about shipping rates, tracking, or your account? Our team is here to help.',
   about: {
-    heading: 'About Bee Direct',
+    heading: 'About BEE DIRECT',
     description:
-      'Bee Direct is Australia’s fastest-growing courier comparison platform. We help businesses and individuals find the best shipping rates across every major carrier, backed by a team that’s always just a message away.',
+      'BEE DIRECT is Australia’s fastest-growing courier comparison platform. We help businesses and individuals find the best shipping rates across every major carrier, backed by a team that’s always just a message away.',
   },
   contactDetails: {
     heading: 'Contact Details',
@@ -69,7 +69,7 @@ export const CONTACT_US_CONTENT: ContactUsContent = {
   membership: {
     heading: 'Become a Member',
     description:
-      'Join Bee Direct Membership and unlock exclusive discounted rates, priority support, and faster processing on every shipment.',
+      'Join BEE DIRECT Membership and unlock exclusive discounted rates, priority support, and faster processing on every shipment.',
     buttonLabel: 'Become a Member',
     to: PATHS.openAccount,
   },

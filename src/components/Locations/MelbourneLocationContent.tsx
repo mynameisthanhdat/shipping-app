@@ -10,7 +10,7 @@ const MelbourneLocationContent: React.FC = () => (
         Reliable Couriers and Freight Delivery Across Melbourne
       </h2>
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Sending something across the city or across the country? Bee Direct makes Melbourne
+        Sending something across the city or across the country? BEE DIRECT makes Melbourne
         shipping simple. Compare courier options side by side and book with confidence, all
         in one place. We connect individuals and businesses with a network of dependable
         couriers, backed by flexible service levels and rates that don&apos;t punish you for
@@ -28,7 +28,7 @@ const MelbourneLocationContent: React.FC = () => (
     </section>
 
     <section>
-      <h2 className="text-xl font-bold text-ink">Why Ship with Bee Direct in Melbourne?</h2>
+      <h2 className="text-xl font-bold text-ink">Why Ship with BEE DIRECT in Melbourne?</h2>
 
       <div className="mt-4 space-y-4">
         <div>
@@ -36,7 +36,7 @@ const MelbourneLocationContent: React.FC = () => (
             Compare Melbourne Couriers in Seconds
           </h3>
           <p className="text-sm leading-relaxed text-ink">
-            Bee Direct pulls live pricing and service options from a network of national and
+            BEE DIRECT pulls live pricing and service options from a network of national and
             regional couriers, so you can weigh up cost and speed in one screen instead of
             requesting quotes one by one.
           </p>
@@ -83,7 +83,7 @@ const MelbourneLocationContent: React.FC = () => (
         </p>
         <p className="text-sm leading-relaxed text-ink">
           &quot;I run a small business and time-sensitive deliveries used to be a headache.
-          Bee Direct&apos;s tracking actually kept me updated instead of leaving me
+          BEE DIRECT&apos;s tracking actually kept me updated instead of leaving me
           guessing.&quot;
         </p>
       </div>

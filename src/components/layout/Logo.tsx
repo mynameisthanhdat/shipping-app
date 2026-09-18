@@ -4,19 +4,20 @@ import BeeMark from './BeeMark';
 import { PATHS } from '../../routes/paths';
 
 type LogoProps = {
-  /** Controls text size and color — the wordmark inherits both. */
+  /** Controls text size and colour — the wordmark inherits both. */
   className?: string;
+  /** The mark is wider than it is tall, so size it by height only. */
   markClassName?: string;
 };
 
-const Logo: React.FC<LogoProps> = ({ className = '', markClassName = 'h-9 w-9' }) => (
+const Logo: React.FC<LogoProps> = ({ className = '', markClassName = 'h-7' }) => (
   <Link
     to={PATHS.home}
-    aria-label="Bee Direct home"
+    aria-label="BEE DIRECT home"
     className={`inline-flex items-center gap-2.5 ${className}`}
   >
-    <BeeMark className={`${markClassName} shrink-0`} />
-    <span className="font-bold">Bee Direct</span>
+    <BeeMark className={`${markClassName} w-auto shrink-0`} />
+    <span className="font-bold tracking-tight">BEE DIRECT</span>
   </Link>
 );
 

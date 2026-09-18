@@ -12,12 +12,12 @@ const AdelaideLocationContent: React.FC = () => (
 
       <p className="mt-4 text-sm font-bold leading-relaxed text-ink">
         Organise your freight delivery across Adelaide and interstate with the courier
-        experts at Bee Direct
+        experts at BEE DIRECT
       </p>
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
         Looking for Adelaide couriers that are reliable, timely, and cost efficient?
-        Bee Direct is the company to call. We operate right across the nation, including
+        BEE DIRECT is the company to call. We operate right across the nation, including
         throughout Adelaide and South Australia, and have a wealth of experience within the
         courier industry. Whether you are a commercial or residential customer, we can
         assist you with:
@@ -55,7 +55,7 @@ const AdelaideLocationContent: React.FC = () => (
       </ul>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Talk to the team at Bee Direct about our freight services today, or discover the
+        Talk to the team at BEE DIRECT about our freight services today, or discover the
         various other locations throughout Australia we can service.
       </p>
     </section>
@@ -64,10 +64,10 @@ const AdelaideLocationContent: React.FC = () => (
       <h2 className="text-xl font-bold text-ink">Adelaide Courier Prices</h2>
       <p className="mt-4 text-sm leading-relaxed text-ink">
         With prices starting as low as {startingFrom} for deliveries within Adelaide and
-        South Australia, Bee Direct makes it easy to stick to your budget while still
+        South Australia, BEE DIRECT makes it easy to stick to your budget while still
         benefiting from our quality service. Whether you want your goods to travel a large
         or small distance, there&apos;s no need to look anywhere else for your freight and
-        shipping needs — Bee Direct has you covered. Get a free online quote for our courier
+        shipping needs — BEE DIRECT has you covered. Get a free online quote for our courier
         service and find out exactly how little your shipment will cost. We think
         you&apos;ll be pleasantly surprised.
       </p>

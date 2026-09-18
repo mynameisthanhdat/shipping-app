@@ -54,7 +54,7 @@ const BlogDetail: React.FC = () => {
 
       <div className="mx-auto mt-auto w-full max-w-container px-6 py-8">
         <CtaBanner
-          title="Ready to automate your store's shipping? Connect Bee Direct and start selling smarter today!"
+          title="Ready to automate your store's shipping? Connect BEE DIRECT and start selling smarter today!"
           primaryAction={{ label: 'Connect My Store', to: PATHS.ecommerce }}
           secondaryAction={{ label: 'See Plans & Pricing', to: PATHS.pricing }}
         />

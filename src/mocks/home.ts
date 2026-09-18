@@ -128,7 +128,7 @@ export const INTEGRATIONS: IntegrationItem[] = [
   {
     id: 'ebay',
     name: 'eBay',
-    description: 'Fulfill marketplace orders without leaving Bee Direct',
+    description: 'Fulfill marketplace orders without leaving BEE DIRECT',
   },
   {
     id: 'paypal',

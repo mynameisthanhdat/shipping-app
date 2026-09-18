@@ -13,11 +13,11 @@ const BrisbaneLocationContent: React.FC = () => (
       </h2>
 
       <p className="mt-4 text-sm font-bold leading-relaxed text-ink">
-        Trust the premium freight services of Bee Direct for your Brisbane shipping needs
+        Trust the premium freight services of BEE DIRECT for your Brisbane shipping needs
       </p>
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
-        When it comes to couriers in Brisbane and throughout Queensland, Bee Direct leads
+        When it comes to couriers in Brisbane and throughout Queensland, BEE DIRECT leads
         the way in terms of reliability, time efficiency, affordability, and providing a
         range of services. Individuals and businesses are able to depend on the cheap
         courier options we provide, no matter what the specifics of their needs are.
@@ -30,7 +30,7 @@ const BrisbaneLocationContent: React.FC = () => (
       <ul className="mt-1 list-disc space-y-2 pl-5 text-sm leading-relaxed text-ink">
         <li>
           <span className="font-bold">Last minute deliveries:</span> For those times when
-          everything&apos;s a bit rushed, Bee Direct offers same day, next day and overnight
+          everything&apos;s a bit rushed, BEE DIRECT offers same day, next day and overnight
           deliveries.
         </li>
         <li>
@@ -48,7 +48,7 @@ const BrisbaneLocationContent: React.FC = () => (
           made anywhere nationwide.
         </li>
         <li>
-          <span className="font-bold">Door to door service:</span> At Bee Direct we
+          <span className="font-bold">Door to door service:</span> At BEE DIRECT we
           don&apos;t want you to lift a finger beyond booking our courier services. We pick
           up the freight from our senders and deliver it directly to the receiver&apos;s
           door.
@@ -59,7 +59,7 @@ const BrisbaneLocationContent: React.FC = () => (
     <section>
       <h2 className="text-xl font-bold text-ink">Prices</h2>
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        With our local prices starting out as low as {startingFrom}, you can trust Bee Direct
+        With our local prices starting out as low as {startingFrom}, you can trust BEE DIRECT
         to deliver a service that suits your budget perfectly and even leaves you with a
         bit of extra change. Use our quick and easy online quoting system to find out
         exactly how much (or should we say how little) it will cost you to move your

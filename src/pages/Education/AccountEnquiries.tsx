@@ -30,7 +30,7 @@ const AccountEnquiries: React.FC = () => {
 
         <div className="mt-6 text-center">
           <h1 className="text-3xl font-bold text-ink">
-            Open A Free Shipping Account With Bee Direct
+            Open A Free Shipping Account With BEE DIRECT
           </h1>
           <p className="mt-3.5 text-lg font-bold text-ink">
             To start looking for answers, choose your category!
@@ -43,7 +43,7 @@ const AccountEnquiries: React.FC = () => {
 
         <section className="mt-12">
           <p className="text-start text-sm leading-relaxed text-muted">
-            Want to save on every delivery you book? Open a free Bee Direct
+            Want to save on every delivery you book? Open a free BEE DIRECT
             shipping account to enjoy member-only discounts, faster bookings and
             real-time parcel tracking – all from one simple-to-use dashboard. No
             matter what your shipping needs are, our courier account puts you in
@@ -70,7 +70,7 @@ const AccountEnquiries: React.FC = () => {
 
         <section className="mt-12">
           <h2 className="text-2xl font-bold text-ink">
-            How to Open a Bee Direct Shipping Account
+            How to Open a BEE DIRECT Shipping Account
           </h2>
           <div className="mt-6">
             <AccountHowToSteps />
@@ -91,7 +91,7 @@ const AccountEnquiries: React.FC = () => {
             Shipping Guidelines and Restrictions
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-muted">
-            Bee Direct accepts most items for transport, from small parcels to
+            BEE DIRECT accepts most items for transport, from small parcels to
             larger freight deliveries. The maximum length we can carry is 5
             metres (500cm).
           </p>
@@ -107,7 +107,7 @@ const AccountEnquiries: React.FC = () => {
 
         <section className="mt-12 scroll-mt-8 focus:outline-none" id={ACCOUNT_SIGNUP_ANCHOR}>
           <h2 className="text-center text-2xl font-bold text-ink">
-            Open Your Bee Direct Shipping Account Today
+            Open Your BEE DIRECT Shipping Account Today
           </h2>
           <p className="mt-3 text-center text-sm leading-relaxed text-muted">
             Ready to start saving? Take advantage of membership discounts by

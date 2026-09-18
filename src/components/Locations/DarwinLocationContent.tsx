@@ -12,7 +12,7 @@ const DarwinLocationContent: React.FC = () => (
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Bee Direct&apos;s vast experience working in Darwin and throughout the Northern
+        BEE DIRECT&apos;s vast experience working in Darwin and throughout the Northern
         Territory allows us to provide the efficient, timely, and reliable courier services
         you require. We have worked with numerous individuals and businesses over the
         years, ensuring our freight delivery services meet their specific requirements.
@@ -41,7 +41,7 @@ const DarwinLocationContent: React.FC = () => (
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
         To learn more about how our Darwin couriers can help you, get in contact with the
-        team at Bee Direct today. You can also check out our various other Australian
+        team at BEE DIRECT today. You can also check out our various other Australian
         locations.
       </p>
 

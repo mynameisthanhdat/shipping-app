@@ -1,6 +1,6 @@
 {
-  "short_name": "Bee Direct",
-  "name": "Bee Direct — Affordable shipping for everyone",
+  "short_name": "BEE DIRECT",
+  "name": "BEE DIRECT — Affordable shipping for everyone",
   "icons": [
     {
       "src": "logo.svg",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#f6be00",
+  "theme_color": "#f5a623",
   "background_color": "#ffffff"
 }

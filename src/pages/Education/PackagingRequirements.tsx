@@ -38,7 +38,7 @@ const PackagingRequirements: React.FC = () => {
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-muted">
             The following are guidelines to follow before you ship with
-            Bee Direct.
+            BEE DIRECT.
           </p>
           <div className="mt-5">
             <PackagingChecklist items={PACKAGING_REQUIREMENTS_ITEMS} />

@@ -31,7 +31,7 @@ const Locations: React.FC = () => {
 
       <div className="mx-auto mt-10 max-w-4xl text-sm leading-relaxed">
         <p>
-          Bee Direct offers our premier{' '}
+          BEE DIRECT offers our premier{' '}
           <Link
             to={PATHS.couriers}
             className="underline underline-offset-2 transition-colors hover:text-brand-deep"

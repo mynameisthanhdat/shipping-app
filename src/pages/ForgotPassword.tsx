@@ -21,7 +21,7 @@ const ForgotPassword: React.FC = () => {
         <div className="mt-10 text-center">
           <h1 className="text-3xl font-bold text-ink">Reset Your Password</h1>
           <p className="mx-auto mt-3.5 max-w-xl text-muted">
-            Enter the email on your Bee Direct account and we will send you a link to choose
+            Enter the email on your BEE DIRECT account and we will send you a link to choose
             a new password.
           </p>
         </div>
@@ -35,7 +35,7 @@ const ForgotPassword: React.FC = () => {
                 address — that would let anyone probe for registered emails.
               */}
               <p className="mt-2 text-sm text-ink">
-                {`If ${sentTo} belongs to a Bee Direct account, a reset link is on its way. The link expires in 30 minutes.`}
+                {`If ${sentTo} belongs to a BEE DIRECT account, a reset link is on its way. The link expires in 30 minutes.`}
               </p>
               <p className="mt-4 text-sm text-muted">
                 Nothing arrived? Check your spam folder, or{' '}
@@ -70,7 +70,7 @@ const ForgotPassword: React.FC = () => {
       </div>
 
       <div className="mx-auto mt-16 w-full max-w-container px-6 pb-8">
-        <CtaBanner title="We've got you covered. Send with Bee Direct and start saving today!" />
+        <CtaBanner title="We've got you covered. Send with BEE DIRECT and start saving today!" />
       </div>
     </div>
   );

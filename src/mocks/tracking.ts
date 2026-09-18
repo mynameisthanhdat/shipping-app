@@ -37,7 +37,7 @@ export const TRACKED_SHIPMENTS: TrackedShipment[] = [
     deliveryWindow: '9:00am – 5:00pm',
     sender: {
       name: 'Dat Pham',
-      company: 'Bee Direct Demo Store',
+      company: 'BEE DIRECT Demo Store',
       suburb: 'Melbourne',
       state: 'VIC',
       postcode: '3000',
@@ -93,7 +93,7 @@ export const TRACKED_SHIPMENTS: TrackedShipment[] = [
     deliveryWindow: '9:00am – 5:00pm',
     deliveredAt: hoursAgo(20),
     signedBy: 'J. Walker',
-    sender: { name: 'Bee Direct Warehouse', suburb: 'Adelaide', state: 'SA', postcode: '5000' },
+    sender: { name: 'BEE DIRECT Warehouse', suburb: 'Adelaide', state: 'SA', postcode: '5000' },
     receiver: { name: 'Jordan Walker', suburb: 'Perth', state: 'WA', postcode: '6000' },
     itemType: 'Carton / Box',
     quantity: 1,

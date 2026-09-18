@@ -15,7 +15,7 @@ export const TERMS_AND_CONDITIONS_CONTENT: TermsAndConditionsContent = {
     'By instructing the Company to supply the Services, the Customer agrees to accept and be bound by the Company’s trading terms and conditions. All and any business undertaken by the Company shall be subject to the Company’s trading terms and conditions of contract which are as follows:',
   definitionsHeading: 'Definitions',
   definitions: [
-    '1. “Company” shall mean Bee Direct Pty Ltd (ACN 50 111 218 627), its employees, servants, agents, subsidiaries, associated entities, successor and/or assigns.',
+    '1. “Company” shall mean BEE DIRECT Pty Ltd (ACN 50 111 218 627), its employees, servants, agents, subsidiaries, associated entities, successor and/or assigns.',
     '“Customer” shall mean the shipper (consignor), the receiver (consignee), the owner of the Goods, the bailor of the Goods or the person for whom any of the Services are arranged and/or performed.',
     '“Goods” shall mean the chattels, articles or things tendered for by the Customer for the Services and shall include the container(s), unit load device(s) or other packaging containing the same and any other pallet(s) delivered with the same to the Company or Subcontractor by the Customer or for or on its behalf.',
     '“Government Authority” means, without limitation, all Government Departments with responsibility for the import and export of goods, the collection of revenue on the import and export of goods and the transport of those goods to include, without limitation, Australian Customs Service (ACS), Australian Quarantine Inspection Service (AQIS) and Australian Taxation Office (ATO).',

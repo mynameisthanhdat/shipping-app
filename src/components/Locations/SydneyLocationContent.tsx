@@ -12,7 +12,7 @@ const SydneyLocationContent: React.FC = () => (
       <p className="mt-4 text-sm leading-relaxed text-ink">
         If you&apos;re after cheap couriers in Sydney and New South Wales who can offer
         you a safe door to door service between local and interstate locations, then look
-        no further. Bee Direct is proud to provide a comprehensive range of interstate
+        no further. BEE DIRECT is proud to provide a comprehensive range of interstate
         courier services to suit a broad range of needs. It is our aim to ensure our
         varied clientele in and around Sydney receives timely, reliable and cost
         efficient freight shipping, in a way that best serves their intended purpose.
@@ -22,7 +22,7 @@ const SydneyLocationContent: React.FC = () => (
         We pride ourselves on being a dependable freight partner in Sydney, consistently
         delivering quality service to our customers all over Australia. Specialising in
         both local and interstate delivery, with options to suit even the most modest
-        budget, Bee Direct connects you with trusted carriers that have stood the test of
+        budget, BEE DIRECT connects you with trusted carriers that have stood the test of
         time.
       </p>
 
@@ -48,7 +48,7 @@ const SydneyLocationContent: React.FC = () => (
     <section>
       <h2 className="text-xl font-bold text-ink">Prices</h2>
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        At Bee Direct, we not only provide a premium level of service, we also strive to keep
+        At BEE DIRECT, we not only provide a premium level of service, we also strive to keep
         our costs as low as possible. With local courier prices starting from {startingFrom},
         you can feel confident you&apos;ll stay within your budget. Get an instant online
         quote to find out just how affordable our services can be. We look forward to

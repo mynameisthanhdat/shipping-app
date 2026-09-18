@@ -33,13 +33,13 @@ export const COURIERS_CONTENT: CouriersContent = {
   breadcrumb: 'Couriers',
   title: 'Courier Companies Australia',
   introduction: {
-    heading: 'Courier Services by Bee Direct',
+    heading: 'Courier Services by BEE DIRECT',
     paragraphs: [
       [
         {
-          text: 'For the best courier service in Australia and internationally, trust Bee Direct. We work with the leading freight companies, couriers and shipping providers and pass along the cheapest quotes to our ',
+          text: 'For the best courier service in Australia and internationally, trust BEE DIRECT. We work with the leading freight companies, couriers and shipping providers and pass along the cheapest quotes to our ',
         },
-        { text: 'Bee Direct members', to: PATHS.openAccount },
+        { text: 'BEE DIRECT members', to: PATHS.openAccount },
         { text: '.' },
       ],
       [
@@ -69,7 +69,7 @@ export const COURIERS_CONTENT: CouriersContent = {
     paragraphs: [
       [
         { text: 'You can also use our free ' },
-        { text: 'Bee Direct Courier Quote Search', to: PATHS.quote },
+        { text: 'BEE DIRECT Courier Quote Search', to: PATHS.quote },
         {
           text: ' to find the perfect courier service to fit your needs, with average savings that are 10-30% cheaper than standard published courier quotes — we pass along the savings to you!',
         },
@@ -78,7 +78,7 @@ export const COURIERS_CONTENT: CouriersContent = {
         {
           text: 'Don’t forget, for the cheapest courier services and international shipping, you can ',
         },
-        { text: 'become a Bee Direct Member', to: PATHS.openAccount },
+        { text: 'become a BEE DIRECT Member', to: PATHS.openAccount },
         {
           text: ' and save big instantly. It’s free and online approval is instant, so you can book with confidence right away. ',
         },

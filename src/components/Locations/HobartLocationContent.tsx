@@ -7,11 +7,11 @@ const HobartLocationContent: React.FC = () => (
   <div className="space-y-8">
     <section>
       <h2 className="text-xl font-bold text-ink">
-        Let Bee Direct handle your shipping needs throughout Hobart and the surrounds
+        Let BEE DIRECT handle your shipping needs throughout Hobart and the surrounds
       </h2>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Bee Direct is proud to provide premium courier services across Hobart, with a focus
+        BEE DIRECT is proud to provide premium courier services across Hobart, with a focus
         on reliability, cost-efficiency, and timely turnarounds. We specialise in assisting
         residents and commercial clients right across Australia with their custom shipping
         needs, including throughout Tasmania.
@@ -30,7 +30,7 @@ const HobartLocationContent: React.FC = () => (
       </ul>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Contact the couriers at Bee Direct today and find out more about how we can assist
+        Contact the couriers at BEE DIRECT today and find out more about how we can assist
         you in Hobart or in one of our many other locations throughout Australia.
       </p>
 

@@ -18,17 +18,17 @@ export type AboutUsContent = {
 
 export const ABOUT_US_CONTENT: AboutUsContent = {
   seo: {
-    title: 'About Us | Bee Direct',
+    title: 'About Us | BEE DIRECT',
     description:
-      'Learn how Bee Direct delivers affordable courier, parcel delivery and freight solutions across Australia.',
+      'Learn how BEE DIRECT delivers affordable courier, parcel delivery and freight solutions across Australia.',
   },
-  breadcrumb: 'About Bee Direct',
-  title: 'Bee Direct | Cheap Couriers, Parcel Delivery & Freight',
-  heading: 'Bee Direct – Delivering Solutions for you.',
+  breadcrumb: 'About BEE DIRECT',
+  title: 'BEE DIRECT | Cheap Couriers, Parcel Delivery & Freight',
+  heading: 'BEE DIRECT – Delivering Solutions for you.',
   paragraphs: [
     [
       {
-        text: 'Here at Bee Direct, we strive to deliver the best range of shipping solutions to suit your needs. With carbon-neutral delivery options, we help your business grow whilst helping to protect our planet.',
+        text: 'Here at BEE DIRECT, we strive to deliver the best range of shipping solutions to suit your needs. With carbon-neutral delivery options, we help your business grow whilst helping to protect our planet.',
       },
     ],
     [
@@ -43,7 +43,7 @@ export const ABOUT_US_CONTENT: AboutUsContent = {
     ],
     [
       {
-        text: 'Bee Direct is a trusted freight partner for Australian businesses and individuals. We back up our courier and freight services with a customer service team who are always there to ensure you and your clients feel confident in the delivery process.',
+        text: 'BEE DIRECT is a trusted freight partner for Australian businesses and individuals. We back up our courier and freight services with a customer service team who are always there to ensure you and your clients feel confident in the delivery process.',
       },
     ],
     [
@@ -59,7 +59,7 @@ export const ABOUT_US_CONTENT: AboutUsContent = {
     ],
   ],
   locationsIntroduction:
-    'We look forward to solving your transport requirements. For more information on how Bee Direct can respond to your local needs, select your location below:',
+    'We look forward to solving your transport requirements. For more information on how BEE DIRECT can respond to your local needs, select your location below:',
   locations: [
     'Melbourne',
     'Sydney',

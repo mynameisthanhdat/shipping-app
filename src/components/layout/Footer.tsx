@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
       <div className="mx-auto max-w-container px-6 py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Logo className="text-2xl text-white" markClassName="h-11 w-11" />
+            <Logo className="text-2xl text-white" markClassName="h-9" />
             <p className="mt-6 text-sm text-white/70">Affordable shipping for everyone.</p>
           </div>
 
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-12 border-t border-white/15 pt-6 text-center text-xs text-white/60">
-          © Bee Direct. All rights reserved.
+          © BEE DIRECT. All rights reserved.
         </div>
       </div>
     </footer>

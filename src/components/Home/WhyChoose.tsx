@@ -9,7 +9,7 @@ const WhyChoose: React.FC = () => {
   return (
     <section className="rounded-xl bg-ink px-6 pt-7 pb-12 text-center">
         <h2 className="text-2xl font-bold text-white">
-          Why Businesses Choose Bee Direct
+          Why Businesses Choose BEE DIRECT
         </h2>
         <div className="mt-10 grid gap-x-12 gap-y-4 sm:grid-cols-2">
           {[leftColumn, rightColumn].map((column, columnIndex) => (

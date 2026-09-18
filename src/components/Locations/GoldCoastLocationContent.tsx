@@ -14,7 +14,7 @@ const GoldCoastLocationContent: React.FC = () => (
         Looking for a Gold Coast Courier to move a package locally or interstate?
         We&apos;re the most reliable and cost effective freight and shipping company in
         Australia and we&apos;ve perfected the art of delivering packages of all sizes in
-        the quickest and safest ways possible. Bee Direct provides a premium level of courier
+        the quickest and safest ways possible. BEE DIRECT provides a premium level of courier
         service to residents and business owners throughout Queensland. We are dedicated to
         making sure our valued customers receive reliable, cost-effective and timely
         services.
@@ -22,7 +22,7 @@ const GoldCoastLocationContent: React.FC = () => (
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
         So whether you&apos;re delivering to clients or just remembered it&apos;s your
-        mum&apos;s birthday and need to send her gift off pronto, Bee Direct is the company
+        mum&apos;s birthday and need to send her gift off pronto, BEE DIRECT is the company
         that will make it seem all too easy. Our expert couriers are available to cater to
         your delivery needs 24 hours a day. That means that if it&apos;s past five p.m. and
         you need the item to arrive at its destination by the next morning, we can make it
@@ -48,7 +48,7 @@ const GoldCoastLocationContent: React.FC = () => (
       </ul>
 
       <p className="mt-4 text-sm leading-relaxed text-ink">
-        Bee Direct exists to meet your delivery needs. We strive to provide every one of our
+        BEE DIRECT exists to meet your delivery needs. We strive to provide every one of our
         customers with exceptional service that ensures they use us again and to maintain
         our excellent reputation nationwide. We have an online quote tool which shows you
         what to expect to pay before you&apos;ve committed and we give you access to a clear
@@ -58,7 +58,7 @@ const GoldCoastLocationContent: React.FC = () => (
       </p>
 
       <p className="mt-3 text-sm leading-relaxed text-ink">
-        Contact Bee Direct today, and find out how our experienced couriers can assist you on
+        Contact BEE DIRECT today, and find out how our experienced couriers can assist you on
         the Gold Coast or in any of our many locations nationwide.
       </p>
 

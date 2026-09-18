@@ -21,7 +21,7 @@ const SignIn: React.FC = () => {
         <div className="mt-10 text-center">
           <h1 className="text-3xl font-bold text-ink">Welcome Back</h1>
           <p className="mx-auto mt-3.5 max-w-xl text-muted">
-            Log in to your Bee Direct account to manage shipments and track savings.
+            Log in to your BEE DIRECT account to manage shipments and track savings.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const SignIn: React.FC = () => {
       </div>
 
       <div className="mx-auto mt-16 w-full max-w-container px-6 pb-8">
-        <CtaBanner title="We've got you covered. Send with Bee Direct and start saving today!" />
+        <CtaBanner title="We've got you covered. Send with BEE DIRECT and start saving today!" />
       </div>
     </div>
   );
