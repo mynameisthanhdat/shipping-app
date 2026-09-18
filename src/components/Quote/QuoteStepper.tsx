@@ -9,8 +9,8 @@ export type QuoteStepperProps = {
 };
 
 const QuoteStepper: React.FC<QuoteStepperProps> = ({ currentIndex, completedCount }) => (
-  <nav aria-label="Quote progress" className="overflow-x-auto">
-    <ol className="flex min-w-max items-start justify-center">
+  <nav aria-label="Quote progress" className="overflow-x-auto overflow-y-hidden">
+    <ol className="flex min-w-max items-start justify-center pb-3">
       {QUOTE_STEPS.map((step, index) => {
         const isCurrent = index === currentIndex;
         const isReached = index <= currentIndex;
